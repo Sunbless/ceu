@@ -24,8 +24,8 @@ production:
   adapter: mysql2
   encoding: utf8
   pool: 5
-  database: <%= "'#{ ENV['MYSQLS_DATABASE'] }'" %>
-  host: <%= "'#{ ENV['MYSQLS_HOSTNAME'] }'" %>
-  port: <%= ENV["MYSQLS_PORT"] %>
-  username: <%= "'#{ ENV['MYSQLS_USERNAME'] }'" %>
-  password: <%= "'#{ ENV['MYSQLS_PASSWORD'] }'" %>
+  database: dep7frqnrwp
+  host: mysqlsdb.co8hm2var4k9.eu-west-1.rds.amazonaws.com
+  port: 3306
+  username: dep7frqnrwp
+  password: vbrMJeZ5m5Gb
