@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>ZZJZ</title>
+  <meta name="description" content="ZZJZ">
+  <meta name="viewport" content="width=device-width">
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">Vi koristite <strong>zastarjeli</strong> internet preglednik. Molimo vas <a href="http://browsehappy.com/">da ga ažurirate</a> ili <a href="http://www.google.com/chromeframe/?redirect=true">aktivirate Google Chrome Frame</a> za bolje korisničko iskustvo.</p>
+  <![endif]-->
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="brand" href="/">ZZJZ</a>
+        <% if user_signed_in? %>
+        <div class="nav-collapse collapse">
+          <ul class="nav">
+            <li class="<%= 'active' if current_page?(root_path) %>"><a href="#">Home</a></li>
+            <li class="<%= 'active' if current_page?(users_path) %>"><a href="<%= users_path %>">Korisnici</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        <p class="navbar-text pull-right">
+              <a href="<%=destroy_user_session_path%>" class="navbar-link">Odjava (<%=current_user.email%>)</a>
+        </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <% [:notice, :error, :alert].each do |level| %>
+      <% unless flash[level].blank? %>
+        <div class="alert-message <%= flash_class(level) %>">
+          <a class="close" href="#">×</a>
+          <%= content_tag :p, flash[level] %>
+        </div>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  </div>
+
+</body>
+</html>
