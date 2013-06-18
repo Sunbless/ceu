@@ -23,8 +23,10 @@ Phi.create(config["phis"])
 
 config["hes"].each do |hes|
   # puts hes["nurse"].inspect
-  nurse_id = hes["nurse"] ? User.find_by_uid(hes["nurse"]).id : nil
-  center_id = hes["dz"] ? Center.find_by_uid(hes["dz"]).id : nil
+  nurse = hes["nurse"] ? User.find_by_uid(hes["nurse"]).id : nil
+  center = hes["dz"] ? Center.find_by_uid(hes["dz"]).id : nil
+  nurse_id = nurse.id ? nurse.id : nil
+  center_id = center.id ? center.id : nil
   he = {
     "nurse_id" => nurse_id, 
     "name" => hes["name"], 
