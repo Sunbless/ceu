@@ -4,6 +4,7 @@ class CasesController < ApplicationController
   # GET /cases.json
   def index
     @cases = Case.all
+    @cases = Case.order("id desc").page params[:page]
 
     respond_to do |format|
       format.html # index.html.erb
@@ -35,6 +36,9 @@ class CasesController < ApplicationController
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
+    @nurses = User.find_all_by_user_type(2)
+    @municipalities = Municipality.all
+    @centers = Center.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @case }
@@ -50,6 +54,9 @@ class CasesController < ApplicationController
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
+    @nurses = User.find_all_by_user_type(2)
+    @municipalities = Municipality.all
+    @centers = Center.all
   end
 
   # POST /cases
@@ -61,8 +68,11 @@ class CasesController < ApplicationController
     @phis = Phi.all
     @hes = He.all
     @laboratories = Laboratory.all
+    @municipalities = Municipality.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
+    @nurses = User.find_all_by_user_type(2)
+    @centers = Center.all
 
     respond_to do |format|
       if @case.save
@@ -85,6 +95,9 @@ class CasesController < ApplicationController
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
+    @nurses = User.find_all_by_user_type(2)
+    @centers = Center.all
+    @municipalities = Municipality.all
 
     respond_to do |format|
       if @case.update_attributes(params[:case])

@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   # skip_before_filer :require_no_authentication 
-  before_filter :authenticate_user!, :allow_admin_access
+  before_filter :authenticate_user!
+  # before_filter :allow_admin_access
 
 
   # GET /users
@@ -47,13 +48,22 @@ class UsersController < ApplicationController
   # POST /users.xml
   def create
     @user = User.new(params[:user])
+    if params[:user][:password].blank?
+      @user.password = (0...30).map{ ('a'..'z').to_a[rand(26)] }.join
+    end
+    if !params[:user][:email] || params[:user][:email] == "false" 
+      @user.email = "#{params[:user][:name]}.#{params[:user][:surname]}@zzjz.ba".delete(' ')
+    end
+    @municipalities = Municipality.all
     respond_to do |format|
       if @user.save
         format.html { redirect_to(@user, :notice => t(:user_created)) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
+        format.json  { render :json => @user, :status => :created, :location => @user }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @user.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -62,6 +72,7 @@ class UsersController < ApplicationController
   # PUT /users/1.xml
   def update
     @user = User.find(params[:id])
+    @municipalities = Municipality.all
     # params[:user]['password'] = @user.password if params[:user]['password'] == ''
     if params[:user][:password].blank?
       params[:user].delete(:password)
@@ -81,6 +92,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.xml
   def destroy
+    allow_admin_access
     @user = User.find(params[:id])
     @user.destroy
 

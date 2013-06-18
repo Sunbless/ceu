@@ -8,7 +8,7 @@ class Case < ActiveRecord::Base
   belongs_to :agent
   has_one :icd
   validates_presence_of :protocol
-
+  paginates_per 50
 
   def operator
     User.find(self.operator_id).full_name
