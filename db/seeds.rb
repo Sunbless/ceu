@@ -3,9 +3,9 @@ seed_file = File.join(Rails.root, 'db', 'seed.yml')
 config = YAML::load_file(seed_file)
 
 
-User.create(config["users"])
+# User.create(config["users"])
 
-Entity.create(config["entities"])
+# Entity.create(config["entities"])
 
 District.create(config["districts"])
 
@@ -22,11 +22,12 @@ Center.create(config["centers"])
 Phi.create(config["phis"])
 
 config["hes"].each do |hes|
-  # puts hes["nurse"].inspect
-  nurse = hes["nurse"] ? User.find_by_uid(hes["nurse"]).id : nil
-  center = hes["dz"] ? Center.find_by_uid(hes["dz"]).id : nil
-  nurse_id = nurse.id ? nurse.id : nil
-  center_id = center.id ? center.id : nil
+
+  nurse = hes["nurse"] ? User.find_by_uid(hes["nurse"]) : false
+  center = hes["dz"] ? Center.find_by_uid(hes["dz"]) : false
+
+  nurse_id = (nurse && nurse.try(:id)) ? nurse.id : nil
+  center_id = (center && center.try(:id)) ? center.id : nil
   he = {
     "nurse_id" => nurse_id, 
     "name" => hes["name"], 
