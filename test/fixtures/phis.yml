@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  abbrev: MyString
+  address: MyString
+  full_bsn: MyString
+  full_eng: MyString
+  mail_no: MyString
+  municipality_id: 1
+  phone: MyString
+  fax: MyString
+  epidemiologist: MyString
+  email: MyString
+  post: MyString
+  district_id: 1
+
+two:
+  abbrev: MyString
+  address: MyString
+  full_bsn: MyString
+  full_eng: MyString
+  mail_no: MyString
+  municipality_id: 1
+  phone: MyString
+  fax: MyString
+  epidemiologist: MyString
+  email: MyString
+  post: MyString
+  district_id: 1

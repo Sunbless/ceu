@@ -1,0 +1,27 @@
+<h3>ICD Pregled</h3>
+
+<table class="table teble-stripped">
+  <thead>
+    <tr>
+      <th>Kod</th>
+      <th>Naziv</th>
+      <th>Naziv (eng)</th>
+      <th></th>
+    </tr>
+  </thead>
+<% @icds.each do |icd| %>
+  <tr>
+    <td><%= icd.code %></td>
+    <td><%= icd.disease_bsn %></td>
+    <td><%= icd.disease_eng %></td>
+    <td>
+      <%= link_to 'Uredi', edit_icd_path(icd) %>
+      <%= link_to 'Izbriši', icd, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi ICD', new_icd_path %>

@@ -1,0 +1,29 @@
+
+<p>
+  <b>Institucija:</b>
+  <%= @he.center.name %>
+</p>
+
+<p>
+  <b>Kod:</b>
+  <%= @he.code %>
+</p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @he.name %>
+</p>
+
+<p>
+  <b>Šef službe:</b>
+  <%= @he.chief.full_name %>
+</p>
+
+<p>
+  <b>Med. tehničar:</b>
+  <%= @he.nurse.full_name %>
+</p>
+
+
+<%= link_to 'Uredi', edit_he_path(@he) %> |
+<%= link_to 'Nazad', hes_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: MyString
+  disease_bsn: MyString
+  disease_eng: MyString
+  int: 1
+  both: 1
+
+two:
+  code: MyString
+  disease_bsn: MyString
+  disease_eng: MyString
+  int: 1
+  both: 1

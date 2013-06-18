@@ -1,0 +1,118 @@
+
+<%= form_for(@case, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @case.errors.any? %>
+    <div id="error_explanation">
+      <% @case.errors.full_messages.each do |msg| %>
+        <p class="error error-text text-error"><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :district_id, 'Distrikt:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :district_id, @districts, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phi_id, "Regionalni zavod:", :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :phi_id, @phis, :id, :full_bsn, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :he_id, :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :he_id, @hes, :id, :name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :user_id, "Doktor:", :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :user_id, @doctors, :id, :full_name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :protocol, "Protokol", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :protocol, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :dg_syndrom, "Dijagnoza", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_area :dg_syndrom %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_dg, "Datum dijagnoze", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_of_dg, :class => 'datepicker input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :labconfirmed,"Laboratorijski potvrđeno", :class=>'control-label'  %>
+    <div class="controls"><%= f.check_box :labconfirmed %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :laboratory_id, 'Laboratorija:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :laboratory_id, @laboratories, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_lab, :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_lab, :class => 'datepicker input-xlarge' %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :agent_id, "Agent", :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :agent_id, @agents, :id, :agent, {:prompt => "Izaberite agent"}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_report, "Datum izvještaja", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_report, :class => 'datepicker input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_entry, "Datum unosa", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_entry, :class => 'datepicker input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :vaccin, 'Vakcinisan:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :vaccin, @case.vaccins, :first, :last, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :comment, "Komentar", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_area :comment %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :patient_name, "Ime pacijenta", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :patient_name, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :patient_surname, "Prezime pacijenta", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :patient_surname, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :age, "Starost", :class=>'control-label'  %>
+    <div class="controls"><%= f.number_field :age %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_of_birth, "Datum rođenja", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_of_birth, :class => 'datepicker input-xlarge' %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :date_death, "Datum smrti", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :date_death, :class => 'datepicker input-xlarge' %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :sex, "Spol", :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :sex, @case.sex_choice, :first, :last, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :jmbg, "JMBG:", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :jmbg %></div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sačuvaj", :class => "btn btn-primary" %>
+  </div>
+<% end %>

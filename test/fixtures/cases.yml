@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  district_id: 1
+  phi_id: 1
+  he_id: 1
+  user_id: 1
+  protocol: MyString
+  dg_syndrom: MyText
+  date_of_dg: 2013-06-18
+  labconfirmed: 1
+  laboratory_id: 1
+  date_lab: 2013-06-18
+  agent_id: 1
+  date_report: 2013-06-18
+  date_entry: 2013-06-18
+  vaccin: 1
+  operator_id: 1
+  comment: MyText
+  patient_name: MyString
+  patient_surname: MyString
+  age: 1
+  date_of_birth: 2013-06-18
+  date_death: 2013-06-18
+  sex: MyString
+  jmbg: MyString
+
+two:
+  district_id: 1
+  phi_id: 1
+  he_id: 1
+  user_id: 1
+  protocol: MyString
+  dg_syndrom: MyText
+  date_of_dg: 2013-06-18
+  labconfirmed: 1
+  laboratory_id: 1
+  date_lab: 2013-06-18
+  agent_id: 1
+  date_report: 2013-06-18
+  date_entry: 2013-06-18
+  vaccin: 1
+  operator_id: 1
+  comment: MyText
+  patient_name: MyString
+  patient_surname: MyString
+  age: 1
+  date_of_birth: 2013-06-18
+  date_death: 2013-06-18
+  sex: MyString
+  jmbg: MyString

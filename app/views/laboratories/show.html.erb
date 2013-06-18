@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @laboratory.name %>
+</p>
+
+<p>
+  <b>UID:</b>
+  <%= @laboratory.uid %>
+</p>
+
+<p>
+  <b>Lokacija:</b>
+  <%= @laboratory.municipality.municipality %>
+</p>
+
+<p>
+  <b>Telefon:</b>
+  <%= @laboratory.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @laboratory.email %>
+</p>
+
+
+<%= link_to 'Uredi', edit_laboratory_path(@laboratory) %> |
+<%= link_to 'Nazad', laboratories_path %>

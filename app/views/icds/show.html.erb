@@ -1,0 +1,28 @@
+<p>
+  <b>Kod:</b>
+  <%= @icd.code %>
+</p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @icd.disease_bsn %>
+</p>
+
+<p>
+  <b>Naziv (eng):</b>
+  <%= @icd.disease_eng %>
+</p>
+
+<p>
+  <b>Int:</b>
+  <%= @icd.int %>
+</p>
+
+<p>
+  <b>Both:</b>
+  <%= @icd.both %>
+</p>
+
+
+<%= link_to 'Uredi', edit_icd_path(@icd) %> |
+<%= link_to 'Nazad', icds_path %>

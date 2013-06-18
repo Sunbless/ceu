@@ -1,0 +1,63 @@
+<p>
+  <b>Abbrev:</b>
+  <%= @phi.abbrev %>
+</p>
+
+<p>
+  <b>Adresa:</b>
+  <%= @phi.address %>
+</p>
+
+<p>
+  <b>Naziv:</b>
+  <%= @phi.full_bsn %>
+</p>
+
+<p>
+  <b>Naziv eng:</b>
+  <%= @phi.full_eng %>
+</p>
+
+<p>
+  <b>Mail no:</b>
+  <%= @phi.mail_no %>
+</p>
+
+<p>
+  <b>Lokacija:</b>
+  <%= @phi.municipality.municipality %>
+</p>
+
+<p>
+  <b>Telefon:</b>
+  <%= @phi.phone %>
+</p>
+
+<p>
+  <b>Fax:</b>
+  <%= @phi.fax %>
+</p>
+
+<p>
+  <b>Epidemiologist:</b>
+  <%= @phi.epidemiologist %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @phi.email %>
+</p>
+
+<p>
+  <b>Post:</b>
+  <%= @phi.post %>
+</p>
+
+<p>
+  <b>Distrikt:</b>
+  <%= @phi.district.abbr if @phi.district_id %>
+</p>
+
+
+<%= link_to 'Uredi', edit_phi_path(@phi) %> |
+<%= link_to 'Nazad', phis_path %>

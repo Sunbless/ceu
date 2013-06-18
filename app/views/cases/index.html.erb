@@ -1,0 +1,32 @@
+<h3>Pregled</h3>
+
+<table class="table teble-stripped">
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Protokol</th>
+      <th>Datum unosa</th>
+      <th>Ime pacijenta</th>
+      <th>Starost</th>
+      <th></th>
+    </tr>
+  </thead>
+<% @cases.each do |c| %>
+  <tr>
+    <td><%= c.district_id %></td>
+    <td><%= c.protocol %></td>
+    <td><%= c.date_entry %></td>
+    <td><%= c.patient_name %> <%= c.patient_surname %></td>
+    <td><%= c.age %></td>
+    <td>
+        <%= link_to 'Pregled', c %> |
+        <%= link_to 'Uredi', edit_case_path(c) %> |
+        <%= link_to 'Izbriši', c, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi slučaj', new_case_path %>

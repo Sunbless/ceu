@@ -1,0 +1,36 @@
+<hr>
+<%= form_for(@laboratory, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @laboratory.errors.any? %>
+    <div id="error_explanation">
+      <% @laboratory.errors.full_messages.each do |msg| %>
+        <p class="text-error"><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, 'Naziv:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :name, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :uid, 'UID:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :uid, :class => 'input-xlarge' %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :municipality_id, 'Lokacija:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :municipality_id, @municipalities, :id, :municipality, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, 'Telefon:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :phone, :class => 'input-xlarge' %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, 'Email:', :class=>'control-label'  %>
+   <div class="controls"> <%= f.email_field :email, :class => 'input-xlarge' %></div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sačuvaj", :class => "btn btn-primary" %>
+  </div>
+<% end %>

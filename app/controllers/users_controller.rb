@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
-  before_filter :authenticate_user!
+  # skip_before_filer :require_no_authentication 
+  before_filter :authenticate_user!, :allow_admin_access
+
+
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all
-
+    @users = User.order(:name,:surname,:email).page params[:page]
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
@@ -27,6 +29,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @current_method = "new"
+    @municipalities = Municipality.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,13 +40,13 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
+    @municipalities = Municipality.all
   end
 
   # POST /users
   # POST /users.xml
   def create
     @user = User.new(params[:user])
-
     respond_to do |format|
       if @user.save
         format.html { redirect_to(@user, :notice => t(:user_created)) }
@@ -59,7 +62,11 @@ class UsersController < ApplicationController
   # PUT /users/1.xml
   def update
     @user = User.find(params[:id])
-    params[:user]['password'] = @user.password if params[:user]['password'] == ''
+    # params[:user]['password'] = @user.password if params[:user]['password'] == ''
+    if params[:user][:password].blank?
+      params[:user].delete(:password)
+      params[:user].delete(:password_confirmation)
+    end
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to(@user, :notice => t(:user_updated)) }

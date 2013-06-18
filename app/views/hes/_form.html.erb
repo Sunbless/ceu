@@ -1,0 +1,40 @@
+<hr>
+<%= form_for(@he, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @he.errors.any? %>
+    <div id="error_explanation">
+      <% @he.errors.full_messages.each do |msg| %>
+        <p class="text-error"><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :center_id, 'Institucija', :class=>'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :center_id, @centers, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :code, 'Kod:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :code, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :name, "Naziv:", :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :name, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :chief_id, 'Šef službe:', :class=>'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :chief_id, @chiefs, :id, :full_name, {:prompt => false, :include_blank => true}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :nurse_id, "Med. tehničar:", :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :nurse_id, @nurses, :id, :full_name, {:prompt => false, :include_blank => true}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sačuvaj", :class=> "btn btn-primary" %>
+  </div>
+<% end %>

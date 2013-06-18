@@ -1,0 +1,66 @@
+<hr>
+<%= form_for(@phi, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @phi.errors.any? %>
+    <div id="error_explanation">
+      <% @phi.errors.full_messages.each do |msg| %>
+        <p class="text-error"><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+   <div class="control-group">
+    <%= f.label :abbrev, 'ABBREV:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :abbrev, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :address, 'Adresa:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :address, :class => 'input-xlarge'  %></div>
+  </div>
+   <div class="control-group">
+    <%= f.label :full_bsn, 'Naziv:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :full_bsn, :class => 'input-xlarge'  %></div>
+  </div>
+   <div class="control-group">
+    <%= f.label :full_eng, 'Naziv (eng):', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :full_eng, :class => 'input-xlarge'  %></div>
+  </div>
+   <div class="control-group">
+    <%= f.label :mail_no, 'Mail_no:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :mail_no, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :municipality_id, 'Lokacija:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :municipality_id, @municipalities, :id, :municipality, {:prompt => false, :include_blank => true}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :phone, 'Telefon:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :phone, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :fax, 'Fax:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :fax, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :epidemiologist, 'Epidemolog:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :epidemiologist, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :email, 'Email:', :class=>'control-label'  %>
+    <div class="controls"><%= f.email_field :email, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :post, 'Post:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :post, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :district_id, 'Distrikt:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :district_id, @districts, :id, :name, {:prompt => false, :include_blank => true}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sačuvaj", :class => "btn btn-primary" %>
+  </div>
+<% end %>

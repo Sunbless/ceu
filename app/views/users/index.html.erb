@@ -1,12 +1,17 @@
+<h2>Korisnici:</h2>
 <table class="table table-striped">
   <thead>
     <tr>
-      <td>E-mail</td>
-      <td>Akcije</td>
+      <th>Ime</th>
+      <th>Funkcija</th>
+      <th>E-mail</th>
+      <th>Akcije</th>
     </tr>
   </thead>
   <% @users.each do |user|%>
   <tr>
+    <td><%= user.name %> <%= user.surname %></td>
+    <td><%= user.show_user_type %></td>
     <td><%= user.email %></td>
     <td>
       <%= link_to '<i class="icon-trash"></i> Izbriši'.html_safe, user_path(user), :confirm => 'Jeste li sigurni da želite izbirsati korisnika?', :method => :delete  if current_user.id != user.id%>
@@ -16,4 +21,5 @@
   </tr>
   <% end %>
 </table>
+<%= paginate @users %>
 <a href="<%= new_user_path %>">Dodaj novog korisnika</a>

@@ -1,0 +1,31 @@
+<h3>Regionalni zdravstveni zavodi</h3>
+
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>Abbrev</th>
+      <th>Adresa</th>
+      <th>Naziv</th>
+      <th>Naziv (eng)</th>
+      <th>Distrikt</th>
+      <th></th>
+    </tr>
+  </thead>
+<% @phis.each do |phi| %>
+  <tr>
+    <td><%= phi.abbrev %></td>
+    <td><%= phi.address %></td>
+    <td><%= phi.full_bsn %></td>
+    <td><%= phi.full_eng %></td>
+    <td><%= phi.district.name if phi.district_id %></td>
+    <td>
+      <%= link_to 'Uredi', edit_phi_path(phi) %>
+      <%= link_to 'Izbriši', phi, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi zavod', new_phi_path %>

@@ -1,0 +1,23 @@
+<h3>Pregled agenata</h3>
+
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>Agent</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+<% @agents.each do |agent| %>
+  <tr>
+    <td><%= agent.agent %></td>
+    <td><%= link_to 'Uredi', edit_agent_path(agent) %></td>
+    <td><%= link_to 'Izbriši', agent, method: :delete, data: { confirm: 'Jeste li sigurni?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi agent', new_agent_path %>

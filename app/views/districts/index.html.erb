@@ -1,0 +1,37 @@
+<h3>Distrikti</h3>
+
+<table class="table table-zebra table-striped">
+  <thead>
+    <tr>
+      <th>Code stat</th>
+      <th>Abbr</th>
+      <th>Name eng</th>
+      <th>Centar</th>
+      <th>Name</th>
+      <th>Population</th>
+      <th>Municipalities</th>
+      <th>Entity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+<% @districts.each do |district| %>
+  <tr>
+    <td><%= district.code_stat %></td>
+    <td><%= district.abbr %></td>
+    <td><%= district.name_eng %></td>
+    <td><%= district.centar %></td>
+    <td><%= district.name %></td>
+    <td><%= district.population %></td>
+    <td><%= district.municipalities.count %></td>
+    <td><%= district.entity.abbr %></td>
+    <td><%= link_to 'Uredi', edit_district_path(district) %></td>
+    <td><%= link_to 'Izbriši', district, method: :delete, data: { confirm: 'Jeste li sigurni?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj novi distrikt', new_district_path %>

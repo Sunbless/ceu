@@ -1,7 +1,36 @@
 Zzjz::Application.routes.draw do
 
-  devise_for :users do
-    get "/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+  resources :icds
+
+
+  resources :agents
+
+
+  resources :cases
+
+
+  resources :phis
+
+
+  resources :laboratories
+
+
+  resources :hes
+
+
+  resources :centers
+
+
+  resources :districts
+
+
+  devise_for :users, :path_prefix => 'my' do
+    get "/my/users/sign_out" => "devise/sessions#destroy", :as => :destroy_user_session
+    get "/my/users/sign_in" => "devise/sessions#new", :as => :new_user_session
+    get "/my/users/sign_up" => "devise/sessions#new", :as => :new_user_registration #disable registration
+    get '/my/users/edit' => 'devise/registrations#edit', :as => 'edit_user_registration'    
+    put '/my/users' => 'devise/registrations#update', :as => 'user_registration' 
+    # get "users/sign_up", :to => "devise/sessions#new", :as => :sign_up
   end
   resources :users
 

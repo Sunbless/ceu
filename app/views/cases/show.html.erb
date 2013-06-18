@@ -1,0 +1,120 @@
+<p>
+  <b>Region:</b>
+  <%= @case.district.name %>
+</p>
+
+<p>
+  <b>Regionalni zavod:</b>
+  <%= @case.phi_id %>
+</p>
+
+<p>
+  <b>Odjel/HES:</b>
+  <%= @case.he_id %>
+</p>
+
+<p>
+  <b>Doktor:</b>
+  <%= @case.user.full_name  if @case.user_id %>
+</p>
+
+<p>
+  <b>Protokol:</b>
+  <%= @case.protocol %>
+</p>
+
+<p>
+  <b>Dg syndrom:</b>
+  <%= @case.dg_syndrom %>
+</p>
+
+<p>
+  <b>Datum dijagnoze:</b>
+  <%= @case.date_of_dg %>
+</p>
+
+<p>
+  <b>Laboratorijski potvrđeno</b>
+  <%= @case.labconfirmed == 1 ? "Da" : "Ne" %>
+</p>
+
+<p>
+  <b>Laboratorija:</b>
+  <%= @case.laboratory.name %>
+</p>
+
+<p>
+  <b>Date lab:</b>
+  <%= @case.date_lab %>
+</p>
+
+<p>
+  <b>Agent:</b>
+  <%= @case.agent.agent if @case.agent_id %>
+</p>
+
+<p>
+  <b>Datum izvještaja:</b>
+  <%= @case.date_report %>
+</p>
+
+<p>
+  <b>Datum upisa:</b>
+  <%= @case.date_entry %>
+</p>
+
+<p>
+  <b>Vakcinisan:</b>
+  <%= @case.vaccins[@case.vaccin] %>
+</p>
+
+<p>
+  <b>Operator:</b>
+  <%= @case.operator if @case.operator_id %>
+</p>
+
+<p>
+  <b>Komentar:</b>
+  <%= @case.comment %>
+</p>
+
+<p>
+  <b>Ime pacijenta:</b>
+  <%= @case.patient_name %>
+</p>
+
+<p>
+  <b>Prezime pacijenta:</b>
+  <%= @case.patient_surname %>
+</p>
+
+<p>
+  <b>Starost:</b>
+  <%= @case.age %>
+</p>
+
+<p>
+  <b>Datum rođenja:</b>
+  <%= @case.date_of_birth %>
+</p>
+
+<% if @case.date_death %>
+<p>
+  <b>Datum smrti:</b>
+  <%= @case.date_death %>
+</p>
+<% end %>
+
+<p>
+  <b>Spol:</b>
+  <%= @case.sex_choice[@case.sex] %>
+</p>
+
+<p>
+  <b>JMBG:</b>
+  <%= @case.jmbg %>
+</p>
+
+
+<%= link_to 'Uredi', edit_case_path(@case) %> |
+<%= link_to 'Nazad', cases_path %>

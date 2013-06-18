@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  center_id: 1
+  code: MyString
+  name: MyString
+  chief_id: 1
+  nurse_id: 1
+
+two:
+  center_id: 1
+  code: MyString
+  name: MyString
+  chief_id: 1
+  nurse_id: 1

@@ -1,0 +1,25 @@
+<h3>Službe / Odjeli / HES</h3>
+
+<table class="table stripped">
+  <thead>
+    <tr>
+      <th>Instituacija</th>
+      <th>Code</th>
+      <th>Naziv</th>
+      <th></th>
+    </tr>
+  </thead>
+<% @hes.each do |he| %>
+  <tr>
+    <td><%= he.center.name if he.center_id %></td>
+    <td><%= he.code %></td>
+    <td><%= he.name %></td>
+    <td><%= link_to 'Uredi', edit_he_path(he) %></td>
+    <td><%= link_to 'Izbriši', he, method: :delete, data: { confirm: 'jeste li sigurni?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novi zapis', new_he_path %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: 1
+  code_stat: 1
+  abbr: MyString
+  name_eng: MyString
+  centar: MyString
+  name: MyString
+  population: 1
+  municipalities: 1
+  entity: 1
+
+two:
+  code: 1
+  code_stat: 1
+  abbr: MyString
+  name_eng: MyString
+  centar: MyString
+  name: MyString
+  population: 1
+  municipalities: 1
+  entity: 1

@@ -1,0 +1,2781 @@
+users:
+ -  email: admin@zzjz.ba
+    admin: 1
+    password: zzjzadmin!
+    name: Admin
+    surname: Adminovic
+
+ -  uid: "{0AABEF45-C267-4D74-A138-D8073E0A8585}"
+    email: fatima.basic@zzjz.ba
+    password: zzjzba123
+    name:  Fatima
+    surname: Bašić
+    user_type: 1
+    municipality_id: 110410 
+
+ -  uid: "{0102F5EA-EFD8-46E5-AC49-ADA4B0DA1497}"
+    email: ante.jelic@zzjz.ba
+    password: zzjzba123
+    name:  Anto
+    surname: Jelić 
+    user_type: 1
+    municipality_id: 110417
+
+ -  uid: "{02A608B0-418A-4643-8D57-497FD3C8AABB}"
+    email: azijada.beganlic@zzjz.ba
+    password: zzjzba123
+    name:  Azijada
+    surname: Beganlić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{04354DF2-408F-4477-A72F-38487FFD28F1}"
+    email: mubidiin.mujiz@zzjz.ba
+    password: zzjzba123
+    name:  Mubidin
+    surname: Mujić 
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{06E2E1CA-99AF-43E2-B3F3-782C16B65CE2}"
+    email: selma.memic@zzjz.ba
+    password: zzjzba123
+    name:  Selma
+    surname: Memić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{076BF433-2599-475E-98D7-A83C3315A46F}"
+    email: amira.poljic@zzjz.ba
+    password: zzjzba123
+    name:  Amira
+    surname: Poljić  
+    user_type: 1
+    municipality_id: 110318
+
+    uid: "{0AA9773B-56B5-4538-AED9-F80B735EA909}"
+    email: mahmoud.hajlista@zzjz.ba
+    password: zzjzba123
+    name:  Mahmoud
+    surname: Haj Lisa  
+    user_type: 1
+    municipality_id: 110320
+
+    uid: "{0B5CA015-0B61-428C-8514-E6F456682BEC}"
+    email: nuseret.stanjkovic@zzjz.ba
+    password: zzjzba123
+    name:  Nusret
+    surname: Stanjankić  
+    user_type: 1
+    municipality_id: 110320
+
+    uid: "{0DAA8641-DA76-4B51-9E98-F4FAB7834883}"
+    email: hidija.salihovic@zzjz.ba
+    password: zzjzba123
+    name:  Hidija
+    surname: Salihović 
+    user_type: 1
+    municipality_id: 110311
+
+ -  uid: "{0E9B19AE-351A-49F4-9C8A-9CE33C248F96}"
+    email: suad.skripic@zzjz.ba
+    password: zzjzba123
+    name:  Suad
+    surname: Škripić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{106EBEFB-A155-4E51-B3C6-942473B2504C}"
+    email: slavica.mott-divkovic@zzjz.ba
+    password: zzjzba123
+    name:  Slavica
+    surname: Mott-Divković 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{1070597A-84DD-4325-8491-3FA5D862DDD3}"
+    email: milada.repovac-imamovic@zzjz.ba
+    password: zzjzba123
+    name:  Milada
+    surname: Repovac-Imamović  
+    user_type: 1
+    municipality_id: 110417
+
+ -  uid: "{125791B3-6635-46BD-AFE8-7E1B9AE899C3}"
+    email: emina.moric@zzjz.ba
+    password: zzjzba123
+    name:  Emina
+    surname: Morić 
+    user_type: 1
+    municipality_id: 110311
+
+ -  uid: "{13BF33C4-1525-4498-955D-1467A420C9B7}"
+    email: nermin.begovic@zzjz.ba
+    password: zzjzba123
+    name:  Nermin
+    surname: Begović 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{13DCA619-0859-463B-A0B9-D09A61F697F7}"
+    email: sanela.husic@zzjz.ba
+    password: zzjzba123
+    name:  Sanela
+    surname: Husić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{15E786F5-9E30-4331-9843-410023A60490}"
+    email: janjic.nada@zzjz.ba
+    password: zzjzba123
+    name:  JANJIĆ
+    surname: NADA  
+    user_type: 1
+    municipality_id: 120610
+
+ -  uid: "{17AFE5CD-08A5-4817-B25E-19694D548F46}"
+    email: nusreta.halilovic-sarajlic@zzjz.ba
+    password: zzjzba123
+    name:  Nusreta
+    surname: Halilović-Sarajlić  
+    user_type: 1
+    municipality_id: 110315
+
+ -  uid: "{1ED10E97-E908-4EF5-A856-B6F662978D0A}"
+    email: miljana.todorovic@zzjz.ba
+    password: zzjzba123
+    name:  MILJANA
+    surname: TODOROVIĆ
+    user_type: 2
+    municipality_id: 120616
+
+ -  uid: "{1F464835-3B0B-433F-98A9-B31597FA37D7}"
+    email: adnan.aljukic@zzjz.ba
+    password: zzjzba123
+    name:  Adnan
+    surname: Aljukić 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{22F18ADB-F639-4EA0-933F-FDB57A56E024}"
+    email: fransi.petrak@zzjz.ba
+    password: zzjzba123
+    name:  Fransi
+    surname: Petrak  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{272D60DB-BBBB-455F-B466-B8C92B5358E2}"
+    email: smiljana.pavic@zzjz.ba
+    password: zzjzba123
+    name:  Smiljana
+    surname: Pavić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{28420424-B158-4416-9CB6-6C036F5FFE99}"
+    email: sana.olic-sabic@zzjz.ba
+    password: zzjzba123
+    name:  Sana
+    surname: Olić-Šabić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{2A813231-5EC3-48C1-B7B3-E6F27ECB5C23}"
+    email: tonka.mrkajic@zzjz.ba
+    password: zzjzba123
+    name:  Tonka
+    surname: Mrkajić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{2A830BD0-91D0-4ACC-959D-A300D259C835}"
+    email: vesna.jahic@zzjz.ba
+    password: zzjzba123
+    name:  Vesna
+    surname: Jahić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{2BC2CFDD-9183-45EA-AF18-80E66BD74494}"
+    email: sevala.palos@zzjz.ba
+    password: zzjzba123
+    name:  Sevala
+    surname: Paloš 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{2CF5770F-6A3F-4612-8EC9-E5FD27067A07}"
+    email: mirela.tobudic@zzjz.ba
+    password: zzjzba123
+    name:  Mirela
+    surname: Tobudić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{2D02CF17-9A29-465E-8926-DBA6FE586B8D}"
+    email: izet.salkanovic@zzjz.ba
+    password: zzjzba123
+    name:  Izet
+    surname: Salkanović  
+    user_type: 1
+    municipality_id: 110322
+
+ -  uid: "{2D055E7E-316B-49CF-B869-A9626CC5D490}"
+    email: aida.r.suvalic@zzjz.ba
+    password: zzjzba123
+    name:  Aida.R.
+    surname: Šuvalić 
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{30B6BB1F-0C3C-40DB-89D0-3C8C63099A9B}"
+    email: nermina.djulovic@zzjz.ba
+    password: zzjzba123
+    name:  Nermina
+    surname: Đulović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{3266A279-A92D-4584-9A4B-5F8FC88059A2}"
+    email: mirjana.remetic@zzjz.ba
+    password: zzjzba123
+    name:  Mirjana
+    surname: Remetić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{33956985-003D-407E-86D9-D328FA413421}"
+    email: vildana.stojic@zzjz.ba
+    password: zzjzba123
+    name:  Viladan
+    surname: Stojić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{33CB3001-7F3E-4A52-8D5F-B27A21794D74}"
+    email: zinaida.topcic@zzjz.ba
+    password: zzjzba123
+    name:  Zinaida
+    surname: Topčić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{38A7C1F3-1A7E-4A97-BAA8-DA4A9B375019}"
+    email: amila.bajraktarevic@zzjz.ba
+    password: zzjzba123
+    name:  Amila
+    surname: Bajraktarević 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{3ABDEF01-E27B-43F3-B877-EBF2D874B569}"
+    email: kenan.overdic@zzjz.ba
+    password: zzjzba123
+    name:  Kenan
+    surname: Omerdić 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{3FB3780C-5E41-45E6-913A-23000AD3AE73}"
+    email: damird.terzic@zzjz.ba
+    password: zzjzba123
+    name:  Damir
+    surname: Terzić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{4094B0F3-BC28-4E40-85D9-0307606B1B0E}"
+    email: azra.delic@zzjz.ba
+    password: zzjzba123
+    name:  Azra
+    surname: Delić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{42C9EEB9-CF35-4D74-A189-4F0328847AEE}"
+    email: amina.polgic@zzjz.ba
+    password: zzjzba123
+    name:  Amina
+    surname: Polgić  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{447B8C84-6FFA-4975-8400-B03ACB74406B}"
+    email: vuka.zirojevic@zzjz.ba
+    password: zzjzba123
+    name:  VUKA
+    surname: ZIROJEVIĆ
+    user_type: 2
+    municipality_id: 120613
+
+ -  uid: "{45E1A7A8-A3EE-421A-BC5E-2C769FA7927D}"
+    email: selma.nurkic@zzjz.ba
+    password: zzjzba123
+    name:  Selma
+    surname: Nurkić  
+    user_type: 1
+    municipality_id: 110311
+
+ -  uid: "{49488019-C773-410E-BD9D-A911587B5609}"
+    email: natasa.damjanac@zzjz.ba
+    password: zzjzba123
+    name:  NATAŠA
+    surname: DAMJANAC  
+    user_type: 1
+    municipality_id: 120610
+
+ -  uid: "{4AE76E83-F3CB-4A80-BC98-AA8DD15121CB}"
+    email: senad.haskic@zzjz.ba
+    password: zzjzba123
+    name:  Senad
+    surname: Haskić  
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{4B366793-3E38-4EC7-8203-F98DFC2D372B}"
+    email: mustafa.sehovic@zzjz.ba
+    password: zzjzba123
+    name:  Mustafa
+    surname: Šehović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{4BD206CD-C795-4C0F-8053-D9E567B2F798}"
+    email: ibrahim.haracic@zzjz.ba
+    password: zzjzba123
+    name:  Ibrahim
+    surname: Haračić 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{4C0F31A6-3BE1-4B16-9AEB-7B637E113BCA}"
+    email: silvija.vukovic@zzjz.ba
+    password: zzjzba123
+    name:  SILVIJA
+    surname: VUKOVIĆ
+    user_type: 2
+    municipality_id: 120615
+
+ -  uid: "{4F36D85F-21B5-46DB-99EF-05BA1C857524}"
+    email: mirjana.ruzic@zzjz.ba
+    password: zzjzba123
+    name:  MIRJANA
+    surname: RUŽIĆ 
+    user_type: 1
+    municipality_id: 120613
+
+ -  uid: "{4FD8F323-E502-402F-865D-A58074EADC71}"
+    email: enver.kubat@zzjz.ba
+    password: zzjzba123
+    name:  Enver
+    surname: Kubat 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{5135944F-7CEA-49E1-8DBA-C4B16DF0AF43}"
+    email: seudina.fajic@zzjz.ba
+    password: zzjzba123
+    name:  Seudina
+    surname: Fajić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{51BCB3C2-FD7B-4C89-B3F6-AEA70A076083}"
+    email: jasna.sadic@zzjz.ba
+    password: zzjzba123
+    name:  Jasna
+    surname: Šadić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{535EE2DA-9083-448F-81D1-3FD2A9BD586B}"
+    email: vildana.stojic@zzjz.ba
+    password: zzjzba123
+    name:  Vildana
+    surname: Stojić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{53F3148F-86F0-482A-8CD4-A0C5072CE8E7}"
+    email: ornela.cabrilo@zzjz.ba
+    password: zzjzba123
+    name:  ORNELA
+    surname: ČABRILO 
+    user_type: 1
+    municipality_id: 120616
+
+ -  uid: "{55F56A83-05B9-45D3-AABA-31E31B5FEC99}"
+    email: savo.novokmet@zzjz.ba
+    password: zzjzba123
+    name:  Savo
+    surname: Novokmet
+    user_type: 1
+    municipality_id:   null
+
+ -  uid: "{5678BB61-A311-47ED-8090-AEE599D11CCE}"
+    email: dzemal.garagic@zzjz.ba
+    password: zzjzba123
+    name:  Džemal
+    surname: Garagić 
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{57C8A527-6B17-4BA8-9599-57C7FB771549}"
+    email: dejan.barac@zzjz.ba
+    password: zzjzba123
+    name:  DEJAN
+    surname: BARAČ
+    user_type: 2
+    municipality_id: 120610
+
+ -  uid: "{58B7949D-DDB1-41BB-B5B4-6083716AFCAF}"
+    email: vesna.vilusic@zzjz.ba
+    password: zzjzba123
+    name:  Vesna
+    surname: Vilušić
+    user_type: 1
+    municipality_id: null
+
+ -  uid: "{59ADEE60-F491-497D-B7B3-6541120D924C}"
+    email: sanela.kovacevic@zzjz.ba
+    password: zzjzba123
+    name:  Sanela
+    surname: Kovačević 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{5B84B105-5468-4677-B04C-F19898436A5E}"
+    email: jasna.alic@zzjz.ba
+    password: zzjzba123
+    name:  Jasna
+    surname: Alić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{5BFDF1E2-3214-4E54-98B6-7D3CFB4BB3BE}"
+    email: muahmed.mehmedinovic@zzjz.ba
+    password: zzjzba123
+    name:  Muahmed
+    surname: Mehmedinović  
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{5CD4906F-4954-4C3D-803B-BF1BD167BF0F}"
+    email: vera.govedarica@zzjz.ba
+    password: zzjzba123
+    name:  VERA
+    surname: GOVEDARICA  
+    user_type: 1
+    municipality_id: 120613
+
+ -  uid: "{5DB0A904-6116-452B-83A3-DA946796B49A}"
+    email: marko.bakmaz@zzjz.ba
+    password: zzjzba123
+    name:  MARKO
+    surname: BAKMAZ  
+    user_type: 1
+    municipality_id: 120610
+
+ -  uid: "{65BD651A-641E-4C36-923E-4945B2EE87C9}"
+    email: zinaida.topcic@zzjz.ba
+    password: zzjzba123
+    name:  Zinaida
+    surname: Topčić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{66E318CA-BBB8-4108-8D41-2AAE9F389DD1}"
+    email: sevala.palos@zzjz.ba
+    password: zzjzba123
+    name:  Ševala
+    surname: Paloš 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{68BA19BF-494C-43CD-9E82-C2887E7AE475}"
+    email: meliha.divkovic-nurkic@zzjz.ba
+    password: zzjzba123
+    name:  Meliha
+    surname: Divković-Nurikić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{692DC17E-9CD9-458C-BA9C-247E55A674AC}"
+    email: azra.feukic@zzjz.ba
+    password: zzjzba123
+    name:  Azra
+    surname: Feukić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{6ADACC37-AC7A-4A33-897C-44ECD050E26B}"
+    email: amirus.klokic@zzjz.ba
+    password: zzjzba123
+    name:  Amiruš
+    surname: Klokić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{6EF2A82B-CDA8-4908-940D-F7877DDD9371}"
+    email: elida.turkusic@zzjz.ba
+    password: zzjzba123
+    name:  Elida
+    surname: Turkušić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{711EEF4F-65AF-49E9-B547-3E8E540FB92F}"
+    email: humera.porobic-jahic@zzjz.ba
+    password: zzjzba123
+    name:  Humera
+    surname: Porobić-Jahić 
+    user_type: 1
+    municipality_id: 110317
+
+ -  uid: "{72C97BD0-0EA5-47FA-BAF3-3D519AC0810D}"
+    email: amerlina.mehicic@zzjz.ba
+    password: zzjzba123
+    name:  Amerlina
+    surname: Mehičić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{7311E249-816A-4A01-9E36-9715CE6C9071}"
+    email: nermin.jukan@zzjz.ba
+    password: zzjzba123
+    name:  Nermin
+    surname: Jukan 
+    user_type: 1
+    municipality_id: 110319
+
+ -  uid: "{744B0046-186E-479F-BC13-347E15F1B1B6}"
+    email: jasminka.alibegovic@zzjz.ba
+    password: zzjzba123
+    name:  Jasminka
+    surname: Alibegović  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{7AECDBA2-8EAD-43EE-AAD8-6B633F870D4B}"
+    email: mirza.pestalic@zzjz.ba
+    password: zzjzba123
+    name:  Mirza
+    surname: Peštalić  
+    user_type: 1
+    municipality_id: 110315
+
+ -  uid: "{7C5CFC0F-142F-4D41-BD52-0EC66D330F4F}"
+    email: renata.govedarica@zzjz.ba
+    password: zzjzba123
+    name:  RENATA
+    surname: GOVEDARICA  
+    user_type: 1
+    municipality_id: 120611
+
+ -  uid: "{7C5F969F-6C12-49DF-BCC7-CF53F1B06720}"
+    email: mirnesa.muminovic@zzjz.ba
+    password: zzjzba123
+    name:  Mirnesa
+    surname: Muminović 
+    user_type: 1
+    municipality_id: 110322
+
+ -  uid: "{7D8C16A4-EA8C-4798-BB1E-8881B7867D45}"
+    email: indira.salihovic.@zzjz.ba
+    password: zzjzba123
+    name:  Indira
+    surname: Salihović 
+    user_type: 1
+    municipality_id: 110311
+
+ -  uid: "{7E02A974-A6E6-471F-9BE6-AD2F233A0981}"
+    email: almir.mujic@zzjz.ba
+    password: zzjzba123
+    name:  Almir
+    surname: Mujić 
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{7FE70CE9-918E-42D0-92D8-9B4D7BB71376}"
+    email: jasmina.selimovic@zzjz.ba
+    password: zzjzba123
+    name:  Jasmina
+    surname: Selimović 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{80EC8B32-316C-4F25-9532-443C43257C92}"
+    email: sejan.omeragic@zzjz.ba
+    password: zzjzba123
+    name: Sejan
+    surname: Omeragić  
+    user_type: 1
+    municipality_id: 110315
+
+ -  uid: "{815BBCB9-A376-43FD-8920-E5315787CBC0}"
+    email: humera.porovic-jahic@zzjz.ba
+    password: zzjzba123
+    name:  Humera
+    surname: Porović-Jahić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{85434A85-5A6C-4E66-9867-A1186B834B55}"
+    email: mladen.popovic@zzjz.ba
+    password: zzjzba123
+    name:  MLADEN
+    surname: POPOVIĆ 
+    user_type: 1
+    municipality_id: 120610
+
+ -  uid: "{855C84F5-602E-4449-A2E4-ED7CF0D1E6F2}"
+    email: sadedin.alsadi@zzjz.ba
+    password: zzjzba123
+    name:  Sadedin
+    surname: Al Sadi 
+    user_type: 1
+    municipality_id: 110316
+
+ -  uid: "{89633887-B371-49FA-BB08-804CB5069B92}"
+    email: munevera.osmic-omerdic@zzjz.ba
+    password: zzjzba123
+    name:  Munevera
+    surname: Osmić-Omerdić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{8FDF07C0-DF3B-44EA-9F76-F0387D2C7BC5}"
+    email: jasmina.sijercic@zzjz.ba
+    password: zzjzba123
+    name:  Jasmina
+    surname: Sijerčić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{901D43AA-DC11-4CCB-9A85-745C8F7E363F}"
+    email: sadeta.terzic@zzjz.ba
+    password: zzjzba123
+    name:  Sadeta
+    surname: Terzić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{912E7929-6BE1-4FE6-B401-83E5EBDAF67D}"
+    email: izet.salkonovic@zzjz.ba
+    password: zzjzba123
+    name:  Izet
+    surname: Salkanović  
+    user_type: 1
+    municipality_id: 110322
+
+ -  uid: "{92C2E2D4-C415-4005-9EE9-96C100B86D3F}"
+    email: drazenka.pasalic-mircic@zzjz.ba
+    password: zzjzba123
+    name:  Draženka
+    surname: Pašalić-Mirčić  
+    user_type: 1
+    municipality_id: 110417
+
+ -  uid: "{932C1B7A-6AC1-42D8-B247-ACBD5D221CDF}"
+    email: nermin.imamovic-zaimovic@zzjz.ba
+    password: zzjzba123
+    name:  Nermin
+    surname: Imamović-Zaimović 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{9453F328-DAD9-4680-82BD-A937BE34E0ED}"
+    email: sabina.suljkanovic@zzjz.ba
+    password: zzjzba123
+    name:  Sabina
+    surname: Suljkanović 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{96445347-857F-4A65-9B90-FF4F0FF79DFD}"
+    email: jovan.petkovic@zzjz.ba
+    password: zzjzba123
+    name:  Jovan
+    surname: Petković  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{9765FD33-6A6D-4A6A-BBD6-24C1433FE227}"
+    email: muhamed.horozic@zzjz.ba
+    password: zzjzba123
+    name:  Muhamed
+    surname: Horozić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{97A753BB-DC91-4E23-A8CB-B3B7D876D667}"
+    email: amira.kurtovic@zzjz.ba
+    password: zzjzba123
+    name:  Amira
+    surname: Kurtović  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{99C3151F-DBD9-4D24-82D0-44A28A7C9CFD}"
+    email: ifeta.salihovic@zzjz.ba
+    password: zzjzba123
+    name:  Ifeta
+    surname: Salihović 
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{99FC183C-E061-4721-B7E2-3342CBBD11C3}"
+    email: muhamed.mehmedinovic@zzjz.ba
+    password: zzjzba123
+    name:  Muhamed
+    surname: Mehmedinović  
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{9AD2FC3E-D68B-4E34-9828-0011DB3B3103}"
+    email: amira.polic@zzjz.ba
+    password: zzjzba123
+    name:  Amira
+    surname: Polić 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{9C331104-0F6C-4E83-92D2-7CDEBAE43F5E}"
+    email: samira.srabovic@zzjz.ba
+    password: zzjzba123
+    name:  Samira
+    surname: Srabović  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{9D771724-0E87-401D-A72A-525A27066C88}"
+    email: senaida.blasanovic@zzjz.ba
+    password: zzjzba123
+    name:  Senaida
+    surname: Biašanović  
+    user_type: 1
+    municipality_id: 110315
+
+ -  uid: "{9DBC8854-D4A4-4651-86A8-71EA3039A032}"
+    email: petra.klokic@zzjz.ba
+    password: zzjzba123
+    name:  Petra
+    surname: Klokić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{9E48B266-986F-47BD-9C0F-4FC0C0A781E1}"
+    email: mirela.hodzic@zzjz.ba
+    password: zzjzba123
+    name:  Mirela
+    surname: Hodžić  
+    user_type: 1
+    municipality_id: 110319
+
+ -  uid: "{A0F42681-8A5E-428D-879C-663370B13397}"
+    email: nihada.mehanovic@zzjz.ba
+    password: zzjzba123
+    name:  Nihada
+    surname: Mehanović 
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{A1F99286-5758-4AA5-A0DD-982686AD10FC}"
+    email: lela.milivojevic@zzjz.ba
+    password: zzjzba123
+    name:  Lela
+    surname: Milivojević 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{A20F7020-CC72-4A19-BFA4-1A29159664C3}"
+    email: admer.alatic@zzjz.ba
+    password: zzjzba123
+    name:  Admer
+    surname: Alatić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{A34512CE-F704-4785-99D3-78CA1D37D22C}"
+    email: enes.halilovic@zzjz.ba
+    password: zzjzba123
+    name:  Enes
+    surname: Halilović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{AAA87C0C-50BC-4D85-B73D-E1C3D91ECFBB}"
+    email: vanja.milosevic@zzjz.ba
+    password: zzjzba123
+    name:  VANJA
+    surname: MILOŠEVIĆ 
+    user_type: 1
+    municipality_id: 120610
+
+ -  uid: "{ACA6836E-801B-4C29-9418-A8FD7900AD78}"
+    email: olivera.batic-mujanovic@zzjz.ba
+    password: zzjzba123
+    name:  Olivera
+    surname: Batić-Mujanović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{AD1969A2-043D-431C-B000-CEA933EE7DCF}"
+    email: halid.husanovic@zzjz.ba
+    password: zzjzba123
+    name:  Halid
+    surname: Husanović 
+    user_type: 1
+    municipality_id: 110313
+
+ -  uid: "{B1DAAD1C-5016-440E-A30A-2ABB1D76DA8B}"
+    email: sabina.zukic@zzjz.ba
+    password: zzjzba123
+    name:  Sabina
+    surname: Zukić 
+    user_type: 1
+    municipality_id: 110311
+
+ -  uid: "{B1F89854-2A99-4FB0-8B26-F29A76422F25}"
+    email: esref.haracinovic@zzjz.ba
+    password: zzjzba123
+    name:  Ešref
+    surname: Harčinović  
+    user_type: 1
+    municipality_id: 110320
+
+ -  uid: "{B2245B93-753F-4055-A5E9-0A033B577E2C}"
+    email: fuad.memic@zzjz.ba
+    password: zzjzba123
+    name:  Fuad
+    surname: Memić 
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{B2788485-682E-4632-A185-4AC948407790}"
+    email: izudin.selimbasic@zzjz.ba
+    password: zzjzba123
+    name:  Izudin
+    surname: Selimbašić  
+    user_type: 1
+    municipality_id: 110317
+
+ -  uid: "{B2988CF9-3A71-4251-9BE6-C9D764FEC253}"
+    email: dzenana.ovcina@zzjz.ba
+    password: zzjzba123
+    name:  Dženana
+    surname: Ovčina  
+    user_type: 1
+    municipality_id: 110322
+
+ -  uid: "{B3BB89F3-E1BF-406E-BB17-A17DA6BF622D}"
+    email: lejla.delalic@zzjz.ba
+    password: zzjzba123
+    name:  Lejla
+    surname: Delalić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{B44EE4E3-3977-4E66-BD39-D1CE4C3D8C96}"
+    email: enver.avdic@zzjz.ba
+    password: zzjzba123
+    name:  Enver
+    surname: Avdić 
+    user_type: 1
+    municipality_id: 110316
+
+ -  uid: "{B6CA51AF-D441-4C96-8B74-E75641DA6F90}"
+    email: samka.subasic-hodzic@zzjz.ba
+    password: zzjzba123
+    name:  Samka
+    surname: Subašić-Hadžić  
+    user_type: 1
+    municipality_id: 110317
+
+ -  uid: "{B8D76DE4-6C67-426E-BA07-5DD28F944190}"
+    email: muhamed.osmanovic@zzjz.ba
+    password: zzjzba123
+    name:  Muhamed
+    surname: Osmanović 
+    user_type: 1
+    municipality_id: 110316
+
+ -  uid: "{B9A2221C-C0D0-4EED-B92D-292D5AFB2621}"
+    email: advija.kovaceic@zzjz.ba
+    password: zzjzba123
+    name:  Advija
+    surname: Kovačeić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{BA374099-B1B9-4B44-AC63-4A16CC82B4A7}"
+    email: dzemila.delalic@zzjz.ba
+    password: zzjzba123
+    name:  Džemila
+    surname: Delalić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{BB09BC29-763C-4BD8-9CD0-1CF73A24667B}"
+    email: mirsada.crnogorcevic-pamukovic@zzjz.ba
+    password: zzjzba123
+    name:  Mirsada
+    surname: Crnogorčević-Pamuković  
+    user_type: 1
+    municipality_id: 110322
+
+ -  uid: "{BF15FF8C-4CDB-479E-AE28-D5D73BF355EF}"
+    email: zehra.velic-mehmedovic@zzjz.ba
+    password: zzjzba123
+    name:  Zehra
+    surname: Velić-Mehmedović  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{C0D8AF80-BA33-423E-9400-517085F0A68B}"
+    email: azijada.sinanovic@zzjz.ba
+    password: zzjzba123
+    name:  Azijada
+    surname: Sinanović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{C3889578-72C1-422E-9550-16D34110958D}"
+    email: zijad.merdanovic@zzjz.ba
+    password: zzjzba123
+    name:  Zijad
+    surname: Merdanović  
+    user_type: 1
+    municipality_id: 110313
+
+ -  uid: "{C55E20D9-1FD4-44C6-8EAA-3C9CAEE505C5}"
+    email: abdulah.husanovic@zzjz.ba
+    password: zzjzba123
+    name:  Abdulah
+    surname: Hasanović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{C76A13DB-39DD-499C-830C-864DD4DB84CA}"
+    email: lejla.poljic@zzjz.ba
+    password: zzjzba123
+    name:  Lejla
+    surname: Poljić  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{C831C31C-4D15-4E96-90D7-2EDA073FB092}"
+    email: milijana.kundacina@zzjz.ba
+    password: zzjzba123
+    name:  MILIJANA
+    surname: KUNDAČINA
+    user_type: 2
+    municipality_id: 120611
+
+ -  uid: "{C968A2C1-0195-46E1-927C-F717A38C8BFA}"
+    email: sana.olic-sabanovic@zzjz.ba
+    password: zzjzba123
+    name:  Sana
+    surname: Olić-Šabanović  
+    user_type: 1
+    municipality_id: 110317
+
+ -  uid: "{CE2E983D-FFD7-4724-A6B1-02EC8C5F2FFF}"
+    email: zana.djulovic@zzjz.ba
+    password: zzjzba123
+    name:  Zana
+    surname: Đulović 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{CE48DB39-A03B-4B24-A489-8EC22EE84BFD}"
+    email: sanadina.kameric@zzjz.ba
+    password: zzjzba123
+    name:  Sanadina
+    surname: Kamerić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{D1133307-6A29-4FE3-9D0C-D47085095B0C}"
+    email: menedin.causi@zzjz.ba
+    password: zzjzba123
+    name:  Menedin
+    surname: Čauši 
+    user_type: 1
+    municipality_id: 110313
+
+ -  uid: "{D3CF2653-E18B-44FD-B6C4-54B4F803CDC8}"
+    email: amila.horozic@zzjz.ba
+    password: zzjzba123
+    name: Amila
+    surname: Horozić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{D4423428-A864-41E9-96FB-78E4F30FB740}"
+    email: murisa.ustavdic@zzjz.ba
+    password: zzjzba123
+    name:  Murisa
+    surname: Ustavdić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{D7E8D44C-460F-49ED-AC52-25DE381FD7CF}"
+    email: ljiljana.greda@zzjz.ba
+    password: zzjzba123
+    name: LJILJANA
+    surname: GREDA
+    user_type: 2
+    municipality_id: 120612
+
+ -  uid: "{DC9A7BC6-60A3-474C-A686-3C3EA9D1C4A3}"
+    email: jasminka.petrovic@zzjz.ba
+    password: zzjzba123
+    name:  Jasminka
+    surname: Petrović  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{DE5E9C80-81F0-4C99-827A-A481358935DD}"
+    email: mirza.mulaosmanovic@zzjz.ba
+    password: zzjzba123
+    name:  Mirza
+    surname: Mulaosmanović 
+    user_type: 1
+    municipality_id: 110313
+
+ -  uid: "{E19CCF28-BCEE-497F-AE68-34DE2AC8AEB3}"
+    email: samira.begic@zzjz.ba
+    password: zzjzba123
+    name:  Samira
+    surname: Begić 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{E22A063F-4242-42E7-9094-F6C371CE3596}"
+    email: alma.nadarevic@zzjz.ba
+    password: zzjzba123
+    name:  Alma
+    surname: Nadarević 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{E3623B3C-E0AE-4AD2-AD8B-B9E10F5F1A41}"
+    email: senada.selmanovic@zzjz.ba
+    password: zzjzba123
+    name:  Senada
+    surname: Selmanović  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{E6578CA2-783C-4B7A-836E-698DAFB765AD}"
+    email: lejla.halilovic@zzjz.ba
+    password: zzjzba123
+    name:  Lejla
+    surname: Halilović
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{E68D9E51-C116-42AD-8D60-027E0C6BB1F5}"
+    email: tatjana.tatara@zzjz.ba
+    password: zzjzba123
+    name:  Tatjana
+    surname: Tatara  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{E7091C04-2EC7-4DF8-83E3-21D8B251B0C2}"
+    email: zdravko.bajric@zzjz.ba
+    password: zzjzba123
+    name:  Zdravka
+    surname: Bajrić  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{E8FEED04-10C4-40EA-AA64-26731F8ADDC2}"
+    email: denisa.omerdic-mujic@zzjz.ba
+    password: zzjzba123
+    name:  Denisa 
+    surname: Omerdić-Mujić 
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{EC5F367C-CEA3-4C55-9FEC-7A1B49F6EE9C}"
+    email: sijad.skripic@zzjz.ba
+    password: zzjzba123
+    name:  Sijad
+    surname: Škripić
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{EFA4F292-66E6-4513-ACD2-4FD5DC7F60F8}"
+    email: samir.jusupovic@zzjz.ba
+    password: zzjzba123
+    name:  Samir
+    surname: Jusupović 
+    user_type: 1
+    municipality_id: 110317
+
+ -  uid: "{F175ACE8-27E4-4557-A1C0-9F4EFD2A2A70}"
+    email: albina.softic@zzjz.ba
+    password: zzjzba123
+    name:  Albina
+    surname: Softić  
+    user_type: 1
+    municipality_id: 110314
+
+ -  uid: "{F1956300-98E2-4E78-B55C-A81FEF765763}"
+    email: edin.jusufija@zzjz.ba
+    password: zzjzba123
+    name:  Edin
+    surname: Jusufija  
+    user_type: 1
+    municipality_id: 110312
+
+ -  uid: "{F1C84372-7887-4A28-9F58-C332203EFC32}"
+    email: samira.herenda@zzjz.ba
+    password: zzjzba123
+    name:  Samira
+    surname: Herenda 
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{F23E64DD-67CC-49A7-9D33-E6C1A40AA585}"
+    email: zumra.hodzic@zzjz.ba
+    password: zzjzba123
+    name:  Zumra
+    surname: Hodžić  
+    user_type: 1
+    municipality_id: 110318
+
+ -  uid: "{F59CF186-77BA-4839-BA75-5A5B4F6D4908}"
+    email: hajrudin.haracic@zzjz.ba
+    password: zzjzba123
+    name:  Hajrudin
+    surname: Haračić 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{F76CE27C-C17A-4DA3-8B37-73565F70A04A}"
+    email: jelena.firesku@zzjz.ba
+    password: zzjzba123
+    name:  JELENA
+    surname: FIRESKU
+    user_type: 1
+    municipality_id:  null
+
+ -  uid: "{F8DDC06B-32DA-4662-809A-56953DC4F3A2}"
+    email: lejla.milivojevic@zzjz.ba
+    password: zzjzba123
+    name:  Lejla
+    surname: Milivojević 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{FC48A52E-8A43-41DE-8B00-83EDD55D437E}"
+    email: mirela.mujkic@zzjz.ba
+    password: zzjzba123
+    name:  Mirela
+    surname: Mujkić  
+    user_type: 1
+    municipality_id: 110310
+
+ -  uid: "{FE78CD14-6CAC-4D46-BC8B-BC8AAD75153C}"
+    email: sadija.bubic@zzjz.ba
+    password: zzjzba123
+    name:  Sadija
+    surname: Bubić 
+    user_type: 1
+    municipality_id: 110321
+
+ -  uid: "{FEED1EF3-6E98-4D3D-BB18-BBEE1EBA5C4A}"
+    email: ratko.marinkovic@zzjz.ba
+    password: zzjzba123
+    name:  RATKO
+    surname: MARINKOVIĆ  
+    user_type: 1
+    municipality_id: 120613
+
+entities:
+ -  id: 9000
+    description: "Federacija Bosne i Hercegovine"
+    description_eng: "Federation of Bosnia & Herzegovina"
+    abbr: "FBIH"
+
+ -  id: 9100
+    description: "Republika Srpska"
+    description_eng: "Republika Srpska"
+    abbr: "RS"
+
+ -  id : 9300
+    description: "Brčko Distrikt"
+    description_eng: "Brčko District"
+    abbr: "DB"
+
+districts:
+ -  id: 1101
+    code_stat: 9001
+    abbr: USK
+    name_eng: Una-Sana Canton 
+    name: Unsko-sanski kanton 
+    centar: 110110
+    population: 287998
+    municipalities: 8
+    entity_id: 9000
+
+ -  id: 1102
+    code_stat: 9002
+    abbr: ŽP
+    name_eng: Posavina Canton
+    name: Posavski kanton 
+    centar: 110210
+    population: 40513
+    municipalities: 3
+    entity_id: 9000
+
+ -  id: 1103
+    code_stat: 9003
+    abbr: TK
+    name_eng: Tuzla Canton
+    name: Tuzlanski kanton
+    centar: 110310
+    population: 497813
+    municipalities: 13
+    entity_id: 9000
+
+ -  id: 1104
+    code_stat: 9004
+    abbr: ZDK
+    name_eng: Zenica-Doboj Canton
+    name: Zeničko-dobojski kanton
+    centar: 110410
+    population: 400848
+    municipalities: 12
+    entity_id: 9000
+
+ -  id: 1105
+    code_stat: 9005
+    abbr: BPK
+    name_eng: Bosnian Podrinje Canton
+    name: Bosansko-podrinjski kanton
+    centar: 110510
+    population: 33662
+    municipalities: 3
+    entity_id: 9000
+
+ -  id: 1106
+    code_stat: 9006
+    abbr: SBK
+    name_eng: Central Bosnia Canton
+    name: Srednjobosanski kanton
+    centar: 110610
+    population: 255648
+    municipalities: 12
+    entity_id: 9000
+
+ -  id: 1107
+    code_stat: 9007
+    abbr: HNK
+    name_eng: Herzegovina-Neretva Canton
+    name: Hercegovačko-neretvanski kanton
+    centar: 110710
+    population: 226632
+    municipalities: 9
+    entity_id: 9000
+
+ -  id: 1108
+    code_stat: 9008
+    abbr: ŽHZ
+    name_eng: West Herzegovina Canton
+    name: Zapadnohercegovački kanton
+    centar: 110810
+    population: 81833
+    municipalities: 4
+    entity_id: 9000
+
+ -  id: 1109
+    code_stat: 9009
+    abbr: KS
+    name_eng: Sarajevo Canton
+    name: Kanton Sarajevo
+    centar: 110116
+    population: 421289
+    municipalities: 9
+    entity_id: 9000
+
+ -  id: 1110
+    code_stat: 9010
+    abbr: K10
+    name_eng: Canton 10
+    name: Kanton 10
+    centar: 111010
+    population: 81396
+    municipalities: 6
+    entity_id: 9000
+
+ -  id: 1201
+    code_stat: 9101
+    abbr: BL
+    name_eng: Banja Luka
+    name: Banja Luka
+    centar: 120110 
+    population: 238353
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1202
+    code_stat: 9102
+    abbr: BI
+    name_eng: Bijeljina
+    name: Bijeljina
+    centar: 120210
+    population: 160000
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1203
+    code_stat: 9103
+    abbr: DB
+    name_eng: Doboj
+    name: Doboj
+    centar: 120310 
+    population: 50000
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1204
+    code_stat: 9104
+    abbr: FOČ
+    name_eng: Foča
+    name: Foča
+    centar: 120410
+    population: 40513
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1205
+    code_stat: 9105
+    abbr: ES
+    name_eng: Eastern Sarajevo
+    name: Istočno Sarajevo
+    centar: 120510
+    population: 100000
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1206
+    code_stat: 9106
+    abbr: TRE
+    name_eng: Trebinje
+    name: Trebinje
+    centar: 120610
+    population: 100000
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1207
+    code_stat: 9107
+    abbr: ZVO
+    name_eng: Zvornik
+    name: Zvornik
+    centar: 120710
+    population: 81295
+    municipalities: 0
+    entity_id: 9100
+
+ -  id: 1300
+    code_stat: 9300
+    abbr: BS
+    name_eng: Brčko District 
+    name: Brčko Distrikt 
+    centar: null
+    population: 87332
+    municipalities: 0
+    entity_id: 9300
+
+municipalities:
+ -  id: 110110
+    municipality: Bihać 
+    district_id: 1101
+ -  id: 110111
+    municipality: Bosanska Krupa  
+    district_id: 1101
+ -  id: 110112
+    municipality: Bosanski Petrovac 
+    district_id: 1101
+ -  id: 110113
+    municipality: Bužim 
+    district_id: 1101
+ -  id: 110114
+    municipality: Cazin 
+    district_id: 1101
+ -  id: 110115
+    municipality: Ključ 
+    district_id: 1101
+ -  id: 110116
+    municipality: Sanski Most 
+    district_id: 1101
+ -  id: 110117
+    municipality: Velika Kladuša  
+    district_id: 1101
+ -  id: 110210
+    municipality: Orašje  
+    district_id: 1102
+ -  id: 110211
+    municipality: Domaljevac-Šamac  
+    district_id: 1102
+ -  id: 110212
+    municipality: Odžak 
+    district_id: 1102
+ -  id: 110310
+    municipality: Tuzla 
+    district_id: 1103
+ -  id: 110311
+    municipality: Banovići  
+    district_id: 1103
+ -  id: 110312
+    municipality: Čelić 
+    district_id: 1103
+ -  id: 110313
+    municipality: Doboj Istok 
+    district_id: 1103
+ -  id: 110314
+    municipality: Gračanica 
+    district_id: 1103
+ -  id: 110315
+    municipality: Gradačac  
+    district_id: 1103
+ -  id: 110316
+    municipality: Kalesija  
+    district_id: 1103
+ -  id: 110317
+    municipality: Kladanj 
+    district_id: 1103
+ -  id: 110318
+    municipality: Lukavac 
+    district_id: 1103
+ -  id: 110319
+    municipality: Sapna 
+    district_id: 1103
+ -  id: 110320
+    municipality: Srebrenik 
+    district_id: 1103
+ -  id: 110321
+    municipality: Teočak  
+    district_id: 1103
+ -  id: 110322
+    municipality: Živinice  
+    district_id: 1103
+ -  id: 110410
+    municipality: Zenica  
+    district_id: 1104
+ -  id: 110411
+    municipality: Breza 
+    district_id: 1104
+ -  id: 110412
+    municipality: Doboj Jug 
+    district_id: 1104
+ -  id: 110413
+    municipality: Kakanj  
+    district_id: 1104
+ -  id: 110414
+    municipality: Maglaj  
+    district_id: 1104
+ -  id: 110415
+    municipality: Olovo 
+    district_id: 1104
+ -  id: 110416
+    municipality: Tešanj  
+    district_id: 1104
+ -  id: 110417
+    municipality: Vareš 
+    district_id: 1104
+ -  id: 110418
+    municipality: Visoko  
+    district_id: 1104
+ -  id: 110419
+    municipality: Zavidovići  
+    district_id: 1104
+ -  id: 110420
+    municipality: Žepče 
+    district_id: 1104
+ -  id: 110421
+    municipality: Usora 
+    district_id: 1104
+ -  id: 110510
+    municipality: Goražde 
+    district_id: 1105
+ -  id: 110511
+    municipality: Foča-Ustikolina 
+    district_id: 1105
+ -  id: 110512
+    municipality: Pale-Prača  
+    district_id: 1105
+ -  id: 110610
+    municipality: Travnik 
+    district_id: 1106
+ -  id: 110611
+    municipality: Bugojno 
+    district_id: 1106
+ -  id: 110612
+    municipality: Busovača  
+    district_id: 1106
+ -  id: 110613
+    municipality: Dobretići 
+    district_id: 1106
+ -  id: 110614
+    municipality: Donji Vakuf 
+    district_id: 1106
+ -  id: 110615
+    municipality: Fojnica 
+    district_id: 1106
+ -  id: 110616
+    municipality: Gornji Vakuf  
+    district_id: 1106
+ -  id: 110617
+    municipality: Jajce 
+    district_id: 1106
+ -  id: 110618
+    municipality: Kiseljak  
+    district_id: 1106
+ -  id: 110619
+    municipality: Kreševo 
+    district_id: 1106
+ -  id: 110620
+    municipality: Novi Travnik  
+    district_id: 1106
+ -  id: 110621
+    municipality: Vitez 
+    district_id: 1106
+ -  id: 110710
+    municipality: Mostar  
+    district_id: 1107
+ -  id: 110711
+    municipality: Čapljina  
+    district_id: 1107
+ -  id: 110712
+    municipality: Čitluk  
+    district_id: 1107
+ -  id: 110713
+    municipality: Jablanica 
+    district_id: 1107
+ -  id: 110714
+    municipality: Konjic  
+    district_id: 1107
+ -  id: 110715
+    municipality: Neum  
+    district_id: 1107
+ -  id: 110716
+    municipality: Prozor  
+    district_id: 1107
+ -  id: 110717
+    municipality: Ravno 
+    district_id: 1107
+ -  id: 110718
+    municipality: Stolac  
+    district_id: 1107
+ -  id: 110810
+    municipality: Široki Brjeg  
+    district_id: 1108
+ -  id: 110811
+    municipality: Grude 
+    district_id: 1108
+ -  id: 110812
+    municipality: Ljubuški  
+    district_id: 1108
+ -  id: 110813
+    municipality: Posušje 
+    district_id: 1108
+ -  id: 110910
+    municipality: Sarajevo  
+    district_id: 1109
+ -  id: 110911
+    municipality: Centar  
+    district_id: 1109
+ -  id: 110912
+    municipality: Stari Grad  
+    district_id: 1109
+ -  id: 110913
+    municipality: Novi Grad 
+    district_id: 1109
+ -  id: 110914
+    municipality: Novo Sarajevo 
+    district_id: 1109
+ -  id: 110915
+    municipality: Vogošča 
+    district_id: 1109
+ -  id: 110916
+    municipality: Hadžiči 
+    district_id: 1109
+ -  id: 110917
+    municipality: Ilijaš  
+    district_id: 1109
+ -  id: 110918
+    municipality: Trnovo  
+    district_id: 1109
+ -  id: 110919
+    municipality: Ilidža  
+    district_id: 1109
+ -  id: 111010
+    municipality: Livno 
+    district_id: 1110
+ -  id: 111011
+    municipality: Bosansko Grahovo  
+    district_id: 1110
+ -  id: 111012
+    municipality: Drvar 
+    district_id: 1110
+ -  id: 111013
+    municipality: Glamoč  
+    district_id: 1110
+ -  id: 111014
+    municipality: Kupres  
+    district_id: 1110
+ -  id: 111015
+    municipality: Tomislavgrad  
+    district_id: 1110
+ -  id: 120110
+    municipality: Banja Luka  
+    district_id: 1201
+ -  id: 120111
+    municipality: Kostajnica  
+    district_id: 1201
+ -  id: 120112
+    municipality: Čelinac 
+    district_id: 1201
+ -  id: 120113
+    municipality: Gradiška  
+    district_id: 1201
+ -  id: 120114
+    municipality: Istočni Drvar 
+    district_id: 1201
+ -  id: 120115
+    municipality: Jezero  
+    district_id: 1201
+ -  id: 120116
+    municipality: Kneževo 
+    district_id: 1201
+ -  id: 120117
+    municipality: Kotor Varoš 
+    district_id: 1201
+ -  id: 120118
+    municipality: Kozarska Dubica 
+    district_id: 1201
+ -  id: 120119
+    municipality: Krupa na Uni  
+    district_id: 1201
+ -  id: 120120
+    municipality: Kupres  
+    district_id: 1201
+ -  id: 120121
+    municipality: Laktaši 
+    district_id: 1201
+ -  id: 120122
+    municipality: Mrkonjić Grad 
+    district_id: 1201
+ -  id: 120123
+    municipality: Novi Grad 
+    district_id: 1201
+ -  id: 120124
+    municipality: Oštra Luka  
+    district_id: 1201
+ -  id: 120125
+    municipality: Petrovac  
+    district_id: 1201
+ -  id: 120126
+    municipality: Prijedor  
+    district_id: 1201
+ -  id: 120127
+    municipality: Prnjavor  
+    district_id: 1201
+ -  id: 120128
+    municipality: Ribnik  
+    district_id: 1201
+ -  id: 120129
+    municipality: Srbac 
+    district_id: 1201
+ -  id: 120130
+    municipality: Šipovo  
+    district_id: 1201
+ -  id: 120131
+    municipality: Teslić  
+    district_id: 1201
+ -  id: 120210
+    municipality: Bijeljina 
+    district_id: 1202
+ -  id: 120211
+    municipality: Lopare  
+    district_id: 1202
+ -  id: 120212
+    municipality: Ugljevik  
+    district_id: 1202
+ -  id: 120213
+    municipality: Vlasenica 
+    district_id: 1202
+ -  id: 120310
+    municipality: Doboj 
+    district_id: 1203
+ -  id: 120311
+    municipality: Brod  
+    district_id: 1203
+ -  id: 120312
+    municipality: Derventa  
+    district_id: 1203
+ -  id: 120313
+    municipality: Donji Žabar 
+    district_id: 1203
+ -  id: 120314
+    municipality: Modriča 
+    district_id: 1203
+ -  id: 120315
+    municipality: Pelagićevo  
+    district_id: 1203
+ -  id: 120316
+    municipality: Petrovo 
+    district_id: 1203
+ -  id: 120317
+    municipality: Šamac 
+    district_id: 1203
+ -  id: 120318
+    municipality: Vukosavlje  
+    district_id: 1203
+ -  id: 120410
+    municipality: Foča  
+    district_id: 1204
+ -  id: 120411
+    municipality: Čajniče 
+    district_id: 1204
+ -  id: 120412
+    municipality: Kalinovik 
+    district_id: 1204
+ -  id: 120413
+    municipality: Novo Goražde  
+    district_id: 1204
+ -  id: 120414
+    municipality: Rudo  
+    district_id: 1204
+ -  id: 120415
+    municipality: Višegrad  
+    district_id: 1204
+ -  id: 120510
+    municipality: Istočno Sarajevo  
+    district_id: 1205
+ -  id: 120511
+    municipality: Han Pijesak 
+    district_id: 1205
+ -  id: 120512
+    municipality: Istočna Ilidža  
+    district_id: 1205
+ -  id: 120513
+    municipality: Istočni Stari Grad  
+    district_id: 1205
+ -  id: 120514
+    municipality: Lukavica  
+    district_id: 1205
+ -  id: 120515
+    municipality: Pale  
+    district_id: 1205
+ -  id: 120516
+    municipality: Rogatica  
+    district_id: 1205
+ -  id: 120517
+    municipality: Sokolac 
+    district_id: 1205
+ -  id: 120518
+    municipality: Trnovo  
+    district_id: 1205
+ -  id: 120610
+    municipality: Trebinje  
+    district_id: 1206
+ -  id: 120611
+    municipality: Berkovići 
+    district_id: 1206
+ -  id: 120612
+    municipality: Bileća  
+    district_id: 1206
+ -  id: 120613
+    municipality: Gacko 
+    district_id: 1206
+ -  id: 120614
+    municipality: Istočni Mostar  
+    district_id: 1206
+ -  id: 120615
+    municipality: Ljubinje  
+    district_id: 1206
+ -  id: 120616
+    municipality: Nevesinje 
+    district_id: 1206
+ -  id: 120710
+    municipality: Zvornik 
+    district_id: 1207
+ -  id: 120711
+    municipality: Bratunac  
+    district_id: 1207
+ -  id: 120712
+    municipality: Milići  
+    district_id: 1207
+ -  id: 120713
+    municipality: Osmaci  
+    district_id: 1207
+ -  id: 120714
+    municipality: Srebrenica  
+    district_id: 1207
+ -  id: 120715
+    municipality: Šekovići  
+    district_id: 1207
+ -  id: 120716
+    municipality: Vlasenica 
+    district_id: 1207
+
+agents:
+ -  uid: "{0412E6CF-C279-464F-83EF-CFEB42E2BA96}"
+    agent: "Rickettsia prowazekii"
+ -  uid: "{0DDC66C5-E2D6-4718-B37B-3FF75CAB0962}"
+    agent: "Rota virus"
+ -  uid: "{119D2827-6AEA-49A1-8B09-F862BC7B3822}"
+    agent: "Corynebacterium diphtheriae"
+ -  uid: "{12E2ED7A-EE54-44A6-8CDC-805ACD0DB613}"
+    agent: "Ancylostoma spp"
+ -  uid: "{1557E4D9-8F3D-4F0D-972B-E4A7334C9740}"
+    agent: "Hanta virus"
+ -  uid: "{166904E9-2F2D-462C-86FD-3FFA93F38C73}"
+    agent: "SARS coronavirus"
+ -  uid: "{18F853CD-47DE-4C42-B3E4-167253B472E1}"
+    agent: "Francisella tularensis"
+ -  uid: "{25772176-9108-4753-8C09-D4BC9BCC86D1}"
+    agent: "Bordetella pertussis"
+ -  uid: "{28780585-B941-469E-A919-B4C863F77A44}"
+    agent: "Influenza virus"
+ -  uid: "{287DE902-7FCD-4C16-A903-92631BBA597F}"
+    agent: "Chikungunya virus"
+ -  uid: "{2D9D5274-6E11-41E0-91D3-4E6538CBAA64}"
+    agent: "Hepatitis A, B, C, delta, and E viruses"
+ -  uid: "{32763BB2-A58B-4C8C-9027-30C7458B8D7B}"
+    agent: "Rubella virus"
+ -  uid: "{36BCF13B-7C2F-4968-9554-6817C06E0ADD}"
+    agent: "Phlebotomus papatasi"
+ -  uid: "{3C309DBC-196C-4EBC-83E7-44A7784E8B67}"
+    agent: "Bacillus cereus (only if associated with food poisoning)"
+ -  uid: "{45D260A3-9B85-4A46-AACF-95A86CA6FA03}"
+    agent: "Echinococcus spp"
+ -  uid: "{4727DC73-3357-457E-B108-6DF19B9CACD9}"
+    agent: "Brucella spp"
+ -  uid: "{4942AD00-0D7C-46E9-8DBC-23CE8959BA69}"
+    agent: "Toxoplasma gondii"
+ -  uid: "{4988DFA6-B184-4511-B52E-1B449DE4840E}"
+    agent: "Streptococcus pneumoniae (invasive)"
+ -  uid: "{49C459A9-8DDC-4021-9FB7-6751EF6C5751}"
+    agent: "Methicillin-resistant staphylococcus aureus (MRSA)"
+ -  uid: "{4EFC7B7E-D95D-4FD0-8A07-3DBB8D826532}"
+    agent: "Clostridium botulinum"
+ -  uid: "{5527DA33-B05F-44DE-BE60-AC6EF06A38B7}"
+    agent: "Rabies virus (classical rabies and rabies-related lyssaviruses)"
+ -  uid: "{570AD727-3AEC-4D7A-A1C0-880801D5E146}"
+    agent: "Sarcoptes scabiei"
+ -  uid: "{5712E345-14CB-4ACD-9261-05C5142188A3}"
+    agent: "Polio virus (wild or vaccine types)"
+ -  uid: "{587FB4C0-F539-4B84-82A1-940F1F1B33E6}"
+    agent: "Plasmodium falciparum, vivax, ovale, malariae, knowlesi"
+ -  uid: "{59335DAB-3D96-45FC-A6CE-7AD4DA06CA8B}"
+    agent: "Campylobacter spp"
+ -  uid: "{5B13F320-6210-4B89-9B79-DA668442BB1F}"
+    agent: "Cryptosporidium spp"
+ -  uid: "{5B24BDE1-8E8A-4C26-954E-E19D46B2012F}"
+    agent: "Variola virus"
+ -  uid: "{5E7894AC-F01C-4E71-A948-C8A5B413B2A1}"
+    agent: "CJD prion"
+ -  uid: "{60C7DA4F-807E-4238-8DBE-3CEF66EAA441}"
+    agent: "Guanarito virus"
+ -  uid: "{62A3E837-944E-47D0-B7B1-0BC089DE65C5}"
+    agent: "Salmonella spp"
+ -  uid: "{62E13E3B-14BA-4A27-837B-D7F80F4BA19E}"
+    agent: "Yellow fever virus"
+ -  uid: "{67A8BCBF-1B53-4B36-9029-099D11759A0E}"
+    agent: "Legionella spp"
+ -  uid: "{6B65708B-7D85-4654-A367-DEBBB4DDA704}"
+    agent: "VHB"
+ -  uid: "{6C8E70F0-3967-4709-BBDB-B2B97B8663E8}"
+    agent: "Escherichia colli"
+ -  uid: "{6F5307C7-E86F-4913-9E6C-2A8B57C2A5FA}"
+    agent: "Mumps virus"
+ -  uid: "{77A9857B-E258-4741-836D-1067A904C74E}"
+    agent: "Leptospira interrogans"
+ -  uid: "{78263608-0A60-4BBA-AF6A-E13481B0AE16}"
+    agent: "Streptococcus pyogenes (invasive)"
+ -  uid: "{803652FA-63E0-4147-B88C-2E4E33DE3465}"
+    agent: "Entamoeba histolytica"
+ -  uid: "{80515C25-61AD-48C2-9040-F36961957A4F}"
+    agent: "Streptococcus  areus"
+ -  uid: "{8B756A64-0330-4996-BA27-CBC85C5AEC8C}"
+    agent: "Treponema pallidum"
+ -  uid: "{8F090957-C2B9-40E2-BB66-740212CE1BA5}"
+    agent: "Mycobacterium leprae"
+ -  uid: "{9205F44E-9586-40D9-B7F3-75D4AE0E24C3}"
+    agent: "Listeria monocytogenes"
+ -  uid: "{9BF71FEE-699F-44A7-8E34-1A9BEAD29F08}"
+    agent: "Clostridium tetani"
+ -  uid: "{9D6FB46F-824D-4CCD-A253-2B6DED61290D}"
+    agent: "Morbilli virus"
+ -  uid: "{A0EB213C-53AF-44E5-9E21-1AD0A0F0D065}"
+    agent: "Bacillus anthracis"
+ -  uid: "{A38D1B3A-2F2E-4F30-AD95-61EB804AD3C1}"
+    agent: "Shigella spp"
+ -  uid: "{A4E311DD-1D5A-48CE-A58D-5A65B38157DA}"
+    agent: "Haemophilus influenzae (invasive)"
+ -  uid: "{A91374E1-FFC3-4FDA-93DC-86E953DEB098}"
+    agent: "Epstein-Barr virus"
+ -  uid: "{AEDB0290-5313-4748-8AF0-891BAD48BE1A}"
+    agent: "Chlamydophila psittaci"
+ -  uid: "{B030FCB2-DAE5-401C-9239-5257BB180940}"
+    agent: "Ebola virus"
+ -  uid: "{B04A7C1B-143D-48B3-A19E-124E1CECE2CF}"
+    agent: "Pseudomonas aeruginosa"
+ -  uid: "{B1DB0C3D-973C-470A-B58F-A1914E8DE84D}"
+    agent: "Microsporidium spp"
+ -  uid: "{B569C378-0FE6-4AAF-8368-A97ECA419D2B}"
+    agent: "Mycobacterium tuberculosis complex"
+ -  uid: "{CECF6DFB-2EFF-4B81-BFF1-5F461B0CC538}"
+    agent: "Salmonela ententidis"
+ -  uid: "{CF1B5322-6832-4A4D-8F20-9BFBC14687E6}"
+    agent: "Methicillin sensitive staphylococcus aureus (MSSA)"
+ -  uid: "{CF7B238A-7CCB-4ED6-A787-82E8398C0622}"
+    agent: "Neisseria meningitidis"
+ -  uid: "{D36069F9-5FBC-4082-B0FA-356EE9AC53AB}"
+    agent: "Vibrio cholerae"
+ -  uid: "{D82CFEAA-FBB3-4C2F-9C2D-09B34586C439}"
+    agent: "HIV"
+ -  uid: "{D9249707-3D66-4A5A-BB1D-C017638C3302}"
+    agent: "Lassa virus"
+ -  uid: "{DF98BE5A-B309-4782-B4C2-7A9341AA33B6}"
+    agent: "Rickettsia spp"
+ -  uid: "{E025B4CA-F306-4F74-BFBF-E24AA239C166}"
+    agent: "Varicella zoster virus"
+ -  uid: "{E33567B2-55AE-478E-AD46-B127446FA906}"
+    agent: "Leishmania spp"
+ -  uid: "{E3E37F87-AF5B-4063-AA91-42D0ED8741D9}"
+    agent: "Borrelia spp"
+ -  uid: "{E8B513E9-6991-496C-875D-5CFB5AF03842}"
+    agent: "Coxiella burnetii"
+ -  uid: "{E91B126D-80FE-44B0-BD4B-E8FBDF26CB9A}"
+    agent: "Yersinia pestis"
+ -  uid: "{EA1C8A11-880E-4A4A-9948-5D626B9FA51A}"
+    agent: "Trichinella spiralis"
+ -  uid: "{EA888A7C-BF61-4982-9E74-43C3191300AD}"
+    agent: "Rota virus"
+ -  uid: "{EAB9AD74-B30D-4C27-995A-92A9D35558E0}"
+    agent: "Clostridium perfringens (only if associated with food poisoning)"
+ -  uid: "{EC4C62E9-A6F9-4204-8399-D1BE63420FD6}"
+    agent: "Verocytotoxigenic Escherichia coli (including E.coli O157)"
+ -  uid: "{F1E43AD6-7BBD-4923-92BA-0D29568F0498}"
+    agent: "Dengue virus"
+ -  uid: "{F3186238-6EDA-4FB8-8AF6-11270B8A6987}"
+    agent: "Herpes virus"
+ -  uid: "{F96E29A6-B81B-4FD5-939C-806EFDD8EF2B}"
+    agent: "Neisseria gonorrhoeae"
+ -  uid: "{FC56F324-C48C-4B10-B836-4DE3740B13A6}"
+    agent: "Giardia lamblia"
+
+icds:
+ -  code: 1
+    disease_bsn: "Infekcije respiratornog trakta"
+    int: 0
+    both: 1
+ -  code: 2
+    disease_bsn: "Spolno prenosive infekcije, uključujući HIV i krvno prenosive viruse"
+    int: 0
+    both: 1
+ -  code: 3
+    disease_bsn: "Oboljenja koja se prenose hranom i vodom i zoonoze"
+    int: 0
+    both: 1
+ -  code: 4
+    disease_bsn: "Oboljenja u nastajanju i oboljenja koja prenose vektori"
+    int: 0
+    both: 1
+ -  code: 5
+    disease_bsn: "Vakcino-preventabilna oboljenja" 
+    int: 0
+    both: 1
+    code: 6
+ -  disease_bsn: "Antimikrobna rezistencija i bolničke infekcije"
+    int: 0
+    both: null
+ -  code: 7
+    disease_bsn: "Druga oboljenja koja se prijavljuju"
+    int: 0
+    both: 1
+ -  code: A00
+    disease_bsn: KOLERA
+    disease_eng: CHOLERA ASIATICA
+    int: 3
+    both: 1
+ -  code: A01
+    disease_bsn: TRBUŠNI TIFUS
+    disease_eng: TYPHUS ABDOMINALIS  
+    int: 3
+    both: 1
+ -  code: A02
+    disease_bsn: SALMONELOZA (VRSTA)
+    disease_eng: SALMONELLOSIS
+    int: 3
+    both: 1
+ -  code: A03
+    disease_bsn: DIZENTERIJA
+    disease_eng: DYSENTERIA BACILLARIS
+    int: 3
+    both: 1
+ -  code: A04.5
+    disease_bsn: KAMPILOBAKTERIOZA
+    disease_eng: CAMPYLOBACTERIO- SIS
+    int: 3
+    both: 0
+ -  code: A04.6
+    disease_bsn: JERSINIJAZA
+    disease_eng: YERSINOSIS  
+    int: 3
+    both: 0
+ -  code: A05
+    disease_bsn: BOTULIZAM
+    disease_eng: BOTULISMUS  
+    int: 3
+    both: 1
+ -  code: A05.1
+    disease_bsn: ZARAZNO TROVANJE HRANOM U
+    disease_eng: TOXIINFECTIO ALIMENTARIS
+    int: 7
+    both: 1
+ -  code: A06
+    disease_bsn: AMEBIJAZA
+    disease_eng: AMEBIASIS
+    int: 7
+    both: 0
+ -  code: A07
+    disease_bsn: GVARDIJAZA
+    disease_eng: GIARDIASIS  
+    int: 3
+    both: 0
+ -  code: A07.2
+    disease_bsn: KRIPTOSPORODIOZA
+    disease_eng: CRIPTOSPORIDIOSIS
+    int: 3
+    both: 0
+ -  code: A09
+    disease_bsn: ENTEROKOLITIS
+    disease_eng: ENTEROCOLITIS
+    int: 7
+    both: 1
+ -  code: A15
+    disease_bsn: AKTIVNA TUBERKULOZA - TUB
+    disease_eng: TUBECULOSIS ACTIVA  
+    int: 1
+    both: 1
+ -  code: A20
+    disease_bsn: KUGA
+    disease_eng: PESTIS  
+    int: 4
+    both: 1
+ -  code: A21
+    disease_bsn: TULAREMIJA
+    disease_eng: TULAREMIA
+    int: 3
+    both: 1
+ -  code: A22
+    disease_bsn: CRNI PRIŠT
+    disease_eng: ANTHRAX
+    int: 3
+    both: 0
+ -  code: A23
+    disease_bsn: BRUCELOZA
+    disease_eng: BRUCELLOSIS
+    int: 3
+    both: 1
+ -  code: A26
+    disease_bsn: CRVENI VJETAR
+    disease_eng: ERYSIPELAS  
+    int: 7
+    both: 0
+ -  code: A27
+    disease_bsn: LEPTOSPIROZA
+    disease_eng: LEPTOSPIROSIS
+    int: 3
+    both: 1
+ -  code: A30
+    disease_bsn: GUBA
+    disease_eng: LEPRA
+    int: 7
+    both: 0
+ -  code: A32
+    disease_bsn: LISTERIOZA
+    disease_eng: LISTERIOSIS
+    int: 3
+    both: 1
+ -  code: A35
+    disease_bsn: TETANUS 
+    disease_eng: TETANUS
+    int: 5
+    both: 1
+ -  code: A36
+    disease_bsn: DIFTERIJA
+    disease_eng: DIPHTHERIA  
+    int: 5
+    both: 1
+ -  code: A37
+    disease_bsn: VELIKI KAŠALJ
+    disease_eng: PERTUSSIS
+    int: 5
+    both: 1
+ -  code: A38
+    disease_bsn: ŠARLAH
+    disease_eng: SCARLATINA
+    int: 7
+    both: 1
+ -  code: A39
+    disease_bsn: MENINGOKOKNI MENINGITIS
+    disease_eng: MENINGITIS EPIDEMICA
+    int: 5
+    both: 0
+ -  code: A40
+    disease_bsn: PNEUMOKOKNE INFEKCIJE PRE
+    disease_eng: PNEUMOCOCCAL INFECTIONS/L
+    int: 5
+    both: 1
+ -  code: A41
+    disease_bsn: SEPSA
+    disease_eng: SEPSSIS
+    int: 7
+    both: 1
+ -  code: A48
+    disease_bsn: LEGIONARSKA BOLEST
+    disease_eng: LEGIONELLOSIS
+    int: 1
+    both: 1
+ -  code: A53
+    disease_bsn: SIFILIS
+    disease_eng: SYPHILIS
+    int: 2
+    both: 1
+ -  code: A54
+    disease_bsn: GONOREJA
+    disease_eng: GONORRHEA
+    int: 2
+    both: 1
+ -  code: A68
+    disease_bsn: POVRATNA GROZNICA
+    disease_eng: FEBRIS RECURRENS
+    int: 7
+    both: 0
+ -  code: A69.2
+    disease_bsn: LAIMSKA BOLEST
+    disease_eng: LYME BORELIOSIS
+    int: 7
+    both: 1
+ -  code: A70
+    disease_bsn: PSITAKOZA-ORNITOZA
+    disease_eng: PSITTACOSIS-ORNITHOSIS  
+    int: 7
+    both: 0
+ -  code: A74
+    disease_bsn: HLAMIDIJA
+    disease_eng: CHLAMYDIA INF.  
+    int: 2
+    both: 1
+ -  code: A75
+    disease_bsn: PJEGAVAC
+    disease_eng: TYPHUS EXANTHEMATICUS
+    int: 7
+    both: 0
+ -  code: A75.1
+    disease_bsn: BRIL-CINCEROVA BOLEST
+    disease_eng: MORBUS BRILL-ZINSSER
+    int: 7
+    both: 1
+ -  code: A78
+    disease_bsn: Q GROZNICA
+    disease_eng: Q FEBRIS
+    int: 4
+    both: 1
+ -  code: A79
+    disease_bsn: RIKECIOZE
+    disease_eng: RICKETTSIOSES
+    int: 7
+    both: 0
+ -  code: A80
+    disease_bsn: DJEČIJA PARALIZA
+    disease_eng: POLIOMYELITIS ANTERIOR AC
+    int: 5
+    both: 0
+ -  code: A82
+    disease_bsn: BJESNILO
+    disease_eng: LYSSA
+    int: 5
+    both: 0
+ -  code: A86
+    disease_bsn: ZARAZNO ZAPALJENJE MOZGA
+    disease_eng: ENCEPHALITIS
+    int: 7
+    both: 1
+ -  code: A87
+    disease_bsn: VIRUSNI MENINGITIS
+    disease_eng: MENINGITIS VIROSA
+    int: 7
+    both: 0
+ -  code: A93
+    disease_bsn: PAPATAČI GROZNICA
+    disease_eng: FEBRIS PAPPATACI
+    int: 7
+    both: 0
+ -  code: A95
+    disease_bsn: ŽUTA GROZNICA
+    disease_eng: FEBRIS FLAVA
+    int: 4
+    both: 1
+ -  code: A98
+    disease_bsn: HEMORAGIČNE GROZNICE
+    disease_eng: FEBRIS HAEMORHAGICAE V  
+    int: 4
+    both: 1
+ -  code: A98.5
+    disease_bsn: HEMORAGIČNA GROZNICA SA B
+    disease_eng: F.HAEMORHAGICAE CUM SYNDR
+    int: 4
+    both: 0
+ -  code: B01
+    disease_bsn: OVČIJE BOGINJE
+    disease_eng: VARICELLAE  
+    int: 7
+    both: 1
+ -  code: B02
+    disease_bsn: ZOSTER
+    disease_eng: HERPES ZOSTER
+    int: 7
+    both: 1
+ -  code: B03
+    disease_bsn: VELIKE BOGINJE
+    disease_eng: VARIOLA VERA
+    int: 4
+    both: 0
+ -  code: B05
+    disease_bsn: MALE BOGINJE
+    disease_eng: MORBILLI
+    int: 5
+    both: 1
+ -  code: B06
+    disease_bsn: CRVENKA
+    disease_eng: RUBELLA/RUBEOLLA
+    int: 5
+    both: 0
+ -  code: B15
+    disease_bsn: Virusne žutice
+    int: 7
+    both: 0
+ -  code: B15
+    disease_bsn: ZARAZNA ŽUTICA TIPA A
+    disease_eng: HEPATITIS VIROSA A  
+    int: 3
+    both: 0
+ -  code: B16
+    disease_bsn: Virusne žutice
+    int: 2
+    both: 0
+ -  code: B16
+    disease_bsn: ZARAZNA ŽUTICA TIPA B
+    disease_eng: HEPATITIS VIROSA B  
+    int: 2
+    both: 0
+ -  code: B17
+    disease_bsn: Virusne žutice
+    int: 2
+    both: 0
+ -  code: B17
+    disease_bsn: ZARAZNA ŽUTICA TIPA C
+    disease_eng: HEPATITIS VIROSA C  
+    int: 2
+    both: 0
+ -  code: B18
+    disease_bsn: Virusne žutice 
+    int: 7
+    both: 0
+ -  code: B19
+    disease_bsn: Virusne žutice 
+    int: 7
+    both: 0
+ -  code: B20
+    disease_bsn: SINDROM STEČENOG NEDOSTAT
+    disease_eng: AIDS /SIDA  
+    int: 2
+    both: 1
+ -  code: B24
+    disease_bsn: HIV INFEKCIJA
+    disease_eng: HIV INFECTION
+    int: 2
+    both: 1
+ -  code: B26
+    disease_bsn: ZAUŠNJACI
+    disease_eng: PAROTITIS EPIDEMICA
+    int: 5
+    both: 1
+ -  code: B27
+    disease_bsn: INFEKTIVNA MONONUKLEOZA
+    disease_eng: MONONUCLEOSIS INFECT.
+    int: 7
+    both: 1
+ -  code: B54
+    disease_bsn: MALARIJA
+    disease_eng: MALARIA
+    int: 4
+    both: 1
+ -  code: B55
+    disease_bsn: LIŠMANIJAZA
+    disease_eng: LEISHMANIASIS
+    int: 7
+    both: 0
+ -  code: B58
+    disease_bsn: TOKSOPLAZMOZA
+    disease_eng: TOKSOPLASMOSIS  
+    int: 3
+    both: 1
+ -  code: B60
+    disease_bsn: MIKROSPORIJA PREMA LOKALI
+    disease_eng: MICROSPORDIOSIS
+    int: 7
+    both: 0
+ -  code: B67
+    disease_bsn: EHINOKOKOZA
+    disease_eng: ECHINOCOCCOSIS  
+    int: 3
+    both: 1
+ -  code: B75
+    disease_bsn: TRIHINOZA
+    disease_eng: TRICHINOSIS
+    int: 3
+    both: 1
+ -  code: B76
+    disease_bsn: ANKILOSTOMIJAZA
+    disease_eng: ANKYLOSTOMIASIS
+    int: 7
+    both: 0
+ -  code: B86
+    disease_bsn: ŠUGA
+    disease_eng: SCABIES
+    int: 7
+    both: 0
+ -  code: G00
+    disease_bsn: Zarazna upala moždanih ovojnica
+    int: 7
+    both: 0
+ -  code: G00
+    disease_bsn: DRUGI BAKTERIJ. MENINGITI
+    disease_eng: MENINGITIS  
+    int: 7
+    both: 1
+ -  code: G01
+    disease_bsn: Zarazna upala moždanih ovojnica
+    int: 7
+    both: 0
+ -  code: G02
+    disease_bsn: Zarazna upala moždanih ovojnica
+    int: 7
+    both: 0
+ -  code: G03
+    disease_bsn: Zarazna upala moždanih ovojnica
+    int: 7
+    both: 0
+ -  code: J02
+    disease_bsn: STREPTOKOKNA UPALA GRLA
+    disease_eng: ANGINA STREPTOCOCCICA
+    int: 7
+    both: 0
+ -  code: J11
+    disease_bsn: GRIPA
+    disease_eng: INFLUENZA
+    int: 1
+    both: 1
+ -  code: J12
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: J13
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: J14
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: J15
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: J16
+    disease_bsn: Upala pluća 
+    int: 7
+    both: 0
+ -  code: J17
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: J18
+    disease_bsn: Upala pluća
+    int: 7
+    both: 0
+ -  code: T88
+    disease_bsn: POSTVAKCINALNE KOMPLIKACI
+    disease_eng: POSTVACCINAL COMPL.
+    int: 7
+    both: 0
+ -  code: XX1
+    disease_bsn: ANTIMIKROBNA RESISTENCIJA
+    disease_eng: ANTIMICROBIAL RESIST.
+    int: 6
+    both: 0
+ -  code: XX10
+    disease_bsn: CJD (Creutzfeldt-Jacobs bolest)
+    disease_eng: CJD (Creutzfeldt-Jacobs desease)
+    int: 3
+    both: 0
+ -  code: XX11
+    disease_bsn: ZARAZNA ŽUTICA TIPA D
+    disease_eng: HEPATITIS VIROSA D  
+    int: 7
+    both: 0
+ -  code: XX12
+    disease_bsn: ZARAZNA ŽUTICA TIPA E
+    disease_eng: HEPATITIS VIROSA E  
+    int: 7
+    both: 0
+ -  code: XX13
+    disease_bsn: Kontakt sa bijesnom ili na bjesnilo sumnjivom životinjom
+    int: 7
+    both: 0
+ -  code: XX14
+    disease_bsn: Prisustvo HCV antitijela
+    int: 7
+    both: 1
+ -  code: XX15
+    disease_bsn: Kliconoštvo Salmonella typhy
+    int: 7
+    both: 0
+ -  code: XX2
+    disease_bsn: AKUTNA FLAKCIDNA PARALIZA
+    disease_eng: AFP
+    int: 7
+    both: 0
+ -  code: XX3
+    disease_bsn: AKUTNI RESPIRATORNI SINDR
+    disease_eng: SARS
+    int: 4
+    both: 1
+ -  code: XX4
+    disease_bsn: CRVENKA KONGENTALNA
+    disease_eng: RUBELLA CONGENTALIS
+    int: 7
+    both: 1
+ -  code: XX5
+    disease_bsn: PTIČIJA GRIPA
+    disease_eng: Avian Flu
+    int: 1
+    both: 1
+ -  code: XX6
+    disease_bsn: INFEKCIJE UZROKOVANE ENTE
+    disease_eng: INFECTIONS WITH ENTERO HA
+    int: 3
+    both: 0
+ -  code: XX7
+    disease_bsn: INTRAHOSPITALNE INFEKCIJE
+    disease_eng: NOSOKOMIAL INF.
+    int: 6
+    both: 0
+ -  code: XX8
+    disease_bsn: INFEKCIJE IZAZVANE HEMOFI
+    disease_eng: INFECTIONS WITH HAEMO PHI
+    int: 5
+    both: 0
+ -  code: XX9
+    disease_bsn: KRPELJNI MENINGOENCEFALIT
+    disease_eng: tick-borne encephalitis
+    int: 7
+    both: 0
+ -  code: Z22
+    disease_bsn: HbsAg NOSILAŠTVO
+    disease_eng: HBsAG
+    int: 7
+    both: 1
+ -  code: XX16
+    disease_bsn: Hepatitis Viroza 
+    int: 7
+    both: 1
+ -  code: XX17
+    disease_bsn: Meningitis
+    int: 7
+    both: 1
+
+laboratories:
+ -  uid: "{39AF005E-0C55-4124-B4F5-75BBD2AF10B2}"
+    name: "Zavod za transfuziologiju UKC Tuzla"
+ -  uid: "{B918B1B5-981A-4DFC-AB4A-6C01E9C30A44}"  
+    name: "UKC Tuzla"
+    municipality_id: 110310
+
+centers:
+ -  uid: "{1F257058-FC60-4888-B0D7-BABB4683D8D0}"
+    code: 6507
+    name: DZ TREBINJE 
+    municipality_id: 120610
+ -  uid: "{2232AA0D-191E-4E98-AB37-3A559D5A0CBB}"
+    code: 6566
+    name: DZ BERKOVIĆI    
+    municipality_id: 120611
+ -  uid: "{257E8EAA-95C9-450E-AB7E-176ED679AB6E}"
+    code: uszdwp
+    name: HES Sapna   
+    municipality_id: 110319
+ -  uid: "{2D80DAC8-A1CB-467F-8A8C-F90F0E004280}"
+    code: 01
+    name: D.Z.ZENICA  
+    municipality_id: 110410
+ -  uid: "{2E1890A7-46E7-4E09-A35A-A29D9FA48D5C}"
+    code: 6523
+    name: DZ BILEĆA   
+    municipality_id: 120612
+ -  uid: "{30C20348-0305-4413-81EE-92E524E107DD}"
+    code: uszdwp
+    name: HES Kalesija    
+    municipality_id: 110316
+ -  uid: "{36330E85-928B-4086-8803-7F4C6699D388}"
+    code: uszdwp
+    name: HES Gradačac    
+    municipality_id: 110315
+ -  uid: "{37464CB5-37DD-44D1-9A98-049EA20FE4D6}"
+    code: uszdwp
+    name: HES Srebrenik   
+    municipality_id: 110320
+ -  uid: "{4C520A42-B3FB-4D46-B071-94B36EA155F4}"
+    code: 03
+    name: D.Z.VAREŠ   
+    municipality_id: 110417
+ -  uid: "{538DB9B7-2A6A-4FDD-B10D-00CA70639114}"
+    code: 6540
+    name: DZ LJUBINJE 
+    municipality_id: 120615
+ -  uid: "{5B84B6D2-6AED-4F76-8706-0B55A630666A}"
+    code: 6558
+    name: DZ NEVESINJE    
+    municipality_id: 120616
+ -  uid: "{7042F610-9F8C-48C5-8295-0C99F1A59113}"
+    code: uszdwp
+    name: HES Gračanica   
+    municipality_id: 110314
+ -  uid: "{72D5ACFC-7745-4980-89D2-C32B8A0688C1}"
+    code: uszdwp
+    name: HES Lukavac 
+    municipality_id: 110318
+ -  uid: "{75332822-2EB7-441C-B87C-439A18C0B3FC}"
+    code: uszdwp
+    name: HES Živinice    
+    municipality_id: 110322
+ -  uid: "{7E3DD3D1-7CD6-4CC7-8DB4-A9EA12D695CB}"
+    code: uszdwp
+    name: HES Živinice    
+    municipality_id: 110322
+ -  uid: "{81E04329-7644-4AB7-BB5F-36F2AAAD6550}"
+    code: uszdwp
+    name: HES Teočak  
+    municipality_id: 110321
+ -  uid: "{8A40E01E-7DE1-4CDE-9981-06C6AD9C49B3}"
+    code: uszdwp
+    name: Banovići    
+    municipality_id: 110311
+ -  uid: "{91543726-48E4-454D-9135-233C40933059}"
+    code: uszdwp
+    name: HES Kladanj 
+    municipality_id: 110317
+ -  uid: "{93BBF464-072E-4A30-B86F-A9A310C6BCDE}"
+    code: Čelić
+    name: Dom zdravlja    
+    municipality_id: 110312
+ -  uid: "{9A44E17E-4958-4E0C-A294-639DE07BD063}"
+    code: uszdwp
+    name: HES Doboj Istok 
+    municipality_id: 110313
+ -  uid: "{B3D3DAB6-9389-40A3-945D-3BA05C0589AC}"
+    code: 04
+    name: D.Z.VISOKO  
+    municipality_id: 110418
+ -  uid: "{C985617A-B861-400F-AC70-D420C6601E9F}"
+    code: uszdwp
+    name: HES Banovići    
+    municipality_id: 110311
+ -  uid: "{D24FEDF1-1A21-4D6B-8419-2C2E25A44804}"
+    code: uszdwp
+    name: HES Čelić   
+    municipality_id: 110312
+ -  uid: "{D4819901-2F0B-4108-B74A-A196153F0C39}"
+    code: 05
+    name: D.Z.USORA   
+    municipality_id: 110421
+ -  uid: "{DF9162EC-509D-4874-BAF1-027569C64FA4}"
+    code: 02
+    name: d.z.ZAVIDOVIĆI  
+    municipality_id: 110419
+ -  uid: "{E11EE217-5271-4DB7-93A8-5B0B7FD30DF8}"
+    code: uszdwp
+    name: HES Tuzla   
+    municipality_id: 110310
+ -  uid: "{ED6BE7EF-FCF2-4447-82D1-0632B12F9071}"
+    code: 6531
+    name: DZ GACKO
+    municipality_id: 120613
+
+
+phis:
+ -  abbrev: "Zvo"
+    address: "Ulica Svetog Save 56a, Zvornik"
+    full_bsn: "RC IZJ Zvornik"
+    full_eng: "Regional Institute Zvornik"
+ -  abbrev: "Foc"
+    address: "Ulici Njegoševa bb"
+    full_bsn: "RC IZJ Foča"
+    full_eng: "Regional Institute Foča"
+ -  abbrev: "Tre"
+    full_bsn: "RC IZJ Trebinje"
+    full_eng: "Regional Institute Trebinje"
+ -  abbrev: EaS
+    full_bsn: "RC IZJ Istočno Sarajevo"
+    full_eng: "Regional Institute East Sarajevo"
+ -  abbrev: Dob
+    full_bsn: "RC IZJ Doboj"
+    full_eng: "Regional Institute Doboj"
+ -  abbrev: BaL
+    address: "Jovana Dučića 1"
+    full_bsn: "IZJ Banja Luka"
+    full_eng: "Pubic Health Institute RS Banja Luka"
+    post: 78000
+ -  abbrev: Fed
+    full_bsn: "Zavod za javno zdravstvo FBiH"
+    full_eng: "Institute for Public Health FB&H"
+ -  abbrev: Zen
+    full_bsn: "Zeničko-dobojski kanton"
+    full_eng: "Cantonal Public Health Institute of Zenica"
+    district_id: 1104
+ -  abbrev: Ora
+    full_bsn: "Posavski kanton Cantonal"
+    full_eng: "Public Health Institute of Orašje"
+    district_id: 1102
+ -  abbrev: Liv
+    full_bsn: "Kanton 10"
+    full_eng: "Cantonal Public Health Institute of Livno"
+    district_id: 1110
+ -  abbrev: Mos
+    full_bsn: "Hercegovačko-neretvanski kanton"
+    full_eng: "Institute for Public Health FB&H, Mostar"
+    district_id: 1107
+ -  abbrev: Tuz
+    full_bsn: "Tuzlanski kanton"
+    full_eng: "Cantonal Public Health Institute of Tuzla"
+    district_id: 1103
+ -  abbrev: Bih
+    full_bsn: "Unsko-sanski kanton Cantonal"
+    full_eng: "Public Health Institute of Bihać"
+    district_id: 1101
+ -  abbrev: Sar
+    full_bsn: "Kanton Sarajevo"
+    full_eng: "Cantonal Public Health Institute of Sarajevo"
+    district_id: 1109
+ -  abbrev: Tra
+    full_bsn: "Srednjobosanski kanton"
+    full_eng: "Cantonal Public Health Institute of Travnik"
+    district_id: 1106
+ -  abbrev: Gru
+    full_bsn: "Zapadno-hercegovački kanton"
+    full_eng: "Cantonal Public Health Institute of Grude"
+    district_id: 1108
+ -  abbrev: Gor
+    full_bsn: "Bosansko-podrinjski kanton"
+    full_eng: "Cantonal Public Health Institute of Grude"
+    district_id: 1105
+ -  abbrev: NUL
+    full_bsn: "Poddodjel za javno zdravstvo BD"
+    district_id: 1300
+
+hes :
+ -  code: "6507"
+    dz: "{1F257058-FC60-4888-B0D7-BABB4683D8D0}"
+    name: "DZ TREBINJE"
+    nurse: "{57C8A527-6B17-4BA8-9599-57C7FB771549}"
+ -  code: "6566"
+    dz: "{2232AA0D-191E-4E98-AB37-3A559D5A0CBB}"
+    name: "DZ BERKOVIĆI"
+    nurse: "{C831C31C-4D15-4E96-90D7-2EDA073FB092}"
+ -  code: "6507"
+    dz: "{1F257058-FC60-4888-B0D7-BABB4683D8D0}"
+    name: "DZ TREBINJE"
+    nurse: "{57C8A527-6B17-4BA8-9599-57C7FB771549}"
+ -  code: "6540"
+    dz: "{538DB9B7-2A6A-4FDD-B10D-00CA70639114}"
+    name: "DZ LJUBINJE"
+    nurse: "{4C0F31A6-3BE1-4B16-9AEB-7B637E113BCA}"
+ -  code: "6531"
+    dz: "{ED6BE7EF-FCF2-4447-82D1-0632B12F9071}"
+    name: "DZ GACKO"
+    nurse: "{447B8C84-6FFA-4975-8400-B03ACB74406B}"
+ -  code: "6523"
+    dz: "{2E1890A7-46E7-4E09-A35A-A29D9FA48D5C}"
+    name: "SVETI LUKA"
+    nurse: "{D7E8D44C-460F-49ED-AC52-25DE381FD7CF}"
+ -  code: "6558"
+    dz: "{5B84B6D2-6AED-4F76-8706-0B55A630666A}"
+    name: "DZ NEVESINJE"
+    nurse: "{1ED10E97-E908-4EF5-A856-B6F662978D0A}"
+ -  dz: "{75332822-2EB7-441C-B87C-439A18C0B3FC}"
+    name: "HES Živinice"
+ -  code: "01"
+    dz: "{2D80DAC8-A1CB-467F-8A8C-F90F0E004280}"
+    name: "D.Z.ZENICA"
+ -  dz: "{9A44E17E-4958-4E0C-A294-639DE07BD063}"
+    name: "HES Doboj Istok"
+ -  code: "uszdwp"
+    dz: "{91543726-48E4-454D-9135-233C40933059}"
+    name: "HES Kladanj"
+ -  dz: "{30C20348-0305-4413-81EE-92E524E107DD}"
+    name: "HES Kalesija"
+ -  dz: "{C985617A-B861-400F-AC70-D420C6601E9F}"
+    name: "HES Banovići"
+ -  code: "uszdwp"
+    dz: "{7042F610-9F8C-48C5-8295-0C99F1A59113}"
+    name: "HES Gračanica"
+ -  code: "03"
+    dz: "{4C520A42-B3FB-4D46-B071-94B36EA155F4}"
+    name: "D.Z.VAREŠ"
+ -  dz: "{81E04329-7644-4AB7-BB5F-36F2AAAD6550}"
+    name: "HES Teočak"
+ -  code: "04"
+    dz: "{B3D3DAB6-9389-40A3-945D-3BA05C0589AC}"
+    name: "D.Z.VISOKO"
+ -  dz: "{36330E85-928B-4086-8803-7F4C6699D388}"
+    name: "HES Gradačac"
+ -  code: "uszdwp"
+    dz: "{E11EE217-5271-4DB7-93A8-5B0B7FD30DF8}"
+    name: "HES Tuzla"
+ -  code: "uszdwp"
+    dz: "{8A40E01E-7DE1-4CDE-9981-06C6AD9C49B3}"
+    name: "Dom zdravlja"
+ -  code: "05"
+    dz: "{D4819901-2F0B-4108-B74A-A196153F0C39}"
+    name: "D.Z.USORA"
+ -  dz: "{257E8EAA-95C9-450E-AB7E-176ED679AB6E}"
+    name: "HES Sapna"
+ -  code: "uszdwp"
+    dz: "{37464CB5-37DD-44D1-9A98-049EA20FE4D6}"
+    name: "HES Srebrenik"
+ -  code: "uszdwp"
+    dz: "{7E3DD3D1-7CD6-4CC7-8DB4-A9EA12D695CB}"
+    name: "HES Živinice"
+ -  code: "02"
+    dz: "{DF9162EC-509D-4874-BAF1-027569C64FA4}"
+    name: "D.Z.ZAVIDOVIĆI"
+ -  dz: "{72D5ACFC-7745-4980-89D2-C32B8A0688C1}"
+    name: "HES Lukavac"
+ -  code: "uszdwp"
+    dz: "{D24FEDF1-1A21-4D6B-8419-2C2E25A44804}"
+    name: "HES Čelić"

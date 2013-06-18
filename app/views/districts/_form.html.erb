@@ -1,0 +1,53 @@
+<%= form_for(@district, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @district.errors.any? %>
+    <div id="error_explanation">
+      <% @district.errors.full_messages.each do |msg| %>
+        <p class="text-error"><%= msg %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.number_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :code_stat %><br />
+    <%= f.number_field :code_stat %>
+  </div>
+  <div class="field">
+    <%= f.label :abbr %><br />
+    <%= f.text_field :abbr %>
+  </div>
+  <div class="field">
+    <%= f.label :name_eng %><br />
+    <%= f.text_field :name_eng %>
+  </div>
+  <div class="field">
+    <%= f.label :centar %><br />
+    <%= f.text_field :centar %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :population %><br />
+    <%= f.number_field :population %>
+  </div>
+  <div class="field">
+    <%= f.label :municipalities %><br />
+    <%= f.number_field :municipalities %>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :job_type, 'Entitet', :class=>'control-label' %>
+    <div class="controls">
+
+      <%= f.collection_select :entity_id, @entities, :id, :abbr, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit "Sačuvaj", :class => "btn btn-primary" %>
+  </div>
+<% end %>

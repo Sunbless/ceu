@@ -17,41 +17,58 @@
   <!--[if lt IE 7]>
     <p class="chromeframe">Vi koristite <strong>zastarjeli</strong> internet preglednik. Molimo vas <a href="http://browsehappy.com/">da ga ažurirate</a> ili <a href="http://www.google.com/chromeframe/?redirect=true">aktivirate Google Chrome Frame</a> za bolje korisničko iskustvo.</p>
   <![endif]-->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="brand" href="/">ZZJZ</a>
-        <% if user_signed_in? %>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-            <li class="<%= 'active' if current_page?(root_path) %>"><a href="#">Home</a></li>
-            <li class="<%= 'active' if current_page?(users_path) %>"><a href="<%= users_path %>">Korisnici</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-        <p class="navbar-text pull-right">
-              <a href="<%=destroy_user_session_path%>" class="navbar-link">Odjava (<%=current_user.email%>)</a>
-        </p>
-        <% end %>
+  <div id="wrap">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Zavod za javno zdrastvo</a>
+          <% if user_signed_in? %>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="<%= 'active' if current_page?(root_path) %>"><a href="<%= root_path %>">Home</a></li>
+              <% if current_user.try(:admin?) %>
+              <li class="<%= 'active' if current_page?(users_path) %>"><a href="<%= users_path %>">Korisnici</a></li>
+              <% end %>
+            </ul>
+          </div><!--/.nav-collapse -->
+          <p class="navbar-text pull-right">
+                <a href="<%=destroy_user_session_path%>" class="navbar-link">Odjava <%= current_user.name ? "(#{current_user.name})" : "" %></a> |
+                <a href="<%=edit_user_registration_path%>" class="navbar-link">Postavke</a>
+          </p>
+          <% end %>
+        </div>
       </div>
+    </div>
+
+    <div class="container">
+      <% [:notice, :error, :alert].each do |level| %>
+        <% unless flash[level].blank? %>
+          <div class="alert alert-<%= flash_class(level) %>">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <%= content_tag :p, flash[level] %>
+          </div>
+        <% end %>
+      <% end %>
+      <%= yield %>
+    </div>
+    <div id="push"></div>
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p class="muted credit">
+        <img src="/assets/eu.png" alt="eu"/>
+        <img src="/assets/ceen.png" alt="ceen"/>
+        <img src="/assets/diadikasia.png" alt="diadikasia"/>
+      </p>
     </div>
   </div>
 
-  <div class="container">
-    <% [:notice, :error, :alert].each do |level| %>
-      <% unless flash[level].blank? %>
-        <div class="alert-message <%= flash_class(level) %>">
-          <a class="close" href="#">×</a>
-          <%= content_tag :p, flash[level] %>
-        </div>
-      <% end %>
-    <% end %>
-    <%= yield %>
-  </div>
 
 </body>
 </html>

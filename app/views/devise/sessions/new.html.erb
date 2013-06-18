@@ -8,6 +8,7 @@
   <% if devise_mapping.rememberable? -%>
     <label class="checkbox"><%= f.check_box :remember_me %> Zapamti me</label>
   <% end -%>
+  <span class="small pull-right"><%= link_to "Zaboravili ste šifru?", new_user_password_path%></span>
 
   <%= f.submit "Prijava", :class =>'btn btn-large btn-primary' %>
 

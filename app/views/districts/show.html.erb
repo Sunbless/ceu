@@ -1,0 +1,48 @@
+<p>
+  <b>Code:</b>
+  <%= @district.code %>
+</p>
+
+<p>
+  <b>Code stat:</b>
+  <%= @district.code_stat %>
+</p>
+
+<p>
+  <b>Abbr:</b>
+  <%= @district.abbr %>
+</p>
+
+<p>
+  <b>Name eng:</b>
+  <%= @district.name_eng %>
+</p>
+
+<p>
+  <b>Centar:</b>
+  <%= @district.centar %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @district.name %>
+</p>
+
+<p>
+  <b>Population:</b>
+  <%= @district.population %>
+</p>
+
+<p>
+  <b>Municipalities:</b>
+  <%= @district.municipalities %>
+</p>
+
+<p>
+  <b>Entity:</b>
+  <%= @district.entity.abbr %>
+</p>
+
+
+<%= link_to 'Uredi', edit_district_path(@district) %> |
+<%= link_to 'Nazad', districts_path %>
