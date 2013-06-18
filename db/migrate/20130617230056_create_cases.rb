@@ -1,6 +1,6 @@
 class CreateCases < ActiveRecord::Migration
   def change
-    create_table :cases do |t|
+    create_table :cases, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.integer :district_id
       t.integer :phi_id
       t.integer :he_id

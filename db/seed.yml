@@ -1221,7 +1221,6 @@ districts:
     name: Unsko-sanski kanton 
     centar: 110110
     population: 287998
-    municipalities: 8
     entity_id: 9000
 
  -  id: 1102
@@ -1231,7 +1230,6 @@ districts:
     name: Posavski kanton 
     centar: 110210
     population: 40513
-    municipalities: 3
     entity_id: 9000
 
  -  id: 1103
@@ -1241,7 +1239,6 @@ districts:
     name: Tuzlanski kanton
     centar: 110310
     population: 497813
-    municipalities: 13
     entity_id: 9000
 
  -  id: 1104
@@ -1251,7 +1248,6 @@ districts:
     name: Zeničko-dobojski kanton
     centar: 110410
     population: 400848
-    municipalities: 12
     entity_id: 9000
 
  -  id: 1105
@@ -1261,7 +1257,6 @@ districts:
     name: Bosansko-podrinjski kanton
     centar: 110510
     population: 33662
-    municipalities: 3
     entity_id: 9000
 
  -  id: 1106
@@ -1271,7 +1266,6 @@ districts:
     name: Srednjobosanski kanton
     centar: 110610
     population: 255648
-    municipalities: 12
     entity_id: 9000
 
  -  id: 1107
@@ -1281,7 +1275,6 @@ districts:
     name: Hercegovačko-neretvanski kanton
     centar: 110710
     population: 226632
-    municipalities: 9
     entity_id: 9000
 
  -  id: 1108
@@ -1291,7 +1284,6 @@ districts:
     name: Zapadnohercegovački kanton
     centar: 110810
     population: 81833
-    municipalities: 4
     entity_id: 9000
 
  -  id: 1109
@@ -1301,7 +1293,6 @@ districts:
     name: Kanton Sarajevo
     centar: 110116
     population: 421289
-    municipalities: 9
     entity_id: 9000
 
  -  id: 1110
@@ -1311,7 +1302,6 @@ districts:
     name: Kanton 10
     centar: 111010
     population: 81396
-    municipalities: 6
     entity_id: 9000
 
  -  id: 1201
@@ -1321,7 +1311,6 @@ districts:
     name: Banja Luka
     centar: 120110 
     population: 238353
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1202
@@ -1331,7 +1320,6 @@ districts:
     name: Bijeljina
     centar: 120210
     population: 160000
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1203
@@ -1341,7 +1329,6 @@ districts:
     name: Doboj
     centar: 120310 
     population: 50000
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1204
@@ -1351,7 +1338,6 @@ districts:
     name: Foča
     centar: 120410
     population: 40513
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1205
@@ -1361,7 +1347,6 @@ districts:
     name: Istočno Sarajevo
     centar: 120510
     population: 100000
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1206
@@ -1371,7 +1356,6 @@ districts:
     name: Trebinje
     centar: 120610
     population: 100000
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1207
@@ -1381,7 +1365,6 @@ districts:
     name: Zvornik
     centar: 120710
     population: 81295
-    municipalities: 0
     entity_id: 9100
 
  -  id: 1300
@@ -1391,7 +1374,6 @@ districts:
     name: Brčko Distrikt 
     centar: null
     population: 87332
-    municipalities: 0
     entity_id: 9300
 
 municipalities:

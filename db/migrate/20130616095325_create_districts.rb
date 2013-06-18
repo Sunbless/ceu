@@ -1,6 +1,6 @@
 class CreateDistricts < ActiveRecord::Migration
   def change
-    create_table :districts do |t|
+    create_table :districts, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.integer :code
       t.integer :code_stat
       t.string :abbr

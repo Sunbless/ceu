@@ -1,6 +1,6 @@
 class CreateCenters < ActiveRecord::Migration
   def change
-    create_table :centers do |t|
+    create_table :centers, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.string :name
       t.string :code
       t.string :uid

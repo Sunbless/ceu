@@ -1,6 +1,6 @@
 class CreateAgents < ActiveRecord::Migration
   def change
-    create_table :agents do |t|
+    create_table :agents, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.string :uid
       t.string :agent
 

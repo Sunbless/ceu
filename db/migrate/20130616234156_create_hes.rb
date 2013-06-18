@@ -1,6 +1,6 @@
 class CreateHes < ActiveRecord::Migration
   def change
-    create_table :hes do |t|
+    create_table :hes, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.integer :center_id
       t.string :code
       t.string :name

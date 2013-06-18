@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: mysql2
-  database: zzjz
+  database: zzjz2
   username: root
   password: ninja
   encoding: utf8

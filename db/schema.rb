@@ -49,9 +49,9 @@ ActiveRecord::Schema.define(:version => 20130617233535) do
   end
 
   create_table "centers", :force => true do |t|
-    t.string   "uid"
     t.string   "name"
     t.string   "code"
+    t.string   "uid"
     t.integer  "municipality_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false

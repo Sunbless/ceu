@@ -1,6 +1,6 @@
 class CreatePhis < ActiveRecord::Migration
   def change
-    create_table :phis do |t|
+    create_table :phis, :options => 'ENGINE=InnoDB DEFAULT CHARSET=utf8' do |t|
       t.string :abbrev
       t.string :address
       t.string :full_bsn
