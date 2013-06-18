@@ -23,7 +23,9 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  pool: 5
+  pool: 2
+  read_timeout: 20
+  write_timeout: 10
   database: depxsbparym
   host: mysqlsdb.co8hm2var4k9.eu-west-1.rds.amazonaws.com
   port: 3306
