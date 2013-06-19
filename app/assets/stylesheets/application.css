@@ -79,10 +79,14 @@ body {
   padding-top: 60px;
 }
 .container .credit {
-  margin: 10px 0;
+  width:560px;
+  margin: 10px auto;
 }
 textarea {
   width: 600px !important;
   height: 200px !important;
 }
-
+/*.muted {
+  width:560px;
+  margin:0 auto;
+}*/

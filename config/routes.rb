@@ -34,6 +34,8 @@ Zzjz::Application.routes.draw do
   end
   resources :users
 
+  get "/reports" => "reports#index", :as => :reports
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

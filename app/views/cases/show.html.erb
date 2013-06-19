@@ -40,7 +40,7 @@
 
 <p>
   <b>Laboratorija:</b>
-  <%= @case.laboratory.name %>
+  <%= @case.laboratory.name if @case.laboratory_id %>
 </p>
 
 <p>

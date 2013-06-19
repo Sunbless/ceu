@@ -52,7 +52,7 @@ class UsersController < ApplicationController
       @user.password = (0...30).map{ ('a'..'z').to_a[rand(26)] }.join
     end
     if !params[:user][:email] || params[:user][:email] == "false" 
-      @user.email = "#{params[:user][:name]}.#{params[:user][:surname]}@zzjz.ba".delete(' ')
+      @user.email = "#{params[:user][:name]}.#{params[:user][:surname]}@ceu.ba".delete(' ')
     end
     @municipalities = Municipality.all
     respond_to do |format|

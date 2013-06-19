@@ -39,6 +39,7 @@ class CasesController < ApplicationController
     @nurses = User.find_all_by_user_type(2)
     @municipalities = Municipality.all
     @centers = Center.all
+    @icds = Icd.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @case }
@@ -57,6 +58,7 @@ class CasesController < ApplicationController
     @nurses = User.find_all_by_user_type(2)
     @municipalities = Municipality.all
     @centers = Center.all
+    @icds = Icd.all
   end
 
   # POST /cases
@@ -73,6 +75,7 @@ class CasesController < ApplicationController
     @doctors = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     @centers = Center.all
+    @icds = Icd.all
 
     respond_to do |format|
       if @case.save
@@ -98,6 +101,7 @@ class CasesController < ApplicationController
     @nurses = User.find_all_by_user_type(2)
     @centers = Center.all
     @municipalities = Municipality.all
+    @icds = Icd.all
 
     respond_to do |format|
       if @case.update_attributes(params[:case])

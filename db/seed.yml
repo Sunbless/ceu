@@ -1,1197 +1,1197 @@
 users:
- -  email: admin@zzjz.ba
+ -  email: admin@ceu.ba
     admin: 1
-    password: zzjzadmin!
+    password: ceuadmin!
     name: Admin
     surname: Adminovic
 
  -  uid: "{0AABEF45-C267-4D74-A138-D8073E0A8585}"
-    email: fatima.basic@zzjz.ba
-    password: zzjzba123
+    email: fatima.basic@ceu.ba
+    password: ceuba123
     name:  Fatima
     surname: Bašić
     user_type: 1
     municipality_id: 110410 
 
  -  uid: "{0102F5EA-EFD8-46E5-AC49-ADA4B0DA1497}"
-    email: ante.jelic@zzjz.ba
-    password: zzjzba123
+    email: ante.jelic@ceu.ba
+    password: ceuba123
     name:  Anto
     surname: Jelić 
     user_type: 1
     municipality_id: 110417
 
  -  uid: "{02A608B0-418A-4643-8D57-497FD3C8AABB}"
-    email: azijada.beganlic@zzjz.ba
-    password: zzjzba123
+    email: azijada.beganlic@ceu.ba
+    password: ceuba123
     name:  Azijada
     surname: Beganlić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{04354DF2-408F-4477-A72F-38487FFD28F1}"
-    email: mubidiin.mujiz@zzjz.ba
-    password: zzjzba123
+    email: mubidiin.mujiz@ceu.ba
+    password: ceuba123
     name:  Mubidin
     surname: Mujić 
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{06E2E1CA-99AF-43E2-B3F3-782C16B65CE2}"
-    email: selma.memic@zzjz.ba
-    password: zzjzba123
+    email: selma.memic@ceu.ba
+    password: ceuba123
     name:  Selma
     surname: Memić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{076BF433-2599-475E-98D7-A83C3315A46F}"
-    email: amira.poljic@zzjz.ba
-    password: zzjzba123
+    email: amira.poljic@ceu.ba
+    password: ceuba123
     name:  Amira
     surname: Poljić  
     user_type: 1
     municipality_id: 110318
 
     uid: "{0AA9773B-56B5-4538-AED9-F80B735EA909}"
-    email: mahmoud.hajlista@zzjz.ba
-    password: zzjzba123
+    email: mahmoud.hajlista@ceu.ba
+    password: ceuba123
     name:  Mahmoud
     surname: Haj Lisa  
     user_type: 1
     municipality_id: 110320
 
     uid: "{0B5CA015-0B61-428C-8514-E6F456682BEC}"
-    email: nuseret.stanjkovic@zzjz.ba
-    password: zzjzba123
+    email: nuseret.stanjkovic@ceu.ba
+    password: ceuba123
     name:  Nusret
     surname: Stanjankić  
     user_type: 1
     municipality_id: 110320
 
     uid: "{0DAA8641-DA76-4B51-9E98-F4FAB7834883}"
-    email: hidija.salihovic@zzjz.ba
-    password: zzjzba123
+    email: hidija.salihovic@ceu.ba
+    password: ceuba123
     name:  Hidija
     surname: Salihović 
     user_type: 1
     municipality_id: 110311
 
  -  uid: "{0E9B19AE-351A-49F4-9C8A-9CE33C248F96}"
-    email: suad.skripic@zzjz.ba
-    password: zzjzba123
+    email: suad.skripic@ceu.ba
+    password: ceuba123
     name:  Suad
     surname: Škripić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{106EBEFB-A155-4E51-B3C6-942473B2504C}"
-    email: slavica.mott-divkovic@zzjz.ba
-    password: zzjzba123
+    email: slavica.mott-divkovic@ceu.ba
+    password: ceuba123
     name:  Slavica
     surname: Mott-Divković 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{1070597A-84DD-4325-8491-3FA5D862DDD3}"
-    email: milada.repovac-imamovic@zzjz.ba
-    password: zzjzba123
+    email: milada.repovac-imamovic@ceu.ba
+    password: ceuba123
     name:  Milada
     surname: Repovac-Imamović  
     user_type: 1
     municipality_id: 110417
 
  -  uid: "{125791B3-6635-46BD-AFE8-7E1B9AE899C3}"
-    email: emina.moric@zzjz.ba
-    password: zzjzba123
+    email: emina.moric@ceu.ba
+    password: ceuba123
     name:  Emina
     surname: Morić 
     user_type: 1
     municipality_id: 110311
 
  -  uid: "{13BF33C4-1525-4498-955D-1467A420C9B7}"
-    email: nermin.begovic@zzjz.ba
-    password: zzjzba123
+    email: nermin.begovic@ceu.ba
+    password: ceuba123
     name:  Nermin
     surname: Begović 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{13DCA619-0859-463B-A0B9-D09A61F697F7}"
-    email: sanela.husic@zzjz.ba
-    password: zzjzba123
+    email: sanela.husic@ceu.ba
+    password: ceuba123
     name:  Sanela
     surname: Husić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{15E786F5-9E30-4331-9843-410023A60490}"
-    email: janjic.nada@zzjz.ba
-    password: zzjzba123
+    email: janjic.nada@ceu.ba
+    password: ceuba123
     name:  JANJIĆ
     surname: NADA  
     user_type: 1
     municipality_id: 120610
 
  -  uid: "{17AFE5CD-08A5-4817-B25E-19694D548F46}"
-    email: nusreta.halilovic-sarajlic@zzjz.ba
-    password: zzjzba123
+    email: nusreta.halilovic-sarajlic@ceu.ba
+    password: ceuba123
     name:  Nusreta
     surname: Halilović-Sarajlić  
     user_type: 1
     municipality_id: 110315
 
  -  uid: "{1ED10E97-E908-4EF5-A856-B6F662978D0A}"
-    email: miljana.todorovic@zzjz.ba
-    password: zzjzba123
+    email: miljana.todorovic@ceu.ba
+    password: ceuba123
     name:  MILJANA
     surname: TODOROVIĆ
     user_type: 2
     municipality_id: 120616
 
  -  uid: "{1F464835-3B0B-433F-98A9-B31597FA37D7}"
-    email: adnan.aljukic@zzjz.ba
-    password: zzjzba123
+    email: adnan.aljukic@ceu.ba
+    password: ceuba123
     name:  Adnan
     surname: Aljukić 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{22F18ADB-F639-4EA0-933F-FDB57A56E024}"
-    email: fransi.petrak@zzjz.ba
-    password: zzjzba123
+    email: fransi.petrak@ceu.ba
+    password: ceuba123
     name:  Fransi
     surname: Petrak  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{272D60DB-BBBB-455F-B466-B8C92B5358E2}"
-    email: smiljana.pavic@zzjz.ba
-    password: zzjzba123
+    email: smiljana.pavic@ceu.ba
+    password: ceuba123
     name:  Smiljana
     surname: Pavić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{28420424-B158-4416-9CB6-6C036F5FFE99}"
-    email: sana.olic-sabic@zzjz.ba
-    password: zzjzba123
+    email: sana.olic-sabic@ceu.ba
+    password: ceuba123
     name:  Sana
     surname: Olić-Šabić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{2A813231-5EC3-48C1-B7B3-E6F27ECB5C23}"
-    email: tonka.mrkajic@zzjz.ba
-    password: zzjzba123
+    email: tonka.mrkajic@ceu.ba
+    password: ceuba123
     name:  Tonka
     surname: Mrkajić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{2A830BD0-91D0-4ACC-959D-A300D259C835}"
-    email: vesna.jahic@zzjz.ba
-    password: zzjzba123
+    email: vesna.jahic@ceu.ba
+    password: ceuba123
     name:  Vesna
     surname: Jahić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{2BC2CFDD-9183-45EA-AF18-80E66BD74494}"
-    email: sevala.palos@zzjz.ba
-    password: zzjzba123
+    email: sevala.palos@ceu.ba
+    password: ceuba123
     name:  Sevala
     surname: Paloš 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{2CF5770F-6A3F-4612-8EC9-E5FD27067A07}"
-    email: mirela.tobudic@zzjz.ba
-    password: zzjzba123
+    email: mirela.tobudic@ceu.ba
+    password: ceuba123
     name:  Mirela
     surname: Tobudić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{2D02CF17-9A29-465E-8926-DBA6FE586B8D}"
-    email: izet.salkanovic@zzjz.ba
-    password: zzjzba123
+    email: izet.salkanovic@ceu.ba
+    password: ceuba123
     name:  Izet
     surname: Salkanović  
     user_type: 1
     municipality_id: 110322
 
  -  uid: "{2D055E7E-316B-49CF-B869-A9626CC5D490}"
-    email: aida.r.suvalic@zzjz.ba
-    password: zzjzba123
+    email: aida.r.suvalic@ceu.ba
+    password: ceuba123
     name:  Aida.R.
     surname: Šuvalić 
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{30B6BB1F-0C3C-40DB-89D0-3C8C63099A9B}"
-    email: nermina.djulovic@zzjz.ba
-    password: zzjzba123
+    email: nermina.djulovic@ceu.ba
+    password: ceuba123
     name:  Nermina
     surname: Đulović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{3266A279-A92D-4584-9A4B-5F8FC88059A2}"
-    email: mirjana.remetic@zzjz.ba
-    password: zzjzba123
+    email: mirjana.remetic@ceu.ba
+    password: ceuba123
     name:  Mirjana
     surname: Remetić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{33956985-003D-407E-86D9-D328FA413421}"
-    email: vildana.stojic@zzjz.ba
-    password: zzjzba123
+    email: vildana.stojic@ceu.ba
+    password: ceuba123
     name:  Viladan
     surname: Stojić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{33CB3001-7F3E-4A52-8D5F-B27A21794D74}"
-    email: zinaida.topcic@zzjz.ba
-    password: zzjzba123
+    email: zinaida.topcic@ceu.ba
+    password: ceuba123
     name:  Zinaida
     surname: Topčić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{38A7C1F3-1A7E-4A97-BAA8-DA4A9B375019}"
-    email: amila.bajraktarevic@zzjz.ba
-    password: zzjzba123
+    email: amila.bajraktarevic@ceu.ba
+    password: ceuba123
     name:  Amila
     surname: Bajraktarević 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{3ABDEF01-E27B-43F3-B877-EBF2D874B569}"
-    email: kenan.overdic@zzjz.ba
-    password: zzjzba123
+    email: kenan.overdic@ceu.ba
+    password: ceuba123
     name:  Kenan
     surname: Omerdić 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{3FB3780C-5E41-45E6-913A-23000AD3AE73}"
-    email: damird.terzic@zzjz.ba
-    password: zzjzba123
+    email: damird.terzic@ceu.ba
+    password: ceuba123
     name:  Damir
     surname: Terzić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{4094B0F3-BC28-4E40-85D9-0307606B1B0E}"
-    email: azra.delic@zzjz.ba
-    password: zzjzba123
+    email: azra.delic@ceu.ba
+    password: ceuba123
     name:  Azra
     surname: Delić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{42C9EEB9-CF35-4D74-A189-4F0328847AEE}"
-    email: amina.polgic@zzjz.ba
-    password: zzjzba123
+    email: amina.polgic@ceu.ba
+    password: ceuba123
     name:  Amina
     surname: Polgić  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{447B8C84-6FFA-4975-8400-B03ACB74406B}"
-    email: vuka.zirojevic@zzjz.ba
-    password: zzjzba123
+    email: vuka.zirojevic@ceu.ba
+    password: ceuba123
     name:  VUKA
     surname: ZIROJEVIĆ
     user_type: 2
     municipality_id: 120613
 
  -  uid: "{45E1A7A8-A3EE-421A-BC5E-2C769FA7927D}"
-    email: selma.nurkic@zzjz.ba
-    password: zzjzba123
+    email: selma.nurkic@ceu.ba
+    password: ceuba123
     name:  Selma
     surname: Nurkić  
     user_type: 1
     municipality_id: 110311
 
  -  uid: "{49488019-C773-410E-BD9D-A911587B5609}"
-    email: natasa.damjanac@zzjz.ba
-    password: zzjzba123
+    email: natasa.damjanac@ceu.ba
+    password: ceuba123
     name:  NATAŠA
     surname: DAMJANAC  
     user_type: 1
     municipality_id: 120610
 
  -  uid: "{4AE76E83-F3CB-4A80-BC98-AA8DD15121CB}"
-    email: senad.haskic@zzjz.ba
-    password: zzjzba123
+    email: senad.haskic@ceu.ba
+    password: ceuba123
     name:  Senad
     surname: Haskić  
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{4B366793-3E38-4EC7-8203-F98DFC2D372B}"
-    email: mustafa.sehovic@zzjz.ba
-    password: zzjzba123
+    email: mustafa.sehovic@ceu.ba
+    password: ceuba123
     name:  Mustafa
     surname: Šehović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{4BD206CD-C795-4C0F-8053-D9E567B2F798}"
-    email: ibrahim.haracic@zzjz.ba
-    password: zzjzba123
+    email: ibrahim.haracic@ceu.ba
+    password: ceuba123
     name:  Ibrahim
     surname: Haračić 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{4C0F31A6-3BE1-4B16-9AEB-7B637E113BCA}"
-    email: silvija.vukovic@zzjz.ba
-    password: zzjzba123
+    email: silvija.vukovic@ceu.ba
+    password: ceuba123
     name:  SILVIJA
     surname: VUKOVIĆ
     user_type: 2
     municipality_id: 120615
 
  -  uid: "{4F36D85F-21B5-46DB-99EF-05BA1C857524}"
-    email: mirjana.ruzic@zzjz.ba
-    password: zzjzba123
+    email: mirjana.ruzic@ceu.ba
+    password: ceuba123
     name:  MIRJANA
     surname: RUŽIĆ 
     user_type: 1
     municipality_id: 120613
 
  -  uid: "{4FD8F323-E502-402F-865D-A58074EADC71}"
-    email: enver.kubat@zzjz.ba
-    password: zzjzba123
+    email: enver.kubat@ceu.ba
+    password: ceuba123
     name:  Enver
     surname: Kubat 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{5135944F-7CEA-49E1-8DBA-C4B16DF0AF43}"
-    email: seudina.fajic@zzjz.ba
-    password: zzjzba123
+    email: seudina.fajic@ceu.ba
+    password: ceuba123
     name:  Seudina
     surname: Fajić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{51BCB3C2-FD7B-4C89-B3F6-AEA70A076083}"
-    email: jasna.sadic@zzjz.ba
-    password: zzjzba123
+    email: jasna.sadic@ceu.ba
+    password: ceuba123
     name:  Jasna
     surname: Šadić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{535EE2DA-9083-448F-81D1-3FD2A9BD586B}"
-    email: vildana.stojic@zzjz.ba
-    password: zzjzba123
+    email: vildana.stojic@ceu.ba
+    password: ceuba123
     name:  Vildana
     surname: Stojić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{53F3148F-86F0-482A-8CD4-A0C5072CE8E7}"
-    email: ornela.cabrilo@zzjz.ba
-    password: zzjzba123
+    email: ornela.cabrilo@ceu.ba
+    password: ceuba123
     name:  ORNELA
     surname: ČABRILO 
     user_type: 1
     municipality_id: 120616
 
  -  uid: "{55F56A83-05B9-45D3-AABA-31E31B5FEC99}"
-    email: savo.novokmet@zzjz.ba
-    password: zzjzba123
+    email: savo.novokmet@ceu.ba
+    password: ceuba123
     name:  Savo
     surname: Novokmet
     user_type: 1
     municipality_id:   null
 
  -  uid: "{5678BB61-A311-47ED-8090-AEE599D11CCE}"
-    email: dzemal.garagic@zzjz.ba
-    password: zzjzba123
+    email: dzemal.garagic@ceu.ba
+    password: ceuba123
     name:  Džemal
     surname: Garagić 
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{57C8A527-6B17-4BA8-9599-57C7FB771549}"
-    email: dejan.barac@zzjz.ba
-    password: zzjzba123
+    email: dejan.barac@ceu.ba
+    password: ceuba123
     name:  DEJAN
     surname: BARAČ
     user_type: 2
     municipality_id: 120610
 
  -  uid: "{58B7949D-DDB1-41BB-B5B4-6083716AFCAF}"
-    email: vesna.vilusic@zzjz.ba
-    password: zzjzba123
+    email: vesna.vilusic@ceu.ba
+    password: ceuba123
     name:  Vesna
     surname: Vilušić
     user_type: 1
     municipality_id: null
 
  -  uid: "{59ADEE60-F491-497D-B7B3-6541120D924C}"
-    email: sanela.kovacevic@zzjz.ba
-    password: zzjzba123
+    email: sanela.kovacevic@ceu.ba
+    password: ceuba123
     name:  Sanela
     surname: Kovačević 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{5B84B105-5468-4677-B04C-F19898436A5E}"
-    email: jasna.alic@zzjz.ba
-    password: zzjzba123
+    email: jasna.alic@ceu.ba
+    password: ceuba123
     name:  Jasna
     surname: Alić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{5BFDF1E2-3214-4E54-98B6-7D3CFB4BB3BE}"
-    email: muahmed.mehmedinovic@zzjz.ba
-    password: zzjzba123
+    email: muahmed.mehmedinovic@ceu.ba
+    password: ceuba123
     name:  Muahmed
     surname: Mehmedinović  
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{5CD4906F-4954-4C3D-803B-BF1BD167BF0F}"
-    email: vera.govedarica@zzjz.ba
-    password: zzjzba123
+    email: vera.govedarica@ceu.ba
+    password: ceuba123
     name:  VERA
     surname: GOVEDARICA  
     user_type: 1
     municipality_id: 120613
 
  -  uid: "{5DB0A904-6116-452B-83A3-DA946796B49A}"
-    email: marko.bakmaz@zzjz.ba
-    password: zzjzba123
+    email: marko.bakmaz@ceu.ba
+    password: ceuba123
     name:  MARKO
     surname: BAKMAZ  
     user_type: 1
     municipality_id: 120610
 
  -  uid: "{65BD651A-641E-4C36-923E-4945B2EE87C9}"
-    email: zinaida.topcic@zzjz.ba
-    password: zzjzba123
+    email: zinaida.topcic@ceu.ba
+    password: ceuba123
     name:  Zinaida
     surname: Topčić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{66E318CA-BBB8-4108-8D41-2AAE9F389DD1}"
-    email: sevala.palos@zzjz.ba
-    password: zzjzba123
+    email: sevala.palos@ceu.ba
+    password: ceuba123
     name:  Ševala
     surname: Paloš 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{68BA19BF-494C-43CD-9E82-C2887E7AE475}"
-    email: meliha.divkovic-nurkic@zzjz.ba
-    password: zzjzba123
+    email: meliha.divkovic-nurkic@ceu.ba
+    password: ceuba123
     name:  Meliha
     surname: Divković-Nurikić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{692DC17E-9CD9-458C-BA9C-247E55A674AC}"
-    email: azra.feukic@zzjz.ba
-    password: zzjzba123
+    email: azra.feukic@ceu.ba
+    password: ceuba123
     name:  Azra
     surname: Feukić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{6ADACC37-AC7A-4A33-897C-44ECD050E26B}"
-    email: amirus.klokic@zzjz.ba
-    password: zzjzba123
+    email: amirus.klokic@ceu.ba
+    password: ceuba123
     name:  Amiruš
     surname: Klokić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{6EF2A82B-CDA8-4908-940D-F7877DDD9371}"
-    email: elida.turkusic@zzjz.ba
-    password: zzjzba123
+    email: elida.turkusic@ceu.ba
+    password: ceuba123
     name:  Elida
     surname: Turkušić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{711EEF4F-65AF-49E9-B547-3E8E540FB92F}"
-    email: humera.porobic-jahic@zzjz.ba
-    password: zzjzba123
+    email: humera.porobic-jahic@ceu.ba
+    password: ceuba123
     name:  Humera
     surname: Porobić-Jahić 
     user_type: 1
     municipality_id: 110317
 
  -  uid: "{72C97BD0-0EA5-47FA-BAF3-3D519AC0810D}"
-    email: amerlina.mehicic@zzjz.ba
-    password: zzjzba123
+    email: amerlina.mehicic@ceu.ba
+    password: ceuba123
     name:  Amerlina
     surname: Mehičić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{7311E249-816A-4A01-9E36-9715CE6C9071}"
-    email: nermin.jukan@zzjz.ba
-    password: zzjzba123
+    email: nermin.jukan@ceu.ba
+    password: ceuba123
     name:  Nermin
     surname: Jukan 
     user_type: 1
     municipality_id: 110319
 
  -  uid: "{744B0046-186E-479F-BC13-347E15F1B1B6}"
-    email: jasminka.alibegovic@zzjz.ba
-    password: zzjzba123
+    email: jasminka.alibegovic@ceu.ba
+    password: ceuba123
     name:  Jasminka
     surname: Alibegović  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{7AECDBA2-8EAD-43EE-AAD8-6B633F870D4B}"
-    email: mirza.pestalic@zzjz.ba
-    password: zzjzba123
+    email: mirza.pestalic@ceu.ba
+    password: ceuba123
     name:  Mirza
     surname: Peštalić  
     user_type: 1
     municipality_id: 110315
 
  -  uid: "{7C5CFC0F-142F-4D41-BD52-0EC66D330F4F}"
-    email: renata.govedarica@zzjz.ba
-    password: zzjzba123
+    email: renata.govedarica@ceu.ba
+    password: ceuba123
     name:  RENATA
     surname: GOVEDARICA  
     user_type: 1
     municipality_id: 120611
 
  -  uid: "{7C5F969F-6C12-49DF-BCC7-CF53F1B06720}"
-    email: mirnesa.muminovic@zzjz.ba
-    password: zzjzba123
+    email: mirnesa.muminovic@ceu.ba
+    password: ceuba123
     name:  Mirnesa
     surname: Muminović 
     user_type: 1
     municipality_id: 110322
 
  -  uid: "{7D8C16A4-EA8C-4798-BB1E-8881B7867D45}"
-    email: indira.salihovic.@zzjz.ba
-    password: zzjzba123
+    email: indira.salihovic.@ceu.ba
+    password: ceuba123
     name:  Indira
     surname: Salihović 
     user_type: 1
     municipality_id: 110311
 
  -  uid: "{7E02A974-A6E6-471F-9BE6-AD2F233A0981}"
-    email: almir.mujic@zzjz.ba
-    password: zzjzba123
+    email: almir.mujic@ceu.ba
+    password: ceuba123
     name:  Almir
     surname: Mujić 
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{7FE70CE9-918E-42D0-92D8-9B4D7BB71376}"
-    email: jasmina.selimovic@zzjz.ba
-    password: zzjzba123
+    email: jasmina.selimovic@ceu.ba
+    password: ceuba123
     name:  Jasmina
     surname: Selimović 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{80EC8B32-316C-4F25-9532-443C43257C92}"
-    email: sejan.omeragic@zzjz.ba
-    password: zzjzba123
+    email: sejan.omeragic@ceu.ba
+    password: ceuba123
     name: Sejan
     surname: Omeragić  
     user_type: 1
     municipality_id: 110315
 
  -  uid: "{815BBCB9-A376-43FD-8920-E5315787CBC0}"
-    email: humera.porovic-jahic@zzjz.ba
-    password: zzjzba123
+    email: humera.porovic-jahic@ceu.ba
+    password: ceuba123
     name:  Humera
     surname: Porović-Jahić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{85434A85-5A6C-4E66-9867-A1186B834B55}"
-    email: mladen.popovic@zzjz.ba
-    password: zzjzba123
+    email: mladen.popovic@ceu.ba
+    password: ceuba123
     name:  MLADEN
     surname: POPOVIĆ 
     user_type: 1
     municipality_id: 120610
 
  -  uid: "{855C84F5-602E-4449-A2E4-ED7CF0D1E6F2}"
-    email: sadedin.alsadi@zzjz.ba
-    password: zzjzba123
+    email: sadedin.alsadi@ceu.ba
+    password: ceuba123
     name:  Sadedin
     surname: Al Sadi 
     user_type: 1
     municipality_id: 110316
 
  -  uid: "{89633887-B371-49FA-BB08-804CB5069B92}"
-    email: munevera.osmic-omerdic@zzjz.ba
-    password: zzjzba123
+    email: munevera.osmic-omerdic@ceu.ba
+    password: ceuba123
     name:  Munevera
     surname: Osmić-Omerdić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{8FDF07C0-DF3B-44EA-9F76-F0387D2C7BC5}"
-    email: jasmina.sijercic@zzjz.ba
-    password: zzjzba123
+    email: jasmina.sijercic@ceu.ba
+    password: ceuba123
     name:  Jasmina
     surname: Sijerčić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{901D43AA-DC11-4CCB-9A85-745C8F7E363F}"
-    email: sadeta.terzic@zzjz.ba
-    password: zzjzba123
+    email: sadeta.terzic@ceu.ba
+    password: ceuba123
     name:  Sadeta
     surname: Terzić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{912E7929-6BE1-4FE6-B401-83E5EBDAF67D}"
-    email: izet.salkonovic@zzjz.ba
-    password: zzjzba123
+    email: izet.salkonovic@ceu.ba
+    password: ceuba123
     name:  Izet
     surname: Salkanović  
     user_type: 1
     municipality_id: 110322
 
  -  uid: "{92C2E2D4-C415-4005-9EE9-96C100B86D3F}"
-    email: drazenka.pasalic-mircic@zzjz.ba
-    password: zzjzba123
+    email: drazenka.pasalic-mircic@ceu.ba
+    password: ceuba123
     name:  Draženka
     surname: Pašalić-Mirčić  
     user_type: 1
     municipality_id: 110417
 
  -  uid: "{932C1B7A-6AC1-42D8-B247-ACBD5D221CDF}"
-    email: nermin.imamovic-zaimovic@zzjz.ba
-    password: zzjzba123
+    email: nermin.imamovic-zaimovic@ceu.ba
+    password: ceuba123
     name:  Nermin
     surname: Imamović-Zaimović 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{9453F328-DAD9-4680-82BD-A937BE34E0ED}"
-    email: sabina.suljkanovic@zzjz.ba
-    password: zzjzba123
+    email: sabina.suljkanovic@ceu.ba
+    password: ceuba123
     name:  Sabina
     surname: Suljkanović 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{96445347-857F-4A65-9B90-FF4F0FF79DFD}"
-    email: jovan.petkovic@zzjz.ba
-    password: zzjzba123
+    email: jovan.petkovic@ceu.ba
+    password: ceuba123
     name:  Jovan
     surname: Petković  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{9765FD33-6A6D-4A6A-BBD6-24C1433FE227}"
-    email: muhamed.horozic@zzjz.ba
-    password: zzjzba123
+    email: muhamed.horozic@ceu.ba
+    password: ceuba123
     name:  Muhamed
     surname: Horozić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{97A753BB-DC91-4E23-A8CB-B3B7D876D667}"
-    email: amira.kurtovic@zzjz.ba
-    password: zzjzba123
+    email: amira.kurtovic@ceu.ba
+    password: ceuba123
     name:  Amira
     surname: Kurtović  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{99C3151F-DBD9-4D24-82D0-44A28A7C9CFD}"
-    email: ifeta.salihovic@zzjz.ba
-    password: zzjzba123
+    email: ifeta.salihovic@ceu.ba
+    password: ceuba123
     name:  Ifeta
     surname: Salihović 
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{99FC183C-E061-4721-B7E2-3342CBBD11C3}"
-    email: muhamed.mehmedinovic@zzjz.ba
-    password: zzjzba123
+    email: muhamed.mehmedinovic@ceu.ba
+    password: ceuba123
     name:  Muhamed
     surname: Mehmedinović  
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{9AD2FC3E-D68B-4E34-9828-0011DB3B3103}"
-    email: amira.polic@zzjz.ba
-    password: zzjzba123
+    email: amira.polic@ceu.ba
+    password: ceuba123
     name:  Amira
     surname: Polić 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{9C331104-0F6C-4E83-92D2-7CDEBAE43F5E}"
-    email: samira.srabovic@zzjz.ba
-    password: zzjzba123
+    email: samira.srabovic@ceu.ba
+    password: ceuba123
     name:  Samira
     surname: Srabović  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{9D771724-0E87-401D-A72A-525A27066C88}"
-    email: senaida.blasanovic@zzjz.ba
-    password: zzjzba123
+    email: senaida.blasanovic@ceu.ba
+    password: ceuba123
     name:  Senaida
     surname: Biašanović  
     user_type: 1
     municipality_id: 110315
 
  -  uid: "{9DBC8854-D4A4-4651-86A8-71EA3039A032}"
-    email: petra.klokic@zzjz.ba
-    password: zzjzba123
+    email: petra.klokic@ceu.ba
+    password: ceuba123
     name:  Petra
     surname: Klokić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{9E48B266-986F-47BD-9C0F-4FC0C0A781E1}"
-    email: mirela.hodzic@zzjz.ba
-    password: zzjzba123
+    email: mirela.hodzic@ceu.ba
+    password: ceuba123
     name:  Mirela
     surname: Hodžić  
     user_type: 1
     municipality_id: 110319
 
  -  uid: "{A0F42681-8A5E-428D-879C-663370B13397}"
-    email: nihada.mehanovic@zzjz.ba
-    password: zzjzba123
+    email: nihada.mehanovic@ceu.ba
+    password: ceuba123
     name:  Nihada
     surname: Mehanović 
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{A1F99286-5758-4AA5-A0DD-982686AD10FC}"
-    email: lela.milivojevic@zzjz.ba
-    password: zzjzba123
+    email: lela.milivojevic@ceu.ba
+    password: ceuba123
     name:  Lela
     surname: Milivojević 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{A20F7020-CC72-4A19-BFA4-1A29159664C3}"
-    email: admer.alatic@zzjz.ba
-    password: zzjzba123
+    email: admer.alatic@ceu.ba
+    password: ceuba123
     name:  Admer
     surname: Alatić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{A34512CE-F704-4785-99D3-78CA1D37D22C}"
-    email: enes.halilovic@zzjz.ba
-    password: zzjzba123
+    email: enes.halilovic@ceu.ba
+    password: ceuba123
     name:  Enes
     surname: Halilović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{AAA87C0C-50BC-4D85-B73D-E1C3D91ECFBB}"
-    email: vanja.milosevic@zzjz.ba
-    password: zzjzba123
+    email: vanja.milosevic@ceu.ba
+    password: ceuba123
     name:  VANJA
     surname: MILOŠEVIĆ 
     user_type: 1
     municipality_id: 120610
 
  -  uid: "{ACA6836E-801B-4C29-9418-A8FD7900AD78}"
-    email: olivera.batic-mujanovic@zzjz.ba
-    password: zzjzba123
+    email: olivera.batic-mujanovic@ceu.ba
+    password: ceuba123
     name:  Olivera
     surname: Batić-Mujanović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{AD1969A2-043D-431C-B000-CEA933EE7DCF}"
-    email: halid.husanovic@zzjz.ba
-    password: zzjzba123
+    email: halid.husanovic@ceu.ba
+    password: ceuba123
     name:  Halid
     surname: Husanović 
     user_type: 1
     municipality_id: 110313
 
  -  uid: "{B1DAAD1C-5016-440E-A30A-2ABB1D76DA8B}"
-    email: sabina.zukic@zzjz.ba
-    password: zzjzba123
+    email: sabina.zukic@ceu.ba
+    password: ceuba123
     name:  Sabina
     surname: Zukić 
     user_type: 1
     municipality_id: 110311
 
  -  uid: "{B1F89854-2A99-4FB0-8B26-F29A76422F25}"
-    email: esref.haracinovic@zzjz.ba
-    password: zzjzba123
+    email: esref.haracinovic@ceu.ba
+    password: ceuba123
     name:  Ešref
     surname: Harčinović  
     user_type: 1
     municipality_id: 110320
 
  -  uid: "{B2245B93-753F-4055-A5E9-0A033B577E2C}"
-    email: fuad.memic@zzjz.ba
-    password: zzjzba123
+    email: fuad.memic@ceu.ba
+    password: ceuba123
     name:  Fuad
     surname: Memić 
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{B2788485-682E-4632-A185-4AC948407790}"
-    email: izudin.selimbasic@zzjz.ba
-    password: zzjzba123
+    email: izudin.selimbasic@ceu.ba
+    password: ceuba123
     name:  Izudin
     surname: Selimbašić  
     user_type: 1
     municipality_id: 110317
 
  -  uid: "{B2988CF9-3A71-4251-9BE6-C9D764FEC253}"
-    email: dzenana.ovcina@zzjz.ba
-    password: zzjzba123
+    email: dzenana.ovcina@ceu.ba
+    password: ceuba123
     name:  Dženana
     surname: Ovčina  
     user_type: 1
     municipality_id: 110322
 
  -  uid: "{B3BB89F3-E1BF-406E-BB17-A17DA6BF622D}"
-    email: lejla.delalic@zzjz.ba
-    password: zzjzba123
+    email: lejla.delalic@ceu.ba
+    password: ceuba123
     name:  Lejla
     surname: Delalić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{B44EE4E3-3977-4E66-BD39-D1CE4C3D8C96}"
-    email: enver.avdic@zzjz.ba
-    password: zzjzba123
+    email: enver.avdic@ceu.ba
+    password: ceuba123
     name:  Enver
     surname: Avdić 
     user_type: 1
     municipality_id: 110316
 
  -  uid: "{B6CA51AF-D441-4C96-8B74-E75641DA6F90}"
-    email: samka.subasic-hodzic@zzjz.ba
-    password: zzjzba123
+    email: samka.subasic-hodzic@ceu.ba
+    password: ceuba123
     name:  Samka
     surname: Subašić-Hadžić  
     user_type: 1
     municipality_id: 110317
 
  -  uid: "{B8D76DE4-6C67-426E-BA07-5DD28F944190}"
-    email: muhamed.osmanovic@zzjz.ba
-    password: zzjzba123
+    email: muhamed.osmanovic@ceu.ba
+    password: ceuba123
     name:  Muhamed
     surname: Osmanović 
     user_type: 1
     municipality_id: 110316
 
  -  uid: "{B9A2221C-C0D0-4EED-B92D-292D5AFB2621}"
-    email: advija.kovaceic@zzjz.ba
-    password: zzjzba123
+    email: advija.kovaceic@ceu.ba
+    password: ceuba123
     name:  Advija
     surname: Kovačeić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{BA374099-B1B9-4B44-AC63-4A16CC82B4A7}"
-    email: dzemila.delalic@zzjz.ba
-    password: zzjzba123
+    email: dzemila.delalic@ceu.ba
+    password: ceuba123
     name:  Džemila
     surname: Delalić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{BB09BC29-763C-4BD8-9CD0-1CF73A24667B}"
-    email: mirsada.crnogorcevic-pamukovic@zzjz.ba
-    password: zzjzba123
+    email: mirsada.crnogorcevic-pamukovic@ceu.ba
+    password: ceuba123
     name:  Mirsada
     surname: Crnogorčević-Pamuković  
     user_type: 1
     municipality_id: 110322
 
  -  uid: "{BF15FF8C-4CDB-479E-AE28-D5D73BF355EF}"
-    email: zehra.velic-mehmedovic@zzjz.ba
-    password: zzjzba123
+    email: zehra.velic-mehmedovic@ceu.ba
+    password: ceuba123
     name:  Zehra
     surname: Velić-Mehmedović  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{C0D8AF80-BA33-423E-9400-517085F0A68B}"
-    email: azijada.sinanovic@zzjz.ba
-    password: zzjzba123
+    email: azijada.sinanovic@ceu.ba
+    password: ceuba123
     name:  Azijada
     surname: Sinanović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{C3889578-72C1-422E-9550-16D34110958D}"
-    email: zijad.merdanovic@zzjz.ba
-    password: zzjzba123
+    email: zijad.merdanovic@ceu.ba
+    password: ceuba123
     name:  Zijad
     surname: Merdanović  
     user_type: 1
     municipality_id: 110313
 
  -  uid: "{C55E20D9-1FD4-44C6-8EAA-3C9CAEE505C5}"
-    email: abdulah.husanovic@zzjz.ba
-    password: zzjzba123
+    email: abdulah.husanovic@ceu.ba
+    password: ceuba123
     name:  Abdulah
     surname: Hasanović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{C76A13DB-39DD-499C-830C-864DD4DB84CA}"
-    email: lejla.poljic@zzjz.ba
-    password: zzjzba123
+    email: lejla.poljic@ceu.ba
+    password: ceuba123
     name:  Lejla
     surname: Poljić  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{C831C31C-4D15-4E96-90D7-2EDA073FB092}"
-    email: milijana.kundacina@zzjz.ba
-    password: zzjzba123
+    email: milijana.kundacina@ceu.ba
+    password: ceuba123
     name:  MILIJANA
     surname: KUNDAČINA
     user_type: 2
     municipality_id: 120611
 
  -  uid: "{C968A2C1-0195-46E1-927C-F717A38C8BFA}"
-    email: sana.olic-sabanovic@zzjz.ba
-    password: zzjzba123
+    email: sana.olic-sabanovic@ceu.ba
+    password: ceuba123
     name:  Sana
     surname: Olić-Šabanović  
     user_type: 1
     municipality_id: 110317
 
  -  uid: "{CE2E983D-FFD7-4724-A6B1-02EC8C5F2FFF}"
-    email: zana.djulovic@zzjz.ba
-    password: zzjzba123
+    email: zana.djulovic@ceu.ba
+    password: ceuba123
     name:  Zana
     surname: Đulović 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{CE48DB39-A03B-4B24-A489-8EC22EE84BFD}"
-    email: sanadina.kameric@zzjz.ba
-    password: zzjzba123
+    email: sanadina.kameric@ceu.ba
+    password: ceuba123
     name:  Sanadina
     surname: Kamerić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{D1133307-6A29-4FE3-9D0C-D47085095B0C}"
-    email: menedin.causi@zzjz.ba
-    password: zzjzba123
+    email: menedin.causi@ceu.ba
+    password: ceuba123
     name:  Menedin
     surname: Čauši 
     user_type: 1
     municipality_id: 110313
 
  -  uid: "{D3CF2653-E18B-44FD-B6C4-54B4F803CDC8}"
-    email: amila.horozic@zzjz.ba
-    password: zzjzba123
+    email: amila.horozic@ceu.ba
+    password: ceuba123
     name: Amila
     surname: Horozić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{D4423428-A864-41E9-96FB-78E4F30FB740}"
-    email: murisa.ustavdic@zzjz.ba
-    password: zzjzba123
+    email: murisa.ustavdic@ceu.ba
+    password: ceuba123
     name:  Murisa
     surname: Ustavdić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{D7E8D44C-460F-49ED-AC52-25DE381FD7CF}"
-    email: ljiljana.greda@zzjz.ba
-    password: zzjzba123
+    email: ljiljana.greda@ceu.ba
+    password: ceuba123
     name: LJILJANA
     surname: GREDA
     user_type: 2
     municipality_id: 120612
 
  -  uid: "{DC9A7BC6-60A3-474C-A686-3C3EA9D1C4A3}"
-    email: jasminka.petrovic@zzjz.ba
-    password: zzjzba123
+    email: jasminka.petrovic@ceu.ba
+    password: ceuba123
     name:  Jasminka
     surname: Petrović  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{DE5E9C80-81F0-4C99-827A-A481358935DD}"
-    email: mirza.mulaosmanovic@zzjz.ba
-    password: zzjzba123
+    email: mirza.mulaosmanovic@ceu.ba
+    password: ceuba123
     name:  Mirza
     surname: Mulaosmanović 
     user_type: 1
     municipality_id: 110313
 
  -  uid: "{E19CCF28-BCEE-497F-AE68-34DE2AC8AEB3}"
-    email: samira.begic@zzjz.ba
-    password: zzjzba123
+    email: samira.begic@ceu.ba
+    password: ceuba123
     name:  Samira
     surname: Begić 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{E22A063F-4242-42E7-9094-F6C371CE3596}"
-    email: alma.nadarevic@zzjz.ba
-    password: zzjzba123
+    email: alma.nadarevic@ceu.ba
+    password: ceuba123
     name:  Alma
     surname: Nadarević 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{E3623B3C-E0AE-4AD2-AD8B-B9E10F5F1A41}"
-    email: senada.selmanovic@zzjz.ba
-    password: zzjzba123
+    email: senada.selmanovic@ceu.ba
+    password: ceuba123
     name:  Senada
     surname: Selmanović  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{E6578CA2-783C-4B7A-836E-698DAFB765AD}"
-    email: lejla.halilovic@zzjz.ba
-    password: zzjzba123
+    email: lejla.halilovic@ceu.ba
+    password: ceuba123
     name:  Lejla
     surname: Halilović
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{E68D9E51-C116-42AD-8D60-027E0C6BB1F5}"
-    email: tatjana.tatara@zzjz.ba
-    password: zzjzba123
+    email: tatjana.tatara@ceu.ba
+    password: ceuba123
     name:  Tatjana
     surname: Tatara  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{E7091C04-2EC7-4DF8-83E3-21D8B251B0C2}"
-    email: zdravko.bajric@zzjz.ba
-    password: zzjzba123
+    email: zdravko.bajric@ceu.ba
+    password: ceuba123
     name:  Zdravka
     surname: Bajrić  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{E8FEED04-10C4-40EA-AA64-26731F8ADDC2}"
-    email: denisa.omerdic-mujic@zzjz.ba
-    password: zzjzba123
+    email: denisa.omerdic-mujic@ceu.ba
+    password: ceuba123
     name:  Denisa 
     surname: Omerdić-Mujić 
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{EC5F367C-CEA3-4C55-9FEC-7A1B49F6EE9C}"
-    email: sijad.skripic@zzjz.ba
-    password: zzjzba123
+    email: sijad.skripic@ceu.ba
+    password: ceuba123
     name:  Sijad
     surname: Škripić
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{EFA4F292-66E6-4513-ACD2-4FD5DC7F60F8}"
-    email: samir.jusupovic@zzjz.ba
-    password: zzjzba123
+    email: samir.jusupovic@ceu.ba
+    password: ceuba123
     name:  Samir
     surname: Jusupović 
     user_type: 1
     municipality_id: 110317
 
  -  uid: "{F175ACE8-27E4-4557-A1C0-9F4EFD2A2A70}"
-    email: albina.softic@zzjz.ba
-    password: zzjzba123
+    email: albina.softic@ceu.ba
+    password: ceuba123
     name:  Albina
     surname: Softić  
     user_type: 1
     municipality_id: 110314
 
  -  uid: "{F1956300-98E2-4E78-B55C-A81FEF765763}"
-    email: edin.jusufija@zzjz.ba
-    password: zzjzba123
+    email: edin.jusufija@ceu.ba
+    password: ceuba123
     name:  Edin
     surname: Jusufija  
     user_type: 1
     municipality_id: 110312
 
  -  uid: "{F1C84372-7887-4A28-9F58-C332203EFC32}"
-    email: samira.herenda@zzjz.ba
-    password: zzjzba123
+    email: samira.herenda@ceu.ba
+    password: ceuba123
     name:  Samira
     surname: Herenda 
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{F23E64DD-67CC-49A7-9D33-E6C1A40AA585}"
-    email: zumra.hodzic@zzjz.ba
-    password: zzjzba123
+    email: zumra.hodzic@ceu.ba
+    password: ceuba123
     name:  Zumra
     surname: Hodžić  
     user_type: 1
     municipality_id: 110318
 
  -  uid: "{F59CF186-77BA-4839-BA75-5A5B4F6D4908}"
-    email: hajrudin.haracic@zzjz.ba
-    password: zzjzba123
+    email: hajrudin.haracic@ceu.ba
+    password: ceuba123
     name:  Hajrudin
     surname: Haračić 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{F76CE27C-C17A-4DA3-8B37-73565F70A04A}"
-    email: jelena.firesku@zzjz.ba
-    password: zzjzba123
+    email: jelena.firesku@ceu.ba
+    password: ceuba123
     name:  JELENA
     surname: FIRESKU
     user_type: 1
     municipality_id:  null
 
  -  uid: "{F8DDC06B-32DA-4662-809A-56953DC4F3A2}"
-    email: lejla.milivojevic@zzjz.ba
-    password: zzjzba123
+    email: lejla.milivojevic@ceu.ba
+    password: ceuba123
     name:  Lejla
     surname: Milivojević 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{FC48A52E-8A43-41DE-8B00-83EDD55D437E}"
-    email: mirela.mujkic@zzjz.ba
-    password: zzjzba123
+    email: mirela.mujkic@ceu.ba
+    password: ceuba123
     name:  Mirela
     surname: Mujkić  
     user_type: 1
     municipality_id: 110310
 
  -  uid: "{FE78CD14-6CAC-4D46-BC8B-BC8AAD75153C}"
-    email: sadija.bubic@zzjz.ba
-    password: zzjzba123
+    email: sadija.bubic@ceu.ba
+    password: ceuba123
     name:  Sadija
     surname: Bubić 
     user_type: 1
     municipality_id: 110321
 
  -  uid: "{FEED1EF3-6E98-4D3D-BB18-BBEE1EBA5C4A}"
-    email: ratko.marinkovic@zzjz.ba
-    password: zzjzba123
+    email: ratko.marinkovic@ceu.ba
+    password: ceuba123
     name:  RATKO
     surname: MARINKOVIĆ  
     user_type: 1
@@ -1979,8 +1979,8 @@ icds:
     disease_bsn: "Vakcino-preventabilna oboljenja" 
     int: 0
     both: 1
-    code: 6
- -  disease_bsn: "Antimikrobna rezistencija i bolničke infekcije"
+ -  code: 6
+    disease_bsn: "Antimikrobna rezistencija i bolničke infekcije"
     int: 0
     both: null
  -  code: 7

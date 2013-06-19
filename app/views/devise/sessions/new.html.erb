@@ -1,5 +1,4 @@
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-signin' }) do |f| %>
-  <img src="/assets/logo.png" alt="Logo"/>
   <h3 class="form-signin-heading">Prijavite se</h3>
   <%= f.email_field :email, :autofocus => true, :placeholder => 'E-mail', :class => 'input-block-level' %>
 
@@ -12,6 +11,5 @@
 
   <%= f.submit "Prijava", :class =>'btn btn-large btn-primary' %>
 
-  <!-- <%= render "devise/shared/links" %> -->
 <% end %>
 

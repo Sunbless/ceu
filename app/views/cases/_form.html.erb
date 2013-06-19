@@ -29,16 +29,11 @@
       </div>
     </div>
     <div class="control-group">
-      <%= f.label :user_id, "Doktor:", :class=>'control-label'  %>
-      <div class="controls">
-        <%= f.collection_select :user_id, @doctors, :id, :full_name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
-        <span class="help"><a href="#" class="openModal" data-modal="#newFakeUser">Novi doktor</a></span>
-      </div>
-    </div>
-    <div class="control-group">
       <%= f.label :protocol, "Protokol", :class=>'control-label'  %>
       <div class="controls"><%= f.text_field :protocol, :class => 'input-xlarge'  %></div>
     </div>
+    
+    
   </div>
   <div class="pull-right span6" style="margin:-2px">
     <div class="control-group form-horizontal">
@@ -69,19 +64,27 @@
           <%= f.collection_select :vaccin, @case.vaccins, :first, :last, {:prompt => false}, :class => 'input-xlarge'  %>
         </div>
       </div>
-      <div class="control-group">
-        <%= f.label :comment, "Komentar:", :class=>'control-label'  %>
-        <div class="controls"><%= f.text_area :comment, :style => "width:450px !important;height:100px!important;" %></div>
-      </div>
+      
   </div>
 </div>
 
 <div class="row form-horizontal">
   <div class="span12">
+    <div class="control-group">
+        <%= f.label :comment, "Komentar:", :class=>'control-label'  %>
+        <div class="controls"><%= f.text_area :comment, :style2 => "width:450px !important;height:100px!important;" %></div>
+      </div>
       <div class="control-group">
+        <!--
         <%= f.label :dg_syndrom, "Dijagnoza klinička", :class=>'control-label'  %>
         <div class="controls"><%= f.text_area :dg_syndrom %></div>
+        -->
+        <%= f.label :icd_id, "Dijagnoza klinička", :class=>'control-label'  %>
+        <div class="controls">
+        <%= f.collection_select :icd_id, @icds, :id, :name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
+      </div>
+
       <div class="control-group">
         <%= f.label :date_of_dg, "Datum dijagnoze", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_of_dg, :class => 'datepicker input-xlarge'  %></div>
@@ -105,12 +108,12 @@
         <div class="controls"><%= f.text_field :patient_surname, :class => 'input-xlarge'  %></div>
       </div>
       <div class="control-group">
-        <%= f.label :age, "Starost", :class=>'control-label'  %>
-        <div class="controls"><%= f.number_field :age, :class=>'input-mini' %></div>
-      </div>
-      <div class="control-group">
         <%= f.label :date_of_birth, "Datum rođenja", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_of_birth, :class => 'datepicker input-xlarge' %></div>
+      </div>
+      <div class="control-group">
+        <%= f.label :age, "Dob", :class=>'control-label'  %>
+        <div class="controls"><%= f.number_field :age, :class=>'input-mini' %></div>
       </div>
       <div class="control-group">
         <%= f.label :date_death, "Datum smrti", :class=>'control-label'  %>
@@ -126,7 +129,16 @@
         <%= f.label :jmbg, "JMBG:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :jmbg, :class => 'input-xlarge' %></div>
       </div>
-      <div class="actions">
+
+      <div class="control-group">
+        <%= f.label :user_id, "Doktor:", :class=>'control-label'  %>
+        <div class="controls">
+          <%= f.collection_select :user_id, @doctors, :id, :full_name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          <span class="help"><a href="#" class="openModal" data-modal="#newFakeUser">Novi doktor</a></span>
+        </div>
+      </div>
+
+      <div class="form-actions">
         <%= f.submit "Sačuvaj", :class => "btn btn-primary" %>
       </div>
     </div>
@@ -151,6 +163,7 @@
       <label class="control-label" for="email">E-mail</label>
       <div class="controls"><input class="input-xlarge" id="demail" name="email" size="30" type="text"></div>
     </div>
+
   </div>
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal">Zatvori</a>
