@@ -1,0 +1,27 @@
+<h3>Izvještaji:</h3>
+<div class="row">
+  <div class="span12">
+    <%= form_tag("/reports", :method => "POST", :class=> "form-horizontal") do %>
+      <div class="control-group">
+        <%= label "entity", 'Entitet:', :class=>'control-label'  %>
+        <div class="controls">
+          <%= collection_select "entity","", @entities, "id", "description", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+        </div>
+      </div>
+      <div class="control-group district">
+        <%= label "district", 'Kanton/regija:', :class=>'control-label'  %>
+        <div class="controls">
+          <%= collection_select "district","fbih", @fbih, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          <%= collection_select "district","rs", @rs, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label "week", 'Sedmica:', :class=>'control-label'  %>
+        <div class="controls">
+          <input type="number" name="week" value=""/>
+        </div>
+      </div>
+      <input type="submit" name="submit" value="Napravi izvještaj" class="btn btn-primary"/>
+    <% end %>
+  </div>
+</div>
