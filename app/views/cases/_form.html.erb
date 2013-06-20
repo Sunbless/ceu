@@ -75,52 +75,48 @@
         <div class="controls"><%= f.text_area :comment, :style2 => "width:450px !important;height:100px!important;" %></div>
       </div>
       <div class="control-group">
-        <!--
-        <%= f.label :dg_syndrom, "Dijagnoza klinička", :class=>'control-label'  %>
-        <div class="controls"><%= f.text_area :dg_syndrom %></div>
-        -->
-        <%= f.label :icd_id, "Dijagnoza klinička", :class=>'control-label'  %>
+        <%= f.label :icd_id, "Dijagnoza klinička:", :class=>'control-label'  %>
         <div class="controls">
         <%= f.collection_select :icd_id, @icds, :id, :name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
       </div>
 
       <div class="control-group">
-        <%= f.label :date_of_dg, "Datum dijagnoze", :class=>'control-label'  %>
+        <%= f.label :date_of_dg, "Datum dijagnoze:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_of_dg, :class => 'datepicker input-xlarge'  %></div>
       </div>
       
       <div class="control-group">
-        <%= f.label :date_report, "Datum izvještaja", :class=>'control-label'  %>
+        <%= f.label :date_report, "Datum izvještaja:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_report, :class => 'datepicker input-xlarge'  %></div>
       </div>
       <div class="control-group">
-        <%= f.label :date_entry, "Datum unosa", :class=>'control-label'  %>
+        <%= f.label :date_entry, "Datum unosa:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_entry, :class => 'datepicker input-xlarge'  %></div>
       </div>
       
       <div class="control-group">
-        <%= f.label :patient_name, "Ime pacijenta", :class=>'control-label'  %>
+        <%= f.label :patient_name, "Ime pacijenta:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :patient_name, :class => 'input-xlarge'  %></div>
       </div>
       <div class="control-group">
-        <%= f.label :patient_surname, "Prezime pacijenta", :class=>'control-label'  %>
+        <%= f.label :patient_surname, "Prezime pacijenta:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :patient_surname, :class => 'input-xlarge'  %></div>
       </div>
       <div class="control-group">
-        <%= f.label :date_of_birth, "Datum rođenja", :class=>'control-label'  %>
+        <%= f.label :date_of_birth, "Datum rođenja:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_of_birth, :class => 'datepicker input-xlarge' %></div>
       </div>
       <div class="control-group">
-        <%= f.label :age, "Dob", :class=>'control-label'  %>
+        <%= f.label :age, "Dob:", :class=>'control-label'  %>
         <div class="controls"><%= f.number_field :age, :class=>'input-mini' %></div>
       </div>
       <div class="control-group">
-        <%= f.label :date_death, "Datum smrti", :class=>'control-label'  %>
+        <%= f.label :date_death, "Datum smrti:", :class=>'control-label'  %>
         <div class="controls"><%= f.text_field :date_death, :class => 'datepicker input-xlarge' %></div>
       </div>
       <div class="control-group">
-        <%= f.label :sex, "Spol", :class=>'control-label'  %>
+        <%= f.label :sex, "Spol:", :class=>'control-label'  %>
         <div class="controls">
           <%= f.collection_select :sex, @case.sex_choice, :first, :last, {:prompt => false}, :class => 'input-xlarge'  %>
         </div>
@@ -178,27 +174,27 @@
   </div>
   <div class="modal-body form-horizontal">
     <div class="control-group">
-      <label class="control-label" for="center_id">Institucija</label>
+      <label class="control-label" for="center_id">Institucija:</label>
       <div class="controls">
         <%= collection_select "center_id","", @centers, :id, :name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="hcode">Kod</label>
+      <label class="control-label" for="hcode">Šifra:</label>
       <div class="controls"><input class="input-xlarge" id="hcode" name="hcode" size="30" type="text" ></div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="hname">Naziv</label>
+      <label class="control-label" for="hname">Naziv:</label>
       <div class="controls"><input class="input-xlarge" id="hname" name="hname" size="30" type="text"></div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="chief_id">Šef službe</label>
+      <label class="control-label" for="chief_id">Šef službe:</label>
       <div class="controls">
         <%= collection_select "chief_id","", @doctors, :id, :full_name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="nurse_id">Med. tehničar</label>
+      <label class="control-label" for="nurse_id">Med. tehničar:</label>
       <div class="controls">
         <%= collection_select "chief_id","", @nurses, :id, :full_name, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
@@ -217,11 +213,11 @@
   </div>
   <div class="modal-body form-horizontal">
     <div class="control-group">
-      <label class="control-label" for="lname">Naziv</label>
+      <label class="control-label" for="lname">Naziv:</label>
       <div class="controls"><input class="input-xlarge" id="lname" name="lname" size="30" type="text" ></div>
     </div>
     <div class="control-group">
-      <label class="control-label" for="lmunicipality">Lokacija</label>
+      <label class="control-label" for="lmunicipality">Lokacija:</label>
       <div class="controls">
         <%= collection_select "lmunicipality","", @municipalities, "id", "municipality", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
       </div>
@@ -241,7 +237,7 @@
   </div>
   <div class="modal-body form-horizontal">
     <div class="control-group">
-      <label class="control-label" for="aname">Naziv</label>
+      <label class="control-label" for="aname">Naziv:</label>
       <div class="controls"><input class="input-xlarge" id="aname" name="aname" size="30" type="text" ></div>
     </div>
   </div>
