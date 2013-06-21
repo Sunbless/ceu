@@ -33,8 +33,11 @@ Zzjz::Application.routes.draw do
     # get "users/sign_up", :to => "devise/sessions#new", :as => :sign_up
   end
   resources :users
+  get "/users/type/:user_type" => "users#users_type", :as => :users_type
+
 
   get "/reports" => "reports#index", :as => :reports
+  post "/reports" => "reports#make_report", :as => :reports
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

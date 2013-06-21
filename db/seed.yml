@@ -1,6 +1,8 @@
 users:
  -  email: admin@ceu.ba
     admin: 1
+    username: admin
+    district_id: 1109
     password: ceuadmin!
     name: Admin
     surname: Adminovic
@@ -2615,24 +2617,30 @@ phis:
     address: "Ulica Svetog Save 56a, Zvornik"
     full_bsn: "RC IZJ Zvornik"
     full_eng: "Regional Institute Zvornik"
+    district_id: 1207
  -  abbrev: "Foc"
     address: "Ulici Njegoševa bb"
     full_bsn: "RC IZJ Foča"
     full_eng: "Regional Institute Foča"
+    district_id: 1204
  -  abbrev: "Tre"
     full_bsn: "RC IZJ Trebinje"
     full_eng: "Regional Institute Trebinje"
+    district_id: 1206
  -  abbrev: EaS
     full_bsn: "RC IZJ Istočno Sarajevo"
     full_eng: "Regional Institute East Sarajevo"
+    district_id: 1205
  -  abbrev: Dob
     full_bsn: "RC IZJ Doboj"
     full_eng: "Regional Institute Doboj"
+    district_id: 1203
  -  abbrev: BaL
     address: "Jovana Dučića 1"
     full_bsn: "IZJ Banja Luka"
     full_eng: "Pubic Health Institute RS Banja Luka"
     post: 78000
+    district_id:  1201
  -  abbrev: Fed
     full_bsn: "Zavod za javno zdravstvo FBiH"
     full_eng: "Institute for Public Health FB&H"

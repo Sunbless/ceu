@@ -4,6 +4,7 @@ class District < ActiveRecord::Base
   has_many :municipalities
   has_many :phis
   has_many :cases
+  has_many :users
   validates_presence_of :abbr, :name, :name_eng
 
 end

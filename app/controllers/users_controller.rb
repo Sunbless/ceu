@@ -7,10 +7,26 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
+    allow_admin_access
     @users = User.order(:name,:surname,:email).page params[:page]
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
+    end
+  end
+
+
+  def users_type
+    allow_admin_access if (!current_user.admin && params[:user_type] == 3)
+    if params[:user_type] == "regular"
+      @users = User.where('user_type != 3')
+    else
+      @users = User.where('user_type = '+params[:user_type])
+    end
+    @users = @users.order(:name,:surname,:email).page params[:page]
+    respond_to do |format|
+      format.html  { render :index }
+      format.json  { render :json => @users }
     end
   end
 
@@ -31,6 +47,7 @@ class UsersController < ApplicationController
     @user = User.new
     @current_method = "new"
     @municipalities = Municipality.all
+    @districts = District.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -42,6 +59,7 @@ class UsersController < ApplicationController
   def edit
     @user = User.find(params[:id])
     @municipalities = Municipality.all
+    @districts = District.all
   end
 
   # POST /users
@@ -55,9 +73,10 @@ class UsersController < ApplicationController
       @user.email = "#{params[:user][:name]}.#{params[:user][:surname]}@ceu.ba".delete(' ')
     end
     @municipalities = Municipality.all
+    @districts = District.all
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(@user, :notice => t(:user_created)) }
+        format.html { redirect_to(users_type_path(params[:user][:user_type]), :notice => t(:user_created)) }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
         format.json  { render :json => @user, :status => :created, :location => @user }
       else
@@ -73,11 +92,13 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     @municipalities = Municipality.all
-    # params[:user]['password'] = @user.password if params[:user]['password'] == ''
+    @districts = District.all
+
     if params[:user][:password].blank?
       params[:user].delete(:password)
       params[:user].delete(:password_confirmation)
     end
+
     respond_to do |format|
       if @user.update_attributes(params[:user])
         format.html { redirect_to(@user, :notice => t(:user_updated)) }

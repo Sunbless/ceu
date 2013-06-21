@@ -11,7 +11,12 @@
 
   <div class="control-group">
     <%= f.label :email, 'E-mail:', :class=>'control-label'  %>
-    <div class="controls"><%= f.text_field :email, :class => 'input-xlarge'  %></div>
+    <div class="controls"><%= f.email_field :email, :class => 'input-xlarge'  %></div>
+  </div>
+
+  <div class="control-group">
+    <%= f.label :username, 'Username:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :username, :class => 'input-xlarge'  %></div>
   </div>
 
   <div class="control-group">
@@ -22,9 +27,10 @@
   <div class="control-group">
     <%= f.label :user_type, 'Vrsta korisnika:', :class=>'control-label' %>
     <div class="controls">
-      <%= f.collection_select :user_type, {1=>'Doktor',2=>'Sestra',3=>'Data'},:first,:last, :class => 'input-xlarge', :id => 'user_type' %>
+      <%= f.collection_select :user_type, {1=>'Doktor',2=>'Sestra',3=>'Operater'},:first,:last, :class => 'input-xlarge', :id => 'user_type' %>
     </div>
   </div>
+  <% if current_user.admin %>
   <div class="control-group">
     <div class="controls">
       <label class="checkbox">
@@ -32,6 +38,7 @@
       </label>
     </div>
   </div>
+  <% end %>
   <% if @user.uid %>
   <p>Korisnikov Access UID: <%= @user.uid %></p>
   <% end %>
@@ -47,6 +54,12 @@
   <div class="control-group">
     <%= f.label :street, 'Ulica:', :class=>'control-label'  %>
     <div class="controls"><%= f.text_field :street, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :district_id, 'Kanton/Regija:', :class=>'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :district_id, @districts, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
   </div>
   <div class="control-group">
     <%= f.label :municipality_id, 'Općina', :class=>'control-label' %>

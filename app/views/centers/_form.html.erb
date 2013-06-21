@@ -22,6 +22,12 @@
       <%= f.collection_select :municipality_id, @municipalities, :id, :municipality, {:prompt => false}, :class => 'input-xlarge'  %>
     </div>
   </div>
+  <div class="control-group">
+    <%= f.label :phi_id, 'Regionalni zavod', :class=>'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :phi_id, @phis, :id, :full_bsn, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
   <div class="actions">
     <%= f.submit "Sačuvaj", :class => 'btn btn-primary' %>
   </div>

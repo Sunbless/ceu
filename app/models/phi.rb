@@ -3,5 +3,6 @@ class Phi < ActiveRecord::Base
   belongs_to :district
   belongs_to :municipality
   has_many :cases
+  has_many :centers
   validates_presence_of :abbrev
 end

@@ -1,12 +1,13 @@
 #encoding: utf-8
 class Case < ActiveRecord::Base
-  attr_accessible :age, :agent_id, :comment, :date_death, :date_entry, :date_lab, :date_of_birth, :date_of_dg, :date_report, :dg_syndrom, :district_id, :he_id, :jmbg, :labconfirmed, :laboratory_id, :operator_id, :patient_name, :patient_surname, :phi_id, :protocol, :sex, :user_id, :vaccin, :icd_id
+  attr_accessible :age, :agent_id, :comment, :date_death, :date_entry, :date_lab, :date_of_birth, :date_of_dg, :date_report, :dg_syndrom, :district_id, :he_id, :jmbg, :labconfirmed, :laboratory_id, :operator_id, :patient_name, :patient_surname, :phi_id, :protocol, :sex, :user_id, :vaccin, :icd_id, :center_id
   belongs_to :district
   belongs_to :user
   belongs_to :phi
   belongs_to :laboratory
   belongs_to :agent
   belongs_to :icd
+  belongs_to :center
   validates_presence_of :protocol
   paginates_per 50
 

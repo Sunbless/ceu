@@ -1,13 +1,11 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <b>Naziv:</b>
   <%= @center.name %>
 </p>
 
 <p>
-  <b>Opcina:</b>
-  <%= @center.municipality_id %>
+  <b>Općina:</b>
+  <%= @center.municipality.municipality if @center.municipality_id %>
 </p>
 
 

@@ -30,15 +30,24 @@ class CasesController < ApplicationController
     @case.date_entry = Time.now.strftime("%Y-%m-%d")
     @case.date_report = Time.now.strftime("%Y-%m-%d")
     @case.date_lab = Time.now.strftime("%Y-%m-%d")
-    @districts = District.all
-    @phis = Phi.all
-    @hes = He.all
+
+    if current_user.district_id and !current_user.admin?
+      @districts = District.where("id = #{current_user.district_id}")
+      @phis = Phi.where("district_id = #{current_user.district_id}")
+    else
+      @districts = District.all
+      @phis = Phi.all
+      @centers = Center.all
+    end
+    @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
+    @hes = He.where(:center_id => @centers.map { |id| id })
+
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     @municipalities = Municipality.all
-    @centers = Center.all
+    # @centers = Center.all
     @icds = Icd.all
     respond_to do |format|
       format.html # new.html.erb
@@ -49,15 +58,23 @@ class CasesController < ApplicationController
   # GET /cases/1/edit
   def edit
     @case = Case.find(params[:id])
-    @districts = District.all
-    @phis = Phi.all
-    @hes = He.all
+
+   if current_user.district_id and !current_user.admin?
+      @districts = District.where("id = #{current_user.district_id}")
+      @phis = Phi.where("district_id = #{current_user.district_id}")
+    else
+      @districts = District.all
+      @phis = Phi.all
+      @centers = Center.all
+    end
+    @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
+    @hes = He.where(:center_id => @centers.map { |id| id })
+
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     @municipalities = Municipality.all
-    @centers = Center.all
     @icds = Icd.all
   end
 
@@ -66,15 +83,22 @@ class CasesController < ApplicationController
   def create
     @case = Case.new(params[:case])
     @case.operator_id = current_user.id
-    @districts = District.all
-    @phis = Phi.all
-    @hes = He.all
+    if current_user.district_id and !current_user.admin?
+      @districts = District.where("id = #{current_user.district_id}")
+      @phis = Phi.where("district_id = #{current_user.district_id}")
+    else
+      @districts = District.all
+      @phis = Phi.all
+      @centers = Center.all
+    end
+    @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
+    @hes = He.where(:center_id => @centers.map { |id| id })
+
     @laboratories = Laboratory.all
     @municipalities = Municipality.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
-    @centers = Center.all
     @icds = Icd.all
 
     respond_to do |format|
@@ -92,14 +116,23 @@ class CasesController < ApplicationController
   # PUT /cases/1.json
   def update
     @case = Case.find(params[:id])
-    @districts = District.all
-    @phis = Phi.all
-    @hes = He.all
+
+    if current_user.district_id and !current_user.admin?
+      @districts = District.where("id = #{current_user.district_id}")
+      @phis = Phi.where("district_id = #{current_user.district_id}")
+    else
+      @districts = District.all
+      @phis = Phi.all
+      @centers = Center.all
+    end
+    @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
+    @hes = He.where(:center_id => @centers.map { |id| id })
+
     @laboratories = Laboratory.all
     @agents = Agent.all
     @doctors = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
-    @centers = Center.all
+
     @municipalities = Municipality.all
     @icds = Icd.all
 

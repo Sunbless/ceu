@@ -12,13 +12,19 @@
     <div class="control-group">
       <%= f.label :district_id, 'Kanton/regija:', :class=>'control-label'  %>
       <div class="controls">
-        <%= f.collection_select :district_id, @districts, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
+        <%= f.collection_select :district_id, @districts, :id, :name, {:prompt => false }, :class => 'input-xlarge'  %>
       </div>
     </div>
     <div class="control-group">
       <%= f.label :phi_id, "Regionalni zavod:", :class=>'control-label'  %>
       <div class="controls">
-        <%= f.collection_select :phi_id, @phis, :id, :full_bsn, {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+        <%= f.collection_select :phi_id, @phis, :id, :full_bsn, {:prompt => false}, :class => 'input-xlarge'  %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :center_id, "Institucija:", :class=>'control-label'  %>
+      <div class="controls">
+        <%= f.collection_select :center_id, @centers, :id, :name, {:prompt => false}, :class => 'input-xlarge'  %>
       </div>
     </div>
     <div class="control-group">

@@ -9,16 +9,20 @@
         </div>
       </div>
       <div class="control-group district">
-        <%= label "district", 'Kanton/regija:', :class=>'control-label'  %>
+        <%= label "district", 'Kanton/regija:', :class=>'control-label district-label'  %>
         <div class="controls">
-          <%= collection_select "district","fbih", @fbih, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
-          <%= collection_select "district","rs", @rs, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          <%= collection_select "district","9000", @fbih, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          <%= collection_select "district","9100", @rs, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
         </div>
       </div>
       <div class="control-group">
         <%= label "week", 'Sedmica:', :class=>'control-label'  %>
         <div class="controls">
-          <input type="number" name="week" value=""/>
+          <select name="week" id="week">
+            <% (1..52).each do |i| %>
+            <option value="<%= i %>"><%= i %></option>
+            <% end %>
+          </select>
         </div>
       </div>
       <input type="submit" name="submit" value="Napravi izvještaj" class="btn btn-primary"/>

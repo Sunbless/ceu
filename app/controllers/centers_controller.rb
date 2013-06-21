@@ -28,6 +28,7 @@ class CentersController < ApplicationController
   def new
     @center = Center.new
     @municipalities = Municipality.all
+    @phis = Phi.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @center }
@@ -38,6 +39,7 @@ class CentersController < ApplicationController
   def edit
     @center = Center.find(params[:id])
     @municipalities = Municipality.all
+    @phis = Phi.all
   end
 
   # POST /centers
@@ -45,9 +47,10 @@ class CentersController < ApplicationController
   def create
     @center = Center.new(params[:center])
     @municipalities = Municipality.all
+    @phis = Phi.all
     respond_to do |format|
       if @center.save
-        format.html { redirect_to @center, notice: 'Center was successfully created.' }
+        format.html { redirect_to @center, notice: t(:record_created)  }
         format.json { render json: @center, status: :created, location: @center }
       else
         format.html { render action: "new" }
@@ -61,9 +64,10 @@ class CentersController < ApplicationController
   def update
     @center = Center.find(params[:id])
     @municipalities = Municipality.all
+    @phis = Phi.all
     respond_to do |format|
       if @center.update_attributes(params[:center])
-        format.html { redirect_to @center, notice: 'Center was successfully updated.' }
+        format.html { redirect_to @center, notice: t(:record_updated) }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

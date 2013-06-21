@@ -6,6 +6,17 @@ $(function() {
     var raz = curDate.getFullYear() - dateOfBirth.getFullYear();
     $('#case_age').val(raz);
   });
+  
+  // var full_phi_list = $('#tmp_phi');
+  // $('#case_district_id').on('change',function(){
+  //   fullClone = full_phi_list.clone();
+  //   var children = $(fullClone).children('[data-district="'+$(this).val()+'"]');
+  //   if (children.length == 0){
+  //     children = $(fullClone).children();
+  //   }
+  //   $('#phi_id option').remove();
+  //   $('#phi_id').append(children);
+  // });
 
   $('.openModal').on('click',function(){
     var modalName = $(this).attr('data-modal');
