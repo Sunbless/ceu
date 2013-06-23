@@ -1,1 +1,4 @@
-Izvještaj za sedmicu: <%= @week %> (period <%= @week_dates %>)
+Izvještaj za sedmicu: <%= @week %> / <%= @year %> za regiju/kanton: <%= @district.name %>
+<hr>
+<%= render "report#{@r}" %>
+<hr>

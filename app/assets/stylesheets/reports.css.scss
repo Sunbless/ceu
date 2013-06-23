@@ -1,3 +1,22 @@
-// Place all the styles related to the reports controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.report-table {
+  tbody{
+    td {
+      border: 1px solid;
+    }
+  }
+  tr {
+    margin: 5px;
+    .boldtr {
+      font-weight: bolder;
+      height: 40px;
+    }
+  }
+  td {
+    min-width:40px;
+  }
+  .name {
+    text-align: left;
+  }
+
+  text-align: center;
+}

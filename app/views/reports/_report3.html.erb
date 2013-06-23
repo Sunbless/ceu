@@ -1,0 +1,35 @@
+<table class="report-table" <%= @total_columns == 30 ? "style='margin-left:-15%'".html_safe : ""%>>
+<thead>
+  <tr>
+    <th><h3>Tabela 1.1.3</h3></th>
+    <th colspan="<%= @step %>">Ukupno sedmično<br>Sedmica</th>
+    <th colspan="<%= @step %>">Medijana po sedmici<br>Sedmice</th>
+    <th colspan="<%= @step %>">Medijana stope sedmičnog prijavljivanja/100000<br>Sedmice</th>
+  </tr>
+  <tr>
+    <th>Obavezno prijavljivanje klinički dokazanih zaraznih oboljenja za SEDMICU <%= @week %>/<%= @year %> po regionima</th>
+    <th colspan="<%= @step %>">Sedmica <%=@year%>, #<%=@week%>, <%= Date.parse(@weeks.last["start"]).strftime("%b %d") %></th>
+    <th colspan="<%= @step %>">Sedmica <%=@year%>, #<%=@week%>, <%= Date.parse(@weeks.last["start"]).strftime("%b %d") %></th>
+    <th colspan="<%= @step %>">Sedmica <%=@year%>, #<%=@week%>, <%= Date.parse(@weeks.last["start"]).strftime("%b %d") %></th>
+
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Naziv</td>
+    <% (1..3).each do |i|%>
+      <% @districts.each do |district|%>
+      <td><%=district.abbr %></td>
+      <% end %>
+    <% end %>
+  </tr>
+  <% @report.each do |report| %>
+  <tr>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.name %></td>
+    <% (1..@total_columns).each do |col|%>
+    <td class="bigtable" style="min-width: 30px;"><%= report["col#{col}"] == 0? report["col#{col}"].round : report["col#{col}"] %> </td>
+    <% end %>
+  </tr>
+  <% end %>
+</tbody>
+</table>

@@ -29,6 +29,8 @@ gem 'devise'
 gem 'cancan'
 gem 'kaminari'
 
+gem "pivot_table"
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

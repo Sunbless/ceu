@@ -1,8 +1,13 @@
 $(function() {
+  var initEntity = $('#entity_entity').val();
   $('#district_9000').hide();
   $('#district_9100').hide();
   $('.district-label').hide();
-  $('#entity_').on('change',function(){
+  if (initEntity){
+    $('.district-label').show();
+    $('#district_'+initEntity).show();
+  }
+  $('#entity_entity').on('change',function(){
     $('.district-label').show();
     $('#district_9000').hide();
     $('#district_9100').hide();

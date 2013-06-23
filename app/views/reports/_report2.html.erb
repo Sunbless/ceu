@@ -1,0 +1,47 @@
+<table class="report-table">
+<thead>
+  <tr>
+    <th><h3>Tabela 1.1.2</h3></th>
+    <th colspan="6">Ukupno sedmično<br>Sedmica</th>
+    <th colspan="3">Medijana po sedmici<br>Sedmice</th>
+    <th colspan="3">Medijana stope sedmičnog prijavljivanja/100000<br>Sedmice</th>
+  </tr>
+  <tr>
+    <th>Obavezno prijavljivanje laboratorijski potvrđenih zaraznih oboljenja u posljednjih 6 sedmica sa ukupnim brojem za tekuću godinu u poređenju sa odgovarajućim periodima u prethodne dvije godine.</th>
+    <% @weeks.each do |week|%>
+    <th>
+      <%= week["year"] %><br>
+      <%= week["week"] %><br>
+      <%= Date.parse(week["start"]).strftime("%b") %><br>
+      <%= Date.parse(week["start"]).strftime("%d") %>
+    </th>
+    <% end %>
+    <th><%= @year - 2%><br>1<br>to<br><%= @week %></th>
+    <th><%= @year - 1%><br>1<br>to<br><%= @week %></th>
+    <th><%= @year %><br>1<br>to<br><%= @week %></th>
+
+    <th><%= @year - 2%><br>1<br>to<br><%= @week %></th>
+    <th><%= @year - 1%><br>1<br>to<br><%= @week %></th>
+    <th><%= @year %><br>1<br>to<br><%= @week %></th>
+  </tr>
+</thead>
+<tbody>
+  <% @report.each do |report| %>
+  <tr>
+    <td class="name"><%= report.name %></td>
+    <td><%= report.col1.round if report.col1 %></td>
+    <td><%= report.col2.round if report.col2 %></td>
+    <td><%= report.col3.round if report.col3 %></td>
+    <td><%= report.col4.round if report.col4 %></td>
+    <td><%= report.col5.round if report.col5 %></td>
+    <td><%= report.col6.round if report.col6 %></td>
+    <td><%= report.col7 == 0? report.col7.round : report.col7 %></td>
+    <td><%= report.col8 == 0? report.col8.round : report.col8 %></td>
+    <td><%= report.col9 == 0? report.col9.round : report.col9 %></td>
+    <td><%= report.col10 == 0? report.col10.round : report.col10 %></td>
+    <td><%= report.col11 == 0? report.col11.round : report.col11 %></td>
+    <td><%= report.col12 == 0? report.col12.round : report.col12 %></td>
+  </tr>
+  <% end %>
+</tbody>
+</table>

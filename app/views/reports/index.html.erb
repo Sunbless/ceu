@@ -5,7 +5,7 @@
       <div class="control-group">
         <%= label "entity", 'Entitet:', :class=>'control-label'  %>
         <div class="controls">
-          <%= collection_select "entity","", @entities, "id", "description", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          <%= collection_select "entity","entity", @entities, "id", "description", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
         </div>
       </div>
       <div class="control-group district">
@@ -22,6 +22,30 @@
             <% (1..52).each do |i| %>
             <option value="<%= i %>"><%= i %></option>
             <% end %>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label "year", 'Godina:', :class=>'control-label'  %>
+        <div class="controls">
+          <select name="year" id="year">
+            <% Time.now.year.downto(2010).each do |i| %>
+            <option value="<%= i %>"><%= i %></option>
+            <% end %>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label "report", 'Izvještaj:', :class=>'control-label'  %>
+        <div class="controls">
+          <select name="report" id="report">
+            <option value="1">Izvještaj 1.1.1</option>
+            <option value="2">Izvještaj 1.1.2</option>
+            <option value="3">Izvještaj 1.1.3</option>
+            <option value="4">Izvještaj 1.1.4</option>
+            <option value="5">Izvještaj 1.1.5</option>
+            <option value="6">Izvještaj 1.1.6</option>
+            <option value="7">Izvještaj 1.1.7</option>
           </select>
         </div>
       </div>

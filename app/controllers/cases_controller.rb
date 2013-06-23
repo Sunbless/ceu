@@ -30,6 +30,7 @@ class CasesController < ApplicationController
     @case.date_entry = Time.now.strftime("%Y-%m-%d")
     @case.date_report = Time.now.strftime("%Y-%m-%d")
     @case.date_lab = Time.now.strftime("%Y-%m-%d")
+    @case.date_of_dg = Time.now.strftime("%Y-%m-%d")
 
     if current_user.district_id and !current_user.admin?
       @districts = District.where("id = #{current_user.district_id}")

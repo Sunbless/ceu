@@ -8,7 +8,7 @@ class Case < ActiveRecord::Base
   belongs_to :agent
   belongs_to :icd
   belongs_to :center
-  validates_presence_of :protocol
+  validates_presence_of :protocol, :date_of_dg, :icd_id
   paginates_per 50
 
   def operator

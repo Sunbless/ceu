@@ -1,0 +1,26 @@
+<table class="report-table">
+<thead>
+  <tr>
+    <th><h3>Tabela 1.1.7</h3></th>
+    <th colspan="2"></th>
+  </tr>
+  <tr>
+    <th>Potencijalne javnozdravstvene prijetnje identificirane na osnovu dijagnoze za SEDMICU <%= @week %>/<%= @year %></th>
+    <th colspan="2"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Zdravstvene prijetnje</td>
+    <td>Broj kliničkih dokazanih dijagnoza</td>
+    <td>Broj laboratorijski potvrđenih dijagnoza</td>
+  </tr>
+  <% @report.each do |id,report| %>
+  <tr>
+    <td class="name"><%= report["name"] %></td>
+    <td><%= report["bkdd"] %></td>
+    <td><%= report["blpd"] %></td>
+  </tr>
+  <% end %>
+</tbody>
+</table>

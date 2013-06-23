@@ -3,7 +3,7 @@
 <table class="table teble-stripped">
   <thead>
     <tr>
-      <th>Region</th>
+      <th>Regija/Kanton</th>
       <th>Protokol</th>
       <th>Datum unosa</th>
       <th>Ime pacijenta</th>
@@ -13,7 +13,7 @@
   </thead>
 <% @cases.each do |c| %>
   <tr>
-    <td><%= c.district_id %></td>
+    <td><%= c.district.name if c.district_id %></td>
     <td><%= c.protocol %></td>
     <td><%= c.date_entry %></td>
     <td><%= c.patient_name %> <%= c.patient_surname %></td>
