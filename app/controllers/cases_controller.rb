@@ -139,7 +139,7 @@ class CasesController < ApplicationController
 
     respond_to do |format|
       if @case.update_attributes(params[:case])
-        format.html { redirect_to @case, notice: 'Case was successfully updated.' }
+        format.html { redirect_to @case, notice: t("record_updated") }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

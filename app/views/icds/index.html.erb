@@ -15,8 +15,8 @@
     <td><%= icd.disease_bsn %></td>
     <td><%= icd.disease_eng %></td>
     <td>
-      <%= link_to 'Uredi', edit_icd_path(icd) %>
-      <%= link_to 'Izbriši', icd, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+      <%= link_to 'Uredi', edit_icd_path(icd), :class => 'btn' %>
+      <%= link_to 'Izbriši', icd, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
     </td>
   </tr>
 <% end %>

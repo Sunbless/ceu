@@ -36,11 +36,37 @@ class User < ActiveRecord::Base
   end
 
   def self.find_first_by_auth_conditions(warden_conditions)
-      conditions = warden_conditions.dup
-      if login = conditions.delete(:login)
-        where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
-      else
-        where(conditions).first
-      end
+    conditions = warden_conditions.dup
+    if login = conditions.delete(:login)
+      where(conditions).where(["lower(username) = :value OR lower(email) = :value", { :value => login.downcase }]).first
+    else
+      where(conditions).first
     end
+  end
+
+
+  def self.import(data)
+    imported = 0
+    data.each do |row|
+      existing = self.where(:uid => row['ID'])
+      if existing.count == 0
+
+        import = self.new
+        import.uid = row['ID']
+        import.email = row['username']+ "@ceu.ba"
+        import.password = row['password']
+        import.phi_id = row['phi_id']
+
+        if import.save
+          imported += 1
+        else
+          puts import.errors.inspect
+        end
+      end
+
+    end
+
+    imported;
+
+  end
 end

@@ -28,8 +28,12 @@ gem 'mysql2'
 gem 'devise'
 gem 'cancan'
 gem 'kaminari'
+gem 'roo'
+gem 'rubyzip'
+gem 'zip'
 
 gem "pivot_table"
+gem "remote_table"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

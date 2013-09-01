@@ -17,8 +17,8 @@
     <td><%= laboratory.phone %></td>
     <td><%= laboratory.email %></td>
     <td>
-        <%= link_to 'Uredi', edit_laboratory_path(laboratory) %> | 
-        <%= link_to 'Izbriši', laboratory, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+        <%= link_to 'Uredi', edit_laboratory_path(laboratory), :class => 'btn' %> | 
+        <%= link_to 'Izbriši', laboratory, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
     </td>
   </tr>
 <% end %>

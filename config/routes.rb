@@ -1,5 +1,9 @@
 Zzjz::Application.routes.draw do
 
+  get "imports/index"
+
+  get "imports/import"
+
   resources :icds
 
 
@@ -38,6 +42,9 @@ Zzjz::Application.routes.draw do
 
   get "/reports" => "reports#index", :as => :reports
   post "/reports" => "reports#make_report", :as => :reports
+
+  get "/imports" => "imports#index", :as => :imports
+  post "/imports" => "imports#import", :as => :imports
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -19,8 +19,8 @@
     <td><%= phi.full_eng %></td>
     <td><%= phi.district.name if phi.district_id %></td>
     <td>
-      <%= link_to 'Uredi', edit_phi_path(phi) %>
-      <%= link_to 'Izbriši', phi, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+      <%= link_to 'Uredi', edit_phi_path(phi), :class => 'btn' %>
+      <%= link_to 'Izbriši', phi, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
     </td>
   </tr>
 <% end %>
@@ -28,4 +28,4 @@
 
 <br />
 
-<%= link_to 'Novi zavod', new_phi_path , :class => "btn" %>
+<%= link_to 'Novi zavod', new_phi_path , :class => "btn btn-primary" %>

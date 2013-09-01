@@ -14,9 +14,9 @@
     <td><%= user.show_user_type %></td>
     <td><%= user.email %></td>
     <td>
-      <%= link_to '<i class="icon-trash"></i> Izbriši'.html_safe, user_path(user), :confirm => 'Jeste li sigurni da želite izbirsati korisnika?', :method => :delete  if current_user.id != user.id%>
+      <%= link_to '<i class="icon-trash"></i> Izbriši'.html_safe, user_path(user), :class => 'btn btn-danger', :confirm => 'Jeste li sigurni da želite izbirsati korisnika?', :method => :delete  if current_user.id != user.id%>
       
-      <a href="<%= edit_user_path(user) %>"><i class="icon-pencil"></i> Uredi</a>
+      <a href="<%= edit_user_path(user) %>" class="btn"><i class="icon-pencil"></i> Uredi</a>
     </td>
   </tr>
   <% end %>

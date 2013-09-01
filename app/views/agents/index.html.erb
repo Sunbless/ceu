@@ -12,8 +12,8 @@
 <% @agents.each do |agent| %>
   <tr>
     <td><%= agent.agent %></td>
-    <td><%= link_to 'Uredi', edit_agent_path(agent) %></td>
-    <td><%= link_to 'Izbriši', agent, method: :delete, data: { confirm: 'Jeste li sigurni?' } %></td>
+    <td><%= link_to 'Uredi', edit_agent_path(agent), :class => 'btn' %></td>
+    <td><%= link_to 'Izbriši', agent, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %></td>
   </tr>
 <% end %>
 </table>

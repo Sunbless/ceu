@@ -12,6 +12,7 @@
 
   <% if current_user.try(:admin?) %>
   <a href="<%= users_type_path 3 %>"><div class="span3 well">Operateri</div></a>
+  <a href="<%= imports_path %>"><div class="span3 well">Uvoz podataka</div></a>
   <% end %>
 
 

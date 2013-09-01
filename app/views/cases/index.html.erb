@@ -19,9 +19,9 @@
     <td><%= c.patient_name %> <%= c.patient_surname %></td>
     <td><%= c.age %></td>
     <td>
-        <%= link_to 'Pregled', c %> |
-        <%= link_to 'Uredi', edit_case_path(c) %> |
-        <%= link_to 'Izbriši', c, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+        <%= link_to 'Pregled', c, :class => 'btn' %> 
+        <%= link_to 'Uredi', edit_case_path(c), :class => 'btn' %> 
+        <%= link_to 'Izbriši', c, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
     </td>
   </tr>
 <% end %>

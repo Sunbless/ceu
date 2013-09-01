@@ -14,8 +14,8 @@
     <td><%= he.center.name if he.center_id %></td>
     <td><%= he.code %></td>
     <td><%= he.name %></td>
-    <td><%= link_to 'Uredi', edit_he_path(he) %></td>
-    <td><%= link_to 'Izbriši', he, method: :delete, data: { confirm: 'jeste li sigurni?' } %></td>
+    <td><%= link_to 'Uredi', edit_he_path(he), :class => 'btn' %></td>
+    <td><%= link_to 'Izbriši', he, method: :delete, data: { confirm: 'jeste li sigurni?' }, :class => 'btn btn-danger' %></td>
   </tr>
 <% end %>
 </table>

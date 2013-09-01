@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130623185238) do
+ActiveRecord::Schema.define(:version => 20130901215642) do
 
   create_table "agents", :force => true do |t|
     t.string   "uid"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(:version => 20130623185238) do
     t.datetime "updated_at",      :null => false
     t.integer  "icd_id"
     t.integer  "center_id"
+    t.string   "uid"
   end
 
   create_table "centers", :force => true do |t|
@@ -89,8 +90,9 @@ ActiveRecord::Schema.define(:version => 20130623185238) do
     t.integer  "chief_id"
     t.integer  "nurse_id"
     t.string   "uid"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.integer  "dataclerk_id"
   end
 
   create_table "icds", :force => true do |t|
@@ -237,6 +239,7 @@ ActiveRecord::Schema.define(:version => 20130623185238) do
     t.string   "specialist"
     t.string   "username"
     t.integer  "district_id"
+    t.integer  "phi_id"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

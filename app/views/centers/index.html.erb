@@ -13,8 +13,8 @@
     <td><%= center.name %></td>
     <td><%= center.municipality.municipality %></td>
     <td>
-      <%= link_to 'Uredi', edit_center_path(center) %>
-      <%= link_to 'Izbriši', center, method: :delete, data: { confirm: 'Jeste li sigurni?' } %>
+      <%= link_to 'Uredi', edit_center_path(center), :class => 'btn' %>
+      <%= link_to 'Izbriši', center, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
     </td>
   </tr>
 <% end %>

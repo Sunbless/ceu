@@ -26,8 +26,8 @@
     <td><%= district.population %></td>
     <td><%= district.municipalities.count %></td>
     <td><%= district.entity.abbr %></td>
-    <td><%= link_to 'Uredi', edit_district_path(district) %></td>
-    <td><%= link_to 'Izbriši', district, method: :delete, data: { confirm: 'Jeste li sigurni?' } %></td>
+    <td><%= link_to 'Uredi', edit_district_path(district), :class => 'btn' %></td>
+    <td><%= link_to 'Izbriši', district, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %></td>
   </tr>
 <% end %>
 </table>
