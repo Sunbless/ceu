@@ -6,6 +6,15 @@ class ReportsController < ApplicationController
     @entities = Entity.all
   end
 
+  def make_sum_report
+    puts params[:sumreport][0].inspect
+    puts params[:periodvalue].inspect
+    if params[:sumreport][0].downcase == 'm' && params[:periodvalue].to_i > 12
+      redirect_to(reports_path, :notice => t(:wrong_period_value)) 
+      return false
+    end
+  end
+
 
   def make_report
     if (params[:entity]["entity"].blank? || params[:week].blank? || params[:week].to_i < 1 || params[:week].to_i > 52 || !params[:report]) 

@@ -1,55 +1,96 @@
-<h3>Izvještaji:</h3>
 <div class="row">
-  <div class="span12">
-    <%= form_tag("/reports", :method => "POST", :class=> "form-horizontal") do %>
-      <div class="control-group">
-        <%= label "entity", 'Entitet:', :class=>'control-label'  %>
-        <div class="controls">
-          <%= collection_select "entity","entity", @entities, "id", "description", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+  <div class="span5">
+    <h4>Izvještaji:</h4>
+      <%= form_tag("/reports", :method => "POST", :class=> "form-horizontal") do %>
+        <div class="control-group">
+          <%= label "entity", 'Entitet:', :class=>'control-label'  %>
+          <div class="controls">
+            <%= collection_select "entity","entity", @entities, "id", "description", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          </div>
         </div>
-      </div>
-      <div class="control-group district">
-        <%= label "district", 'Kanton/regija:', :class=>'control-label district-label'  %>
-        <div class="controls">
-          <%= collection_select "district","9000", @fbih, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
-          <%= collection_select "district","9100", @rs, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+        <div class="control-group district">
+          <%= label "district", 'Kanton/regija:', :class=>'control-label district-label'  %>
+          <div class="controls">
+            <%= collection_select "district","9000", @fbih, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+            <%= collection_select "district","9100", @rs, "id", "name", {:prompt => "Izaberite"}, :class => 'input-xlarge'  %>
+          </div>
         </div>
-      </div>
-      <div class="control-group">
-        <%= label "week", 'Sedmica:', :class=>'control-label'  %>
-        <div class="controls">
-          <select name="week" id="week">
-            <% (1..52).each do |i| %>
-            <option value="<%= i %>"><%= i %></option>
-            <% end %>
-          </select>
+        <div class="control-group">
+          <%= label "week", 'Sedmica:', :class=>'control-label'  %>
+          <div class="controls">
+            <select name="week" id="week">
+              <% (1..52).each do |i| %>
+              <option value="<%= i %>"><%= i %></option>
+              <% end %>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="control-group">
-        <%= label "year", 'Godina:', :class=>'control-label'  %>
-        <div class="controls">
-          <select name="year" id="year">
-            <% Time.now.year.downto(2010).each do |i| %>
-            <option value="<%= i %>"><%= i %></option>
-            <% end %>
-          </select>
+        <div class="control-group">
+          <%= label "year", 'Godina:', :class=>'control-label'  %>
+          <div class="controls">
+            <select name="year" id="year">
+              <% Time.now.year.downto(2010).each do |i| %>
+              <option value="<%= i %>"><%= i %></option>
+              <% end %>
+            </select>
+          </div>
         </div>
-      </div>
-      <div class="control-group">
-        <%= label "report", 'Izvještaj:', :class=>'control-label'  %>
-        <div class="controls">
-          <select name="report" id="report">
-            <option value="1">Izvještaj 1.1.1</option>
-            <option value="2">Izvještaj 1.1.2</option>
-            <option value="3">Izvještaj 1.1.3</option>
-            <option value="4">Izvještaj 1.1.4</option>
-            <option value="5">Izvještaj 1.1.5</option>
-            <option value="6">Izvještaj 1.1.6</option>
-            <option value="7">Izvještaj 1.1.7</option>
-          </select>
+        <div class="control-group">
+          <%= label "report", 'Izvještaj:', :class=>'control-label'  %>
+          <div class="controls">
+            <select name="report" id="report">
+              <option value="1">Izvještaj 1.1.1</option>
+              <option value="2">Izvještaj 1.1.2</option>
+              <option value="3">Izvještaj 1.1.3</option>
+              <option value="4">Izvještaj 1.1.4</option>
+              <option value="5">Izvještaj 1.1.5</option>
+              <option value="6">Izvještaj 1.1.6</option>
+              <option value="7">Izvještaj 1.1.7</option>
+            </select>
+          </div>
         </div>
-      </div>
-      <input type="submit" name="submit" value="Napravi izvještaj" class="btn btn-primary"/>
-    <% end %>
+        <input type="submit" name="submit" value="Napravi izvještaj" class="btn btn-primary pull-right"/>
+      <% end %>
   </div>
+  <div class="span2">
+  </div>
+  <div class="span5">
+    <h4>Sumarni izvještaji:</h4>
+    <%= form_tag(sum_reports_path, :method => "POST", :class=> "form-horizontal") do %>
+      <div class="control-group">
+        <%= label "region", 'Izvještaj za:', :class=>'control-label'  %>
+        <div class="controls">
+          <select name="region" id="region">
+            <option value="fbih">FBiH</option>
+            <option value="rs">RS</option>
+            <option value="moca">MoCA</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label "sumreport", 'Izvještaj:', :class=>'control-label'  %>
+        <div class="controls">
+          <select name="sumreport" id="sumreport">
+            <option value="MRFPHI" data-type="m">MRFPHI</option>
+            <option value="MRFPHI10k" data-type="m">MRFPHI10k</option>
+            <option value="MRFPHIp100" data-type="m">MRFPHIp100</option>
+            <option value="MRFPHITrendsCumulative" data-type="m">MRFPHITrendsCumulative</option>
+            <option value="MRFPHITrends" data-type="m">MRFPHITrends</option>
+            <option value="WRFPHI" data-type="w">WRFPHI</option>
+            <option value="WRFPHI10k" data-type="w">WRFPHI10k</option>
+            <option value="WRFPHIp100" data-type="w">WRFPHIp100</option>
+          </select>
+        </div>
+      </div>
+      <div class="control-group">
+        <%= label "periodvalue", 'Mjesec:', :class=>'control-label periodvalue'  %>
+        <div class="controls">
+          <input type="number" value="1" name="periodvalue" id="periodvalue"/>
+          <input type="hidden" value="<%= Time.now.strftime('%U') %>" name="periodvalueW" id="periodvalueW">
+        </div>
+      </div>
+
+      <input type="submit" name="submit" value="Napravi sumarni izvještaj" class="btn btn-primary pull-right"/>
+    <% end %>
+  </span>
 </div>

@@ -15,7 +15,8 @@ ba:
   user_updated: Korisnik uspješno ažuriran.
   record_created: Zapis uspješno kreirean.
   record_updated: Zapis uspješno ažuriran.
-  select_entity_and_week: "Molimo vas da odabere entitet,distrikt/regiju i sedmicu za izvještaj"
+  select_entity_and_week: "Molimo Vas da odabere entitet,distrikt/regiju i sedmicu za izvještaj"
+  wrong_period_value: "Molimo Vas da unesete ispravan vremenski period za koji želite sumarni izvještaj"
 
   date:
     abbr_day_names:

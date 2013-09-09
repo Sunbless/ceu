@@ -42,6 +42,7 @@ Zzjz::Application.routes.draw do
 
   get "/reports" => "reports#index", :as => :reports
   post "/reports" => "reports#make_report", :as => :reports
+  post "/reports/sum" => "reports#make_sum_report", :as => :sum_reports
 
   get "/imports" => "imports#index", :as => :imports
   post "/imports" => "imports#import", :as => :imports
