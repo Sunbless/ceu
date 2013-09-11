@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130901215642) do
+ActiveRecord::Schema.define(:version => 20130911213537) do
 
   create_table "agents", :force => true do |t|
     t.string   "uid"
@@ -210,6 +210,25 @@ ActiveRecord::Schema.define(:version => 20130901215642) do
     t.float    "col28",      :default => 0.0
     t.float    "col29",      :default => 0.0
     t.float    "col30",      :default => 0.0
+    t.datetime "created_at",                  :null => false
+    t.datetime "updated_at",                  :null => false
+  end
+
+  create_table "sum_report1", :force => true do |t|
+    t.string   "icd"
+    t.string   "disease"
+    t.float    "col1",       :default => 0.0
+    t.float    "col2",       :default => 0.0
+    t.float    "col3",       :default => 0.0
+    t.float    "col4",       :default => 0.0
+    t.float    "col5",       :default => 0.0
+    t.float    "col6",       :default => 0.0
+    t.float    "col7",       :default => 0.0
+    t.float    "col8",       :default => 0.0
+    t.float    "col9",       :default => 0.0
+    t.float    "col10",      :default => 0.0
+    t.float    "col11",      :default => 0.0
+    t.float    "col12",      :default => 0.0
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
   end

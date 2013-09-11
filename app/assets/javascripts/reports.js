@@ -16,7 +16,7 @@ $(function() {
 
   // var sumRegion = $('#region').val();
   $('#region').on('change', function (){
-    if ($(this).val() === 'moca'){
+    if ($(this).val() === 'MoCA'){
       $('#sumreport').children('[data-type="w"]').attr('disabled',true);
     } else {
       $('#sumreport').children('[data-type="w"]').attr('disabled',false);

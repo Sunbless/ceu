@@ -34,6 +34,7 @@
               <% if current_user.try(:admin?) %>
               <li class="<%= 'active' if current_page?(users_path) %>"><a href="<%= users_path %>">Korisnici</a></li>
               <% end %>
+              <li class="<%= 'active' if current_page?(reports_path) || current_page?(sum_reports_path) %>"><a href="<%= reports_path %>">Izvještaji</a></li>
             </ul>
           </div><!--/.nav-collapse -->
           <p class="navbar-text pull-right">

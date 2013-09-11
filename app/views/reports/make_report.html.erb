@@ -1,4 +1,9 @@
-Izvještaj za sedmicu: <%= @week %> / <%= @year %> za regiju/kanton: <%= @district.name %>
+<div class="pull-left">
+  Izvještaj za sedmicu: <%= @week %> / <%= @year %> za regiju/kanton: <%= @district.name %>
+</div>
+<div class="pull-right">
+  <%= link_to "Nazad", reports_path %>
+</div>
 <hr>
 <%= render "report#{@r}" %>
 <hr>

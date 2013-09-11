@@ -6,15 +6,6 @@ class ReportsController < ApplicationController
     @entities = Entity.all
   end
 
-  def make_sum_report
-    puts params[:sumreport][0].inspect
-    puts params[:periodvalue].inspect
-    if params[:sumreport][0].downcase == 'm' && params[:periodvalue].to_i > 12
-      redirect_to(reports_path, :notice => t(:wrong_period_value)) 
-      return false
-    end
-  end
-
 
   def make_report
     if (params[:entity]["entity"].blank? || params[:week].blank? || params[:week].to_i < 1 || params[:week].to_i > 52 || !params[:report]) 
@@ -47,6 +38,66 @@ class ReportsController < ApplicationController
       @report = send("report#{@r}")
     end
   end
+
+  def make_sum_report
+    puts params[:sumreport][0].inspect
+    puts params[:periodvalue].inspect
+    if params[:sumreport][0].downcase == 'm' && params[:periodvalue].to_i > 12
+      redirect_to(reports_path, :notice => t(:wrong_period_value)) 
+      return false
+    end
+    @report_type = params[:sumreport][0].downcase
+    @sumreport = params[:sumreport]
+    case params[:sumreport]
+    when "MRFPHI"
+      sum_report1
+    when "MRFPHI10k"
+      sum_report2
+    when "MRFPHIp100"
+      sum_report3
+    when "MRFPHITrendsCumulative"
+      sum_report4
+    when "MRFPHITrends"
+      sum_report5
+    when "WRFPHI"
+      sum_report6
+    when "WRFPHI10k"
+      sum_report7
+    when "WRFPHIp100"
+      sum_report8
+    else
+      redirect_to(reports_path, :notice => "error") 
+    end
+  end
+
+  def sum_report1
+    Report.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+
+  end
+
+  def sum_report2
+  end
+
+  def sum_report3
+  end
+
+  def sum_report4
+  end
+
+  def sum_report5
+  end
+
+  def sum_report6
+  end
+
+  def sum_report7
+  end
+
+  def sum_report8
+  end
+
 
   def week_dates( week_num, year )
     week_start = Date.commercial( year, week_num, 1 )
@@ -427,6 +478,7 @@ group by agents.id, year(date_lab), weekofyear(date_lab), date_lab;
     if (@r == 1)
       Report.table_name = 'report111'
       Report.delete_all
+      ActiveRecord::Base.connection.execute("TRUNCATE report111")
       main_icd = Icd.where(:int => 0)
       main_icd.each do |micd|
         row = Report.new
@@ -449,6 +501,7 @@ group by agents.id, year(date_lab), weekofyear(date_lab), date_lab;
       #report 1.1.2
       Report.table_name = 'report112'
       Report.delete_all
+      ActiveRecord::Base.connection.execute("TRUNCATE report112")
       agents = Agent.all
       agents.each do |agent|
         row = Report.new
@@ -460,6 +513,7 @@ group by agents.id, year(date_lab), weekofyear(date_lab), date_lab;
       #report 1.1.3
       Report2.table_name = 'report113'
       Report2.delete_all
+      ActiveRecord::Base.connection.execute("TRUNCATE report113")
       main_icd = Icd.where(:int => 0)
       main_icd.each do |micd|
         row = Report2.new
@@ -482,11 +536,23 @@ group by agents.id, year(date_lab), weekofyear(date_lab), date_lab;
       #report 1.1.4
       Report2.table_name = 'report113'
       Report2.delete_all
+      ActiveRecord::Base.connection.execute("TRUNCATE report113")
       agents = Agent.all
       agents.each do |agent|
         row = Report2.new
         row.name = agent.agent
         row.item_id = agent.id
+        row.save
+      end
+    elsif @r == 'sum1'
+      Sumreport.table_name = 'sum_report1'
+      ActiveRecord::Base.connection.execute("TRUNCATE #{Report.table_name}")
+      icds = Icd.where('icds.int > 0 and icds.disease_eng != ""').order("disease_eng")
+      icds.each do |icd|
+        row = Sumreport.new
+        row.icd_id = icd.id
+        row.icd = icd.code
+        row.disease = icd.disease_eng
         row.save
       end
     end
