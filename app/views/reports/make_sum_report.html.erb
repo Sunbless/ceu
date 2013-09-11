@@ -1,0 +1,9 @@
+<div class="pull-left">
+  Izvještaj "<%= params[:sumreport] %>" za <%= @report_type == 'm' ? 'mjesec' : 'sedmicu' %> <%= params[:periodvalue] %> / <%= params[:year] %> za <%= params[:region] %>
+</div>
+<div class="pull-right">
+  <%= link_to "Nazad", reports_path %>
+</div>
+<hr>
+<%= render "report_#{@sumreport}" %>
+<hr>
