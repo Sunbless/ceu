@@ -40,14 +40,15 @@ class ReportsController < ApplicationController
   end
 
   def make_sum_report
-    puts params[:sumreport][0].inspect
-    puts params[:periodvalue].inspect
     if params[:sumreport][0].downcase == 'm' && params[:periodvalue].to_i > 12
       redirect_to(reports_path, :notice => t(:wrong_period_value)) 
       return false
     end
     @report_type = params[:sumreport][0].downcase
     @sumreport = params[:sumreport]
+
+    @districts = District.get_by_name(params[:region])
+
     case params[:sumreport]
     when "MRFPHI"
       sum_report1
@@ -71,32 +72,422 @@ class ReportsController < ApplicationController
   end
 
   def sum_report1
-    Report.table_name = 'sum_report1'
+    Sumreport.table_name = 'sum_report1'
     @r = 'sum1'
     prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      else
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      end
+
+      district_data.each do |dd|
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    end
+    @cumul_total_num = 0
+    cumul_data.each do |cd|
+      @cumul_total_num += cd.num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => cd.num}
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = cd.num 
+      end
+    end
+
+    @report = Sumreport.all
 
   end
 
   def sum_report2
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @total_population = 0
+    @total_cols = {}
+    @report_map = {}
+    
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        regionPopulation = District.region_population(d[:id])
+        d[:population] = regionPopulation
+        @total_population += regionPopulation
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      else
+        @total_population += d.population
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      end
+      district_data.each do |dd|
+        num10k = (dd.num.to_f / d[:population].to_f) * 10000
+        num10k = num10k.round(3)
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + num10k : num10k
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => num10k, "col#{i}_num" => dd.num }
+        else
+          @report_map[dd.icd_id]["col#{i}"] = num10k 
+          @report_map[dd.icd_id]["col#{i}_num"] = dd.num
+        end
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    end
+
+    @cumul_total_num = 0
+    cumul_data.each do |cd|
+      num = (cd.num.to_f/@total_population.to_f) * 10000
+      num = num.round(3);
+      @cumul_total_num += num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => num }
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = num 
+      end
+    end
+    puts @total_population.inspect
+    @report = Sumreport.all
   end
 
   def sum_report3
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+        district_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+      else
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+        district_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+      end
+
+      district_data.each do |dd|
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+
+      district_data_confirmed.each do |dd|
+        @total_cols["col#{i}_confirmed"] = @total_cols["col#{i}_confirmed"] ? @total_cols["col#{i}_confirmed"] + dd.num : dd.num
+        @report_map[dd.icd_id]["col#{i}_confirmed"] = dd.num 
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      cumul_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      cumul_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+    end
+    @cumul_total_num = 0
+    @cumul_total_num_confirmed = 0
+    cumul_data.each do |cd|
+      @cumul_total_num += cd.num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => cd.num}
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = cd.num 
+      end
+    end
+
+    cumul_data_confirmed.each do |cd|
+      @cumul_total_num_confirmed += cd.num
+      @report_map[cd.icd_id]["col#{cumulCol}_confirmed"] = cd.num 
+    end
+
+    @report = Sumreport.all
   end
 
   def sum_report4
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    data = {}
+
+    if params[:region] == 'MoCA'
+      data[0] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      data[1] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-1} group by icd_id")
+      data[2] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-2} group by icd_id")
+      data[3] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-3} group by icd_id")
+      data[4] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-4} group by icd_id")
+    else
+      regionDistricts = District.region_districts(District.get_id_from_name(params[:region]))
+      data[0] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      data[1] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-1} group by icd_id")
+      data[2] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-2} group by icd_id")
+      data[3] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-3} group by icd_id")
+      data[4] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-4} group by icd_id")
+    end
+    data.each do |key, d|
+      d.each do |dd|
+        puts dd.num.inspect
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+      i += 1
+    end
+
+    @report = Sumreport.all
   end
 
   def sum_report5
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    data = {}
+
+    if params[:region] == 'MoCA'
+      data[0] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      data[1] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-1} group by icd_id")
+      data[2] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-2} group by icd_id")
+      data[3] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-3} group by icd_id")
+      data[4] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-4} group by icd_id")
+    else
+      regionDistricts = District.region_districts(District.get_id_from_name(params[:region]))
+      data[0] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      data[1] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-1} group by icd_id")
+      data[2] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-2} group by icd_id")
+      data[3] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-3} group by icd_id")
+      data[4] = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and month(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year].to_i-4} group by icd_id")
+    end
+    data.each do |key, d|
+      d.each do |dd|
+        puts dd.num.inspect
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+      i += 1
+    end
+
+    @report = Sumreport.all
   end
 
-  def sum_report6
+
+def sum_report6
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      else
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      end
+
+      district_data.each do |dd|
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    end
+    @cumul_total_num = 0
+    cumul_data.each do |cd|
+      @cumul_total_num += cd.num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => cd.num}
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = cd.num 
+      end
+    end
+
+    @report = Sumreport.all
+
   end
 
   def sum_report7
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @total_population = 0
+    @total_cols = {}
+    @report_map = {}
+    
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        regionPopulation = District.region_population(d[:id])
+        d[:population] = regionPopulation
+        @total_population += regionPopulation
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      else
+        @total_population += d.population
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      end
+      district_data.each do |dd|
+        num10k = (dd.num.to_f / d[:population].to_f) * 10000
+        num10k = num10k.round(3)
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + num10k : num10k
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => num10k, "col#{i}_num" => dd.num }
+        else
+          @report_map[dd.icd_id]["col#{i}"] = num10k 
+          @report_map[dd.icd_id]["col#{i}_num"] = dd.num
+        end
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+    end
+
+    @cumul_total_num = 0
+    cumul_data.each do |cd|
+      num = (cd.num.to_f/@total_population.to_f) * 10000
+      num = num.round(3);
+      @cumul_total_num += num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => num }
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = num 
+      end
+    end
+    puts @total_population.inspect
+    @report = Sumreport.all
   end
 
   def sum_report8
+    Sumreport.table_name = 'sum_report1'
+    @r = 'sum1'
+    prepare_reports_tables
+    i = 0;
+    @report_map = {}
+    @total_cols = {}
+    
+    cumul_districts = []
+    @districts.each do |d|
+      i += 1
+      if params[:region] == 'MoCA'
+        regionDistricts = District.region_districts(d[:id])
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+        district_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{regionDistricts}) and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+      else
+        district_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+        district_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id = #{d[:id]} and weekofyear(date_of_dg) = #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+      end
+
+      district_data.each do |dd|
+        @total_cols["col#{i}"] = @total_cols["col#{i}"] ? @total_cols["col#{i}"] + dd.num : dd.num
+        if !@report_map[dd.icd_id]
+          @report_map[dd.icd_id] = {"col#{i}" => dd.num}
+        else
+          @report_map[dd.icd_id]["col#{i}"] = dd.num 
+        end
+      end
+
+      district_data_confirmed.each do |dd|
+        @total_cols["col#{i}_confirmed"] = @total_cols["col#{i}_confirmed"] ? @total_cols["col#{i}_confirmed"] + dd.num : dd.num
+        @report_map[dd.icd_id]["col#{i}_confirmed"] = dd.num 
+      end
+
+      cumul_districts.push(d[:id])
+    end
+    cumulCol = @districts.count + 2
+    if params[:region] == 'MoCA'
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      cumul_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+    else
+      cumul_data = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} group by icd_id")
+      cumul_data_confirmed = Case.find_by_sql("SELECT count(*) as num, icd_id from cases where district_id in (#{cumul_districts.join(',')}) and weekofyear(date_of_dg) <= #{params[:periodvalue]} and year(date_of_dg) = #{params[:year]} and labconfirmed = 1 group by icd_id")
+    end
+    @cumul_total_num = 0
+    @cumul_total_num_confirmed = 0
+    cumul_data.each do |cd|
+      @cumul_total_num += cd.num
+      if !@report_map[cd.icd_id]
+        @report_map[cd.icd_id] = {"col#{cumulCol}" => cd.num}
+      else
+        @report_map[cd.icd_id]["col#{cumulCol}"] = cd.num 
+      end
+    end
+
+    cumul_data_confirmed.each do |cd|
+      @cumul_total_num_confirmed += cd.num
+      @report_map[cd.icd_id]["col#{cumulCol}_confirmed"] = cd.num 
+    end
+
+    @report = Sumreport.all
   end
+
 
 
   def week_dates( week_num, year )
@@ -546,7 +937,7 @@ group by agents.id, year(date_lab), weekofyear(date_lab), date_lab;
       end
     elsif @r == 'sum1'
       Sumreport.table_name = 'sum_report1'
-      ActiveRecord::Base.connection.execute("TRUNCATE #{Report.table_name}")
+      ActiveRecord::Base.connection.execute("TRUNCATE #{Sumreport.table_name}")
       icds = Icd.where('icds.int > 0 and icds.disease_eng != ""').order("disease_eng")
       icds.each do |icd|
         row = Sumreport.new

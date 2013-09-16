@@ -1,1 +1,47 @@
+<h3>Syndromes reported</h3>
+<div class="row">
+  <div class="span5"><h4>RATES 4 years same</h4></div>
+  <div class="span3"><h4>Mjesec: <%= params[:periodvalue] %></h4></div>
+  <div class="span3"><h4>Godina: <%= params[:year] %></h4></div>
+</div>
+<table class="report-table" style="width:100%">
+<thead>
+  <tr>
+    <th>ICD</th>
+    <th>BOLEST</th>
+    <th><%= params[:year].to_i-4 %></th>
+    <th><%= params[:year].to_i-3 %></th>
+    <th><%= params[:year].to_i-2 %></th>
+    <th><%= params[:year].to_i-1 %></th>
+    <th><%= params[:year].to_i %></th>
+  </tr>
+</thead>
+<tbody>
+  <% total = 0 %>
+  <% @report.each do |report| %>
+  <% i = 0 %>
+  <% sub_total = 0 %>
+  <tr>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.icd %></td>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.disease %></td>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col4"]) ? @report_map[report.icd_id]["col4"] : 0 %></td>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col3"]) ? @report_map[report.icd_id]["col3"] : 0 %></td>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col2"]) ? @report_map[report.icd_id]["col2"] : 0 %></td>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col1"]) ? @report_map[report.icd_id]["col1"] : 0 %></td>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col0"]) ? @report_map[report.icd_id]["col0"] : 0 %>
+    </td>
+  </tr>
+  <% end %>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="2"><h4>Total:</h4></td>
+    <td><%= @total_cols["col4"] ? @total_cols["col4"] : 0 %></td>
+    <td><%= @total_cols["col3"] ? @total_cols["col3"] : 0 %></td>
+    <td><%= @total_cols["col2"] ? @total_cols["col2"] : 0 %></td>
+    <td><%= @total_cols["col1"] ? @total_cols["col1"] : 0 %></td>
+    <td><%= @total_cols["col0"] ? @total_cols["col0"] : 0 %></td>
+  </tr>
+</tfoot>
+</table>
 _

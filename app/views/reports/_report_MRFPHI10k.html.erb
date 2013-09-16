@@ -1,1 +1,57 @@
+<h3>Syndromes reported</h3>
+
+<div class="row">
+  <div class="span5"><h4>RATES per 10 000 inhabitants</h4></div>
+  <div class="span3"><h4>Mjesec: <%= params[:periodvalue] %></h4></div>
+  <div class="span3"><h4>Godina: <%= params[:year] %></h4></div>
+</div>
+
+<table class="report-table" style="width:100%">
+<thead>
+  <tr>
+    <th>ICD</th>
+    <th>BOLEST</th>
+    <% @districts.each do |district| %>
+    <th> <%= district[:abbr] %> </th>
+    <% end %>
+    <th>total</th>
+    <th>cumul</th>
+  </tr>
+</thead>
+<tbody>
+  <% total = 0 %>
+  <% @report.each do |report| %>
+  <% i = 0 %>
+  <% sub_total = 0 %>
+  <% population = 0 %>
+  <tr>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.icd %></td>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.disease %></td>
+    <% @districts.each do |district| %>
+      <% i += 1 %>
+      <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col#{i}"]) ? @report_map[report.icd_id]["col#{i}"] : 0 %> </td>
+      <% rez = (@report_map[report.icd_id] && @report_map[report.icd_id]["col#{i}_num"]) ? @report_map[report.icd_id]["col#{i}_num"] : 0 %> 
+      <% population += district.population if params[:region] != 'MoCA' %> 
+      <% total += rez %>
+      <% sub_total += rez %>
+    <% end %>
+    <td><%= (@total_population > 0) ? ((sub_total.to_f/@total_population.to_f)*10000).round(3) : "0" %></td>
+    <% i += 2 %>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col#{i}"]) ? @report_map[report.icd_id]["col#{i}"] : 0 %></td>
+  </tr>
+  <% end %>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="2"><h4>Total:</h4></td>
+    <% i = 0%>
+    <% @districts.each do |district| %>
+    <% i += 1%>
+    <td><%= @total_cols["col#{i}"] ? @total_cols["col#{i}"].round(3) : "0" %></td>
+    <% end %>
+    <td><%= total.round %></td>
+    <td><%= @cumul_total_num.round(3) %></td>
+  </tr>
+</tfoot>
+</table>
 _

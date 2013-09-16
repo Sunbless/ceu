@@ -1,1 +1,53 @@
+<h3>Syndromes reported</h3>
+<div class="row">
+  <div class="span3"><h4>CASES</h4></div>
+  <div class="span3"><h4>Sedmica: <%= params[:periodvalue] %></h4></div>
+  <div class="span3"><h4>Godina: <%= params[:year] %></h4></div>
+</div>
+
+<table class="report-table" style="width:100%">
+<thead>
+  <tr>
+    <th>ICD</th>
+    <th>BOLEST</th>
+    <% @districts.each do |district| %>
+    <th> <%= district[:abbr] %> </th>
+    <% end %>
+    <th>total</th>
+    <th>cumul</th>
+  </tr>
+</thead>
+<tbody>
+  <% total = 0 %>
+  <% @report.each do |report| %>
+  <% i = 0 %>
+  <% sub_total = 0 %>
+  <tr>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.icd %></td>
+    <td class="name <%= "boldtr" if report.col1 == nil %>"><%= report.disease %></td>
+    <% @districts.each do |district| %>
+      <% i += 1 %>
+      <td><%= rez = (@report_map[report.icd_id] && @report_map[report.icd_id]["col#{i}"]) ? @report_map[report.icd_id]["col#{i}"].round : 0 %> </td>
+      <% sub_total += rez %>
+      <% total += rez %>
+    <% end %>
+    <td><%= sub_total.round if sub_total %></td>
+    <% i += 2 %>
+    <td><%= (@report_map[report.icd_id] && @report_map[report.icd_id]["col#{i}"]) ? @report_map[report.icd_id]["col#{i}"] : 0 %></td>
+  </tr>
+  <% end %>
+</tbody>
+<tfoot>
+  <tr>
+    <td colspan="2"><h4>Total:</h4></td>
+    <% i = 0%>
+    <% @districts.each do |district| %>
+    <% i += 1%>
+    <td><%= @total_cols["col#{i}"] ? @total_cols["col#{i}"].round(3) : "0" %></td>
+    <% end %>
+    <td><%= total.round %></td>
+    <td><%= @cumul_total_num.round(3) %></td>
+  </tr>
+</tfoot>
+</table>
 _

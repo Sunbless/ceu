@@ -1,4 +1,8 @@
 $(function() {
+  $('.periodvalue').text('Mjesec:');
+  var d = new Date();
+  var n = d.getMonth()+1;
+  $('#periodvalue').val(n);
   var initEntity = $('#entity_entity').val();
   $('#district_9000').hide();
   $('#district_9100').hide();
@@ -26,12 +30,14 @@ $(function() {
   $('#sumreport').on('change', function () {
     if ($(this).find(':selected').attr('data-type') === 'w'){
       $('.periodvalue').text('Sedmica:');
+      var week = $('#periodvalueW').val();
+      week++;
       //Grrr js nema nativnog nacina da se uzme broj sedmice..
-      $('#periodvalue').val($('#periodvalueW').val());
+      $('#periodvalue').val(week);
     } else {
       $('.periodvalue').text('Mjesec:');
       var d = new Date();
-      var n = d.getMonth();
+      var n = d.getMonth()+1;
       $('#periodvalue').val(n);
     }
   });
