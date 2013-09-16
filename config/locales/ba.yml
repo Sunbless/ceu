@@ -13,7 +13,7 @@ ba:
             disease_bsn: "Naziv"
   user_created: Korisnik uspješno kreiran.
   user_updated: Korisnik uspješno ažuriran.
-  record_created: Zapis uspješno kreirean.
+  record_created: Zapis uspješno kreiran.
   record_updated: Zapis uspješno ažuriran.
   select_entity_and_week: "Molimo Vas da odabere entitet,distrikt/regiju i sedmicu za izvještaj"
   wrong_period_value: "Molimo Vas da unesete ispravan vremenski period za koji želite sumarni izvještaj"

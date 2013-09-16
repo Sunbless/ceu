@@ -8,6 +8,7 @@ class Case < ActiveRecord::Base
   belongs_to :agent
   belongs_to :icd
   belongs_to :center
+  belongs_to :he
   validates_presence_of :protocol, :date_of_dg, :icd_id
   paginates_per 50
 

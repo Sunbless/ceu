@@ -1,120 +1,131 @@
-<p>
-  <b>Kanton/Regija:</b>
-  <%= @case.district.name %>
-</p>
+<table class="table table-striped">
+<tr>
+  <td><b>Kanton/Regija:</b></td>
+  <td><%= @case.district.name %></td>
+</tr>
 
-<p>
-  <b>Regionalni zavod:</b>
-  <%= @case.phi_id %>
-</p>
-
-<p>
-  <b>Odjel/HES:</b>
-  <%= @case.he_id %>
-</p>
-
-<p>
-  <b>Doktor:</b>
-  <%= @case.user.full_name  if @case.user_id %>
-</p>
-
-<p>
-  <b>Protokol:</b>
-  <%= @case.protocol %>
-</p>
-
-<p>
-  <b>Dijagnoza klinička:</b>
-  <%= @case.dg_syndrom %>
-</p>
-
-<p>
-  <b>Datum dijagnoze:</b>
-  <%= @case.date_of_dg %>
-</p>
-
-<p>
-  <b>Laboratorijski potvrđeno</b>
-  <%= @case.labconfirmed == 1 ? "Da" : "Ne" %>
-</p>
-
-<p>
-  <b>Laboratorija:</b>
-  <%= @case.laboratory.name if @case.laboratory_id %>
-</p>
-
-<p>
-  <b>Date lab:</b>
-  <%= @case.date_lab %>
-</p>
-
-<p>
-  <b>Agent:</b>
-  <%= @case.agent.agent if @case.agent_id %>
-</p>
-
-<p>
-  <b>Datum izvještaja:</b>
-  <%= @case.date_report %>
-</p>
-
-<p>
-  <b>Datum upisa:</b>
-  <%= @case.date_entry %>
-</p>
-
-<p>
-  <b>Vakcinisan:</b>
-  <%= @case.vaccins[@case.vaccin] %>
-</p>
-
-<p>
-  <b>Operator:</b>
-  <%= @case.operator if @case.operator_id %>
-</p>
-
-<p>
-  <b>Komentar:</b>
-  <%= @case.comment %>
-</p>
-
-<p>
-  <b>Ime pacijenta:</b>
-  <%= @case.patient_name %>
-</p>
-
-<p>
-  <b>Prezime pacijenta:</b>
-  <%= @case.patient_surname %>
-</p>
-
-<p>
-  <b>Starost:</b>
-  <%= @case.age %>
-</p>
-
-<p>
-  <b>Datum rođenja:</b>
-  <%= @case.date_of_birth %>
-</p>
-
-<% if @case.date_death %>
-<p>
-  <b>Datum smrti:</b>
-  <%= @case.date_death %>
-</p>
+<% if @case.phi_id %>
+<tr>
+  <td><b>Regionalni zavod:</b></td>
+  <td><%= @case.phi.full_bsn %></td>
+</tr>
 <% end %>
 
-<p>
-  <b>Spol:</b>
-  <%= @case.sex_choice[@case.sex] %>
-</p>
+<% if @case.he_id %>
+<tr>
+  <td><b>Odjel/HES:</b></td>
+  <td><%= @case.he.name %></td>
+</tr>
+<% end %>
 
-<p>
-  <b>JMBG:</b>
-  <%= @case.jmbg %>
-</p>
+<tr>
+  <td><b>Doktor:</b></td>
+  <td><%= @case.user.full_name  if @case.user_id %></td>
+</tr>
 
+<tr>
+  <td><b>Protokol:</b></td>
+  <td><%= @case.protocol %></td>
+</tr>
 
-<%= link_to 'Uredi', edit_case_path(@case) %> |
-<%= link_to 'Nazad', cases_path %>
+<tr>
+  <td><b>Dijagnoza klinička:</b></td>
+  <td><%= @case.dg_syndrom %></td>
+</tr>
+
+<tr>
+  <td><b>Datum dijagnoze:</b></td>
+  <td><%= @case.date_of_dg.strftime("%d.%m.%Y") %></td>
+</tr>
+
+<tr>
+  <td><b>Laboratorijski potvrđeno</b></td>
+  <td><%= @case.labconfirmed == 1 ? "Da" : "Ne" %></td>
+</tr>
+
+<tr>
+  <td><b>Laboratorija:</b></td>
+  <td><%= @case.laboratory.name if @case.laboratory_id %></td>
+</tr>
+
+<tr>
+  <td><b>Date lab:</b></td>
+  <td><%= @case.date_lab.strftime("%d.%m.%Y") %></td>
+</tr>
+
+<% if @case.agent_id %>
+<tr>
+  <td><b>Agent:</b></td>
+  <td><%= @case.agent.agent if @case.agent_id %></td>
+</tr>
+<% end %>
+
+<tr>
+  <td><b>Datum izvještaja:</b></td>
+  <td><%= @case.date_report.strftime("%d.%m.%Y") %></td>
+</tr>
+
+<tr>
+  <td><b>Datum upisa:</b></td>
+  <td><%= @case.date_entry.strftime("%d.%m.%Y") %></td>
+</tr>
+
+<tr>
+  <td><b>Vakcinisan:</b></td>
+  <td><%= @case.vaccins[@case.vaccin] %></td>
+</tr>
+
+<tr>
+  <td><b>Operator:</b></td>
+  <td><%= @case.operator if @case.operator_id %></td>
+</tr>
+
+<tr>
+  <td><b>Komentar:</b></td>
+  <td><%= @case.comment %></td>
+</tr>
+
+<tr>
+  <td><b>Ime pacijenta:</b></td>
+  <td><%= @case.patient_name %></td>
+</tr>
+
+<tr>
+  <td><b>Prezime pacijenta:</b></td>
+  <td><%= @case.patient_surname %></td>
+</tr>
+
+<% if @case.age > 0 %>
+<tr>
+  <td><b>Starost:</b></td>
+  <td><%= @case.age %></td>
+</tr>
+<% end %>
+
+<% if @case.date_of_birth %>
+<tr>
+  <td><b>Datum rođenja:</b></td>
+  <td><%= @case.date_of_birth.strftime("%d.%m.%Y") %></td>
+</tr>
+<% end %>
+
+<% if @case.date_death %>
+<tr>
+  <td><b>Datum smrti:</b></td>
+  <td><%= @case.date_death %></td>
+</tr>
+<% end %>
+
+<tr>
+  <td><b>Spol:</b></td>
+  <td><%= @case.sex_choice[@case.sex] %></td>
+</tr>
+
+<tr>
+  <td><b>JMBG:</b></td>
+  <td><%= @case.jmbg %></td>
+</tr>
+</table>
+
+<%= link_to 'Uredi', edit_case_path(@case), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', cases_path, :class => 'btn' %>
