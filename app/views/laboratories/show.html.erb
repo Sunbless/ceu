@@ -5,11 +5,11 @@
   <%= @laboratory.name %>
 </p>
 
-<p>
+<!-- <p>
   <b>UID:</b>
   <%= @laboratory.uid %>
 </p>
-
+ -->
 <p>
   <b>Lokacija:</b>
   <%= @laboratory.municipality.municipality %>
@@ -26,5 +26,5 @@
 </p>
 
 
-<%= link_to 'Uredi', edit_laboratory_path(@laboratory) %> |
-<%= link_to 'Nazad', laboratories_path %>
+<%= link_to 'Uredi', edit_laboratory_path(@laboratory), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', laboratories_path, :class => 'btn' %>

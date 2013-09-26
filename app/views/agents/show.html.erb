@@ -1,13 +1,13 @@
-<p>
+<!-- <p>
   <b>UID:</b>
   <%= @agent.uid %>
 </p>
-
+ -->
 <p>
   <b>Agent:</b>
   <%= @agent.agent %>
 </p>
 
 
-<%= link_to 'Uredi', edit_agent_path(@agent) %> |
-<%= link_to 'Nazad', agents_path %>
+<%= link_to 'Uredi', edit_agent_path(@agent), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', agents_path, :class => 'btn' %>
