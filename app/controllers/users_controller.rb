@@ -17,11 +17,14 @@ class UsersController < ApplicationController
 
 
   def users_type
-    allow_admin_access if (!current_user.admin && params[:user_type] == 3)
+    allow_admin_access if (!current_user.admin && params[:user_type] == "3")
     if params[:user_type] == "regular"
       @users = User.where('user_type != 3')
     else
       @users = User.where('user_type = '+params[:user_type])
+    end
+    if current_user.district_id and !current_user.admin?
+      @users = @users.where("district_id = #{current_user.district_id}")
     end
     @users = @users.order(:name,:surname,:email).page params[:page]
     respond_to do |format|
@@ -46,8 +49,13 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @current_method = "new"
-    @municipalities = Municipality.all
-    @districts = District.all
+    if current_user.district_id and !current_user.admin?
+      @districts =  District.where("id = #{current_user.district_id}")
+      @municipalities = Municipality.where("district_id = #{current_user.district_id}")
+    else
+      @municipalities = Municipality.all
+      @districts = District.all
+    end
 
     respond_to do |format|
       format.html # new.html.erb

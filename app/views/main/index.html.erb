@@ -1,9 +1,7 @@
   <a href="<%= new_case_path %>"><div class="span3 well">Novi slučaj</div></a>
   <a href="<%= cases_path %>"><div class="span3 well">Pregled slučajeva</div></a>
   <a href="<%= reports_path %>"><div class="span3 well">Izvještaji</div></a>
-  <a href="<%= agents_path %>"><div class="span3 well">Agenti</div></a>
-  <a href="<%= icds_path %>"><div class="span3 well">ICD</div></a>
-  <a href="<%= districts_path %>"><div class="span3 well">Regije</div></a>
+  
   <a href="<%= centers_path %>"><div class="span3 well">Institucije</div></a>
   <a href="<%= hes_path %>"><div class="span3 well">Službe / Odjeli / HES</div></a>
   <a href="<%= laboratories_path %>"><div class="span3 well">Laboratorije</div></a>
@@ -11,6 +9,9 @@
   <a href="<%= users_type_path "regular" %>"><div class="span3 well">Osoblje</div></a>
 
   <% if current_user.try(:admin?) %>
+  <a href="<%= agents_path %>"><div class="span3 well">Agenti</div></a>
+  <a href="<%= icds_path %>"><div class="span3 well">ICD</div></a>
+  <a href="<%= districts_path %>"><div class="span3 well">Regije</div></a>
   <a href="<%= users_type_path 3 %>"><div class="span3 well">Operateri</div></a>
   <a href="<%= imports_path %>"><div class="span3 well">Uvoz podataka</div></a>
   <% end %>
