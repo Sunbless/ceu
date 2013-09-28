@@ -3,7 +3,12 @@ class HesController < ApplicationController
   # GET /hes
   # GET /hes.json
   def index
-    @hes = He.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @hes = district.hes
+    else
+      @hes = He.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -26,7 +31,12 @@ class HesController < ApplicationController
   # GET /hes/new.json
   def new
     @he = He.new
-    @centers = Center.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @centers = district.centers
+    else
+      @centers = Center.all
+    end
     @chiefs = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     respond_to do |format|
@@ -38,7 +48,12 @@ class HesController < ApplicationController
   # GET /hes/1/edit
   def edit
     @he = He.find(params[:id])
-    @centers = Center.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @centers = district.centers
+    else
+      @centers = Center.all
+    end
     @chiefs = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
   end
@@ -47,7 +62,12 @@ class HesController < ApplicationController
   # POST /hes.json
   def create
     @he = He.new(params[:he])
-    @centers = Center.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @centers = district.centers
+    else
+      @centers = Center.all
+    end
     @chiefs = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     respond_to do |format|
@@ -65,7 +85,12 @@ class HesController < ApplicationController
   # PUT /hes/1.json
   def update
     @he = He.find(params[:id])
-    @centers = Center.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @centers = district.centers
+    else
+      @centers = Center.all
+    end
     @chiefs = User.find_all_by_user_type(1)
     @nurses = User.find_all_by_user_type(2)
     respond_to do |format|

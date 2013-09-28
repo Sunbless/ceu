@@ -3,7 +3,11 @@ class PhisController < ApplicationController
   # GET /phis
   # GET /phis.json
   def index
-    @phis = Phi.all
+    if current_user.district_id and !current_user.admin?
+      @phis = Phi.where("district_id = #{current_user.district_id}")
+    else
+      @phis = Phi.all
+    end
 
     respond_to do |format|
       format.html # index.html.erb

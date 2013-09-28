@@ -3,8 +3,13 @@ class CasesController < ApplicationController
   # GET /cases
   # GET /cases.json
   def index
-    @cases = Case.all
-    @cases = Case.order("id desc").page params[:page]
+    if current_user.district_id and !current_user.admin?
+      @cases = Case.where("district_id = #{current_user.district_id}")
+    else
+      @cases = Case.all
+    end
+    @cases = @cases.page params[:page]
+    # @cases = Case.order("id desc").page params[:page]
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,10 +21,14 @@ class CasesController < ApplicationController
   # GET /cases/1.json
   def show
     @case = Case.find(params[:id])
+    if current_user.district_id and !current_user.admin? and @case.district_id != current_user.district_id
+      redirect_to cases_path
+    else
 
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @case }
+      respond_to do |format|
+        format.html # show.html.erb
+        format.json { render json: @case }
+      end
     end
   end
 
@@ -59,24 +68,28 @@ class CasesController < ApplicationController
   # GET /cases/1/edit
   def edit
     @case = Case.find(params[:id])
-
-   if current_user.district_id and !current_user.admin?
-      @districts = District.where("id = #{current_user.district_id}")
-      @phis = Phi.where("district_id = #{current_user.district_id}")
+    if current_user.district_id and !current_user.admin? and @case.district_id != current_user.district_id
+      redirect_to cases_path
     else
-      @districts = District.all
-      @phis = Phi.all
-      @centers = Center.all
-    end
-    @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
-    @hes = He.where(:center_id => @centers.map { |id| id })
 
-    @laboratories = Laboratory.all
-    @agents = Agent.all
-    @doctors = User.find_all_by_user_type(1)
-    @nurses = User.find_all_by_user_type(2)
-    @municipalities = Municipality.all
-    @icds = Icd.all
+      if current_user.district_id and !current_user.admin?
+        @districts = District.where("id = #{current_user.district_id}")
+        @phis = Phi.where("district_id = #{current_user.district_id}")
+      else
+        @districts = District.all
+        @phis = Phi.all
+        @centers = Center.all
+      end
+      @centers = (@phis.count == 1)? Center.where("phi_id = #{@phis.first.id}") : Center.all
+      @hes = He.where(:center_id => @centers.map { |id| id })
+
+      @laboratories = Laboratory.all
+      @agents = Agent.all
+      @doctors = User.find_all_by_user_type(1)
+      @nurses = User.find_all_by_user_type(2)
+      @municipalities = Municipality.all
+      @icds = Icd.all
+    end
   end
 
   # POST /cases

@@ -3,7 +3,12 @@ class CentersController < ApplicationController
   # GET /centers
   # GET /centers.json
   def index
-    @centers = Center.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @centers = district.centers
+    else
+      @centers = Center.all
+    end
 
 
     respond_to do |format|
@@ -27,7 +32,12 @@ class CentersController < ApplicationController
   # GET /centers/new.json
   def new
     @center = Center.new
-    @municipalities = Municipality.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @municipalities = district.municipalities
+    else
+      @municipalities = Municipality.all
+    end
     @phis = Phi.all
     respond_to do |format|
       format.html # new.html.erb
@@ -38,7 +48,12 @@ class CentersController < ApplicationController
   # GET /centers/1/edit
   def edit
     @center = Center.find(params[:id])
-    @municipalities = Municipality.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @municipalities = district.municipalities
+    else
+      @municipalities = Municipality.all
+    end
     @phis = Phi.all
   end
 
@@ -46,7 +61,12 @@ class CentersController < ApplicationController
   # POST /centers.json
   def create
     @center = Center.new(params[:center])
-    @municipalities = Municipality.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @municipalities = district.municipalities
+    else
+      @municipalities = Municipality.all
+    end
     @phis = Phi.all
     respond_to do |format|
       if @center.save
@@ -63,7 +83,12 @@ class CentersController < ApplicationController
   # PUT /centers/1.json
   def update
     @center = Center.find(params[:id])
-    @municipalities = Municipality.all
+    if current_user.district_id and !current_user.admin?
+      district = District.find(current_user.district_id)
+      @municipalities = district.municipalities
+    else
+      @municipalities = Municipality.all
+    end
     @phis = Phi.all
     respond_to do |format|
       if @center.update_attributes(params[:center])
