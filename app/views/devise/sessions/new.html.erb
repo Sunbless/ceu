@@ -1,6 +1,6 @@
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-signin' }) do |f| %>
   <h3 class="form-signin-heading">Prijavite se</h3>
-  <%= f.text_field :login, :autofocus => true, :placeholder => 'Username / E-mail', :class => 'input-block-level' %>
+  <%= f.text_field :login, :autofocus => true, :placeholder => 'Korisničko ime / E-mail', :class => 'input-block-level' %>
 
   <%= f.password_field :password, :placeholder => 'Šifra', :class => 'input-block-level'  %>
 
