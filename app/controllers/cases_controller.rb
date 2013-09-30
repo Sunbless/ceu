@@ -4,11 +4,11 @@ class CasesController < ApplicationController
   # GET /cases.json
   def index
     if current_user.district_id and !current_user.admin?
-      @cases = Case.where("district_id = #{current_user.district_id}")
+      @cases = Case.where("district_id = #{current_user.district_id}").order("id desc").page params[:page]
     else
-      @cases = Case.all
+      # @cases = Case.all
+      @cases = Case.order("id desc").page params[:page]
     end
-    @cases = @cases.page params[:page]
     # @cases = Case.order("id desc").page params[:page]
 
     respond_to do |format|
