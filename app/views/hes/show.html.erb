@@ -14,16 +14,19 @@
   <%= @he.name %>
 </p>
 
+<% if @he.chief_id && @he.chief.full_name %>
 <p>
   <b>Šef službe:</b>
   <%= @he.chief.full_name %>
 </p>
+<% end %>
 
+<% if @he.nurse_id && @he.nurse.full_name %>
 <p>
   <b>Med. tehničar:</b>
   <%= @he.nurse.full_name %>
 </p>
+<% end %>
 
-
-<%= link_to 'Uredi', edit_he_path(@he) %> |
-<%= link_to 'Nazad', hes_path %>
+<%= link_to 'Uredi', edit_he_path(@he), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', hes_path, :class => 'btn' %>
