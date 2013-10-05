@@ -6,12 +6,13 @@
   <a href="<%= hes_path %>"><div class="span3 well">Službe / Odjeli / HES</div></a>
 
   <% if current_user.try(:admin?) %>
-  <a href="<%= laboratories_path %>"><div class="span3 well">Laboratorije</div></a>
+  <a href="<%= laboratories_path %>"><div class="span3 well">Laboratoriji</div></a>
   <a href="<%= phis_path %>"><div class="span3 well">Regionalni zdravstveni zavodi</div></a>
   <a href="<%= users_type_path "regular" %>"><div class="span3 well">Osoblje</div></a>
   <a href="<%= agents_path %>"><div class="span3 well">Agenti</div></a>
   <a href="<%= icds_path %>"><div class="span3 well">ICD</div></a>
-  <a href="<%= districts_path %>"><div class="span3 well">Regije</div></a>
+  <a href="<%= districts_path %>"><div class="span3 well">Regije / Kantoni</div></a>
+  <a href="<%= municipalities_path %>"><div class="span3 well">Općine</div></a>
   <a href="<%= users_type_path 3 %>"><div class="span3 well">Operateri</div></a>
   <a href="<%= imports_path %>"><div class="span3 well">Uvoz podataka</div></a>
   <% end %>

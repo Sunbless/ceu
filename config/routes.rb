@@ -1,5 +1,8 @@
 Zzjz::Application.routes.draw do
 
+  resources :municipalities
+
+
   get "imports/index"
 
   get "imports/import"

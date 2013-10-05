@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130911213537) do
+ActiveRecord::Schema.define(:version => 20131005181111) do
 
   create_table "agents", :force => true do |t|
     t.string   "uid"
@@ -69,10 +69,10 @@ ActiveRecord::Schema.define(:version => 20130911213537) do
     t.string   "centar"
     t.string   "name"
     t.integer  "population"
-    t.integer  "municipalities"
+    t.integer  "municipality_no"
     t.integer  "entity_id"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "entities", :force => true do |t|
@@ -215,6 +215,7 @@ ActiveRecord::Schema.define(:version => 20130911213537) do
   end
 
   create_table "sum_report1", :force => true do |t|
+    t.integer  "icd_id"
     t.string   "icd"
     t.string   "disease"
     t.float    "col1",       :default => 0.0

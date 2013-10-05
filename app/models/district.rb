@@ -1,5 +1,5 @@
 class District < ActiveRecord::Base
-  attr_accessible :abbr, :centar, :code, :code_stat, :entity_id, :municipalities, :name, :name_eng, :population, :id
+  attr_accessible :abbr, :centar, :code, :code_stat, :entity_id, :municipality_no, :name, :name_eng, :population, :id
   belongs_to :entity
   has_many :municipalities
   has_many :centers, through: :municipalities

@@ -27,6 +27,7 @@ class DistrictsController < ApplicationController
   def new
     @district = District.new
     @entities = Entity.all
+    @municipalities = Municipality.all
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @district }
@@ -37,6 +38,7 @@ class DistrictsController < ApplicationController
   def edit
     @entities = Entity.all
     @district = District.find(params[:id])
+    @municipalities = @district.municipalities
   end
 
   # POST /districts
@@ -44,10 +46,10 @@ class DistrictsController < ApplicationController
   def create
     @district = District.new(params[:district])
     @entities = Entity.all
-
+    @municipalities = Municipality.all
     respond_to do |format|
       if @district.save
-        format.html { redirect_to @district, notice: 'District was successfully created.' }
+        format.html { redirect_to @district, notice: t(:record_created)  }
         format.json { render json: @district, status: :created, location: @district }
       else
         format.html { render action: "new" }
@@ -61,10 +63,10 @@ class DistrictsController < ApplicationController
   def update
     @district = District.find(params[:id])
     @entities = Entity.all
-
+    @municipalities = Municipality.all
     respond_to do |format|
       if @district.update_attributes(params[:district])
-        format.html { redirect_to @district, notice: 'District was successfully updated.' }
+        format.html { redirect_to @district, notice: t(:record_updated)  }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }

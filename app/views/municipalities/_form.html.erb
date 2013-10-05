@@ -1,0 +1,28 @@
+<%= form_for(@municipality, :html => {:class => 'form-horizontal'} ) do |f| %>
+  <% if @municipality.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@municipality.errors.count, "error") %> prohibited this municipality from being saved:</h2>
+
+      <ul>
+      <% @municipality.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="control-group">
+    <%= f.label :municipality, 'Naziv:', :class=>'control-label'  %>
+    <div class="controls"><%= f.text_field :municipality, :class => 'input-xlarge'  %></div>
+  </div>
+  <div class="control-group">
+    <%= f.label :district_id, 'Regija / Kanton:', :class=>'control-label' %>
+    <div class="controls">
+
+      <%= f.collection_select :district_id, @districts, :id, :abbr, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= f.submit  'Sačuvaj', :class => 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -7,41 +7,43 @@
     </div>
   <% end %>
 
-  <div class="control-group">
+<!--   <div class="control-group">
     <%= f.label :code, :class=>'control-label' %>
-    <%= f.number_field :code %>
+    <div class="controls"><%= f.number_field :code %></div>
+  </div> -->
+  <div class="control-group">
+    <%= f.label :code_stat, 'Code:', :class=>'control-label' %>
+    <div class="controls"><%= f.number_field :code_stat %></div>
   </div>
   <div class="control-group">
-    <%= f.label :code_stat, :class=>'control-label' %>
-    <%= f.number_field :code_stat %>
-  </div>
-  <div class="control-group">
-    <%= f.label :abbr, :class=>'control-label' %>
+    <%= f.label :abbr, 'Abbr:', :class=>'control-label' %>
     <div class="controls"><%= f.text_field :abbr %></div>
   </div>
   <div class="control-group">
-    <%= f.label :name_eng, :class=>'control-label' %>
+    <%= f.label :name_eng, 'Naziv eng. :', :class=>'control-label' %>
     <div class="controls"><%= f.text_field :name_eng %></div>
   </div>
   <div class="control-group">
-    <%= f.label :centar, :class=>'control-label' %>
-    <div class="controls"><%= f.text_field :centar %></div>
+    <%= f.label :centar, 'Centar:', :class=>'control-label'  %>
+    <div class="controls">
+      <%= f.collection_select :centar, @municipalities, :id, :municipality, {:prompt => false}, :class => 'input-xlarge'  %>
+    </div>
   </div>
   <div class="control-group">
-    <%= f.label :name, :class=>'control-label' %>
+    <%= f.label :name, 'Naziv:', :class=>'control-label' %>
     <div class="controls"><%= f.text_field :name %></div>
   </div>
   <div class="control-group">
-    <%= f.label :population, :class=>'control-label' %>
+    <%= f.label :population, 'Populacija:',:class=>'control-label' %>
     <div class="controls"><%= f.number_field :population %></div>
   </div>
   <div class="control-group">
-    <%= f.label :municipalities, :class=>'control-label' %>
-    <div class="controls"><%= f.number_field :municipalities %></div>
+    <%= f.label :municipality_no, 'Općina:', :class=>'control-label' %>
+    <div class="controls"><%= f.number_field :municipality_no %></div>
   </div>
 
   <div class="control-group">
-    <%= f.label :job_type, 'Entitet', :class=>'control-label' %>
+    <%= f.label :entity_id, 'Entitet:', :class=>'control-label' %>
     <div class="controls">
 
       <%= f.collection_select :entity_id, @entities, :id, :abbr, {:prompt => false}, :class => 'input-xlarge'  %>

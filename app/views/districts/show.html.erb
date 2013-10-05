@@ -1,7 +1,7 @@
-<p>
+<!-- <p>
   <b>Code:</b>
   <%= @district.code %>
-</p>
+</p> -->
 
 <p>
   <b>Code stat:</b>
@@ -14,7 +14,7 @@
 </p>
 
 <p>
-  <b>Name eng:</b>
+  <b>Naziv eng:</b>
   <%= @district.name_eng %>
 </p>
 
@@ -24,25 +24,25 @@
 </p>
 
 <p>
-  <b>Name:</b>
+  <b>Naziv:</b>
   <%= @district.name %>
 </p>
 
 <p>
-  <b>Population:</b>
+  <b>Populacija:</b>
   <%= @district.population %>
 </p>
 
 <p>
-  <b>Municipalities:</b>
-  <%= @district.municipalities %>
+  <b>Općina:</b>
+  <%= @district.municipality_no %> / <%= @district.municipalities.count %>
 </p>
 
 <p>
-  <b>Entity:</b>
+  <b>Entitet:</b>
   <%= @district.entity.abbr %>
 </p>
 
 
-<%= link_to 'Uredi', edit_district_path(@district) %> |
-<%= link_to 'Nazad', districts_path %>
+<%= link_to 'Uredi', edit_district_path(@district), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', districts_path, :class => 'btn' %>

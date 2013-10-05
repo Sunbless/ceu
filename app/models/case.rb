@@ -46,8 +46,9 @@ class Case < ActiveRecord::Base
     hes = Hash.new
     users = Hash.new
     icds = Hash.new
-
+    # puts data.inspect
     data.each do |row|
+      puts row.inspect
       existing = self.where(:uid => row['ID'])
       if existing.size == 0
         import = self.new

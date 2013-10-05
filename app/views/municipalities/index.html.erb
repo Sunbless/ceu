@@ -1,0 +1,26 @@
+<h3>Općine</h3>
+
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>Naziv</th>
+      <th>Regije/Kanton</th>
+      <th></th>
+    </tr>
+  </thead>
+
+<% @municipalities.each do |municipality| %>
+  <tr>
+    <td><%= municipality.municipality %></td>
+    <td><%= municipality.district.name %></td>
+    <td>
+      <%= link_to 'Uredi', edit_municipality_path(municipality), :class => 'btn' %> |
+      <%= link_to 'Izbriši', municipality, method: :delete, data: { confirm: 'Jeste li sigurni?' }, :class => 'btn btn-danger' %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj novu općinu', new_municipality_path, :class => 'btn' %>

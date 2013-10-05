@@ -1,0 +1,15 @@
+
+
+<p>
+  <b>Naziv:</b>
+  <%= @municipality.municipality %>
+</p>
+
+<% if @municipality.district_id %>
+  <p>
+    <b>Regija / Kanton:</b>
+    <%= @municipality.district.name %>
+  </p>
+<% end%>
+<%= link_to 'Uredi', edit_municipality_path(@municipality), :class => 'btn btn-primary' %> |
+<%= link_to 'Nazad', municipalities_path, :class => 'btn' %>
